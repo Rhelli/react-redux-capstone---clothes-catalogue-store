@@ -1,0 +1,717 @@
+{
+  "mens": {
+    "jackets": {
+      "jacket01": {
+        "productName": "Timberland sherpa jacket in black/blue",
+        "price": 120.00,
+        "color": "Black",
+        "productDetails": [
+          "Layer up", "Colour-block design", "High collar", "Zip fastening", "Woven panels",
+          "Zip chest pockets", "Zip side pockets", "Logo patch details", "Long sleeves", "Regular Fit",
+          "True to size"
+        ],
+        "productDesc": "With a rich New England heritage, Timberland's signature work boots were quickly adopted by a new wave of youth culture. With a rugged feel and reputation for quality, Timberland keeps it laid-back and low-key across a range of boots, jersey pieces and outerwear.",
+        "brandName": "Timberland",
+        "madeOf": "Fabric: 100% Cotton."
+      },
+      "jacket02": {
+        "productName": "Barbour Ashby wax jacket in black",
+        "price": 146.30,
+        "color": "Black",
+        "productDetails": [
+          "Feel the benefit",
+          "Check lining with one internal pocket",
+          "Corduroy collar",
+          "Zip fastening with press-stud placket",
+          "Functional pockets",
+          "Regular fit",
+          "Just select your usual size"
+        ],
+        "productDesc": "With a rich heritage dating back to 1894, quintessentially British brand, Barbour have garnered a reputation for quality and durability, across their collection of high performance outerwear. Expanding their country-wear roots, Barbour rework their original cuts in contemporary nylon and leather finishes, whilst the Heritage line champions the brand's signature style with classic quilted jackets sitting alongside the waxed cotton Beadnell.",
+        "brandName": "Barbour",
+        "madeOf": "Main: 100% Cotton, Sleeve: 100% Polyester, Inner: 100% Cotton."
+      },
+      "jacket03": {
+        "productName": "Jack & Jones Core hooded puffer in green",
+        "price": 33.00,
+        "color": "Darkest Spruce",
+        "productDetails": [
+          "Feel the benefit",
+          "Padded design",
+          "Toggle cord hood",
+          "Zip fastening",
+          "Logo patch to chest",
+          "Contrast side pockets",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "Founded in 1990, Jack & Jones is a Danish brand that offers cool, relaxed designs that express a strong visual style through their diffusion lines, Jack & Jones intelligence and Jack & Jones vintage. Using innovative treatments and cuts Jack & Jones place their signature laid back style on to a whole range of clothing from print t-shirts to jeans.",
+        "brandName": "Jack & Jones",
+        "madeOf": "Fabric: 100% Polyester."
+      },
+      "jacket04": {
+        "productName": "ASOS DESIGN oversized polar fleece sweatshirt with half zip in all over geo print",
+        "price": 32.00,
+        "color": "Multi",
+        "productDetails": [
+          "Aesthetic: on point ",
+          "Geometric design",
+          "High neck",
+          "Partial zip fastening",
+          "Long sleeves",
+          "Side pockets",
+          "Elasticated cuffs",
+          "Oversized fit",
+          "Relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Fabric: 100% Polyester."
+      },
+      "jacket05": {
+        "productName": "Bershka denim jacket in light blue",
+        "price": 25.27,
+        "color": "Blue",
+        "productDetails": [
+          "It's layering season",
+          "Spread collar",
+          "Button placket ",
+          "Button chest pockets ",
+          "Side pockets ",
+          "Adjustable hem ",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "Made for the modern man, Bershka's contemporary casuals are influenced by the latest music, technology and social media trends. Comfort meets cools with its earthy-toned longline T-shirts, joggers and washed denim, while the brand's activewear freshens up your keep-fit kit.",
+        "brandName": "Bershka",
+        "madeOf": "Fabric: 100% Cotton."
+      }
+    },
+    "jeans": {
+      "jeans01": {
+        "productName": "Levi's skinny tapered fit jeans in eat the popcorn advanced light wash",
+        "price": 95.00,
+        "color": "Blue",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Regular rise",
+          "Belt loops",
+          "Functional pockets",
+          "Skinny, tapered fit ",
+          "Cut tightly around the thigh with a narrow shape through the leg"
+        ],
+        "productDesc": "Since creating the first ever pair of blue jeans back in 1873, American label Levi's has gone on to become one of the world’s most iconic denim brands – but you already knew that. Today, its collection has expanded to include jeans in a range of cuts and washes, as well as shirts, T-shirts and jackets. Look out for the brand’s 501 Original jeans, for an all-American, all-you look.",
+        "brandName": "Levi",
+        "madeOf": "Main: 68% Cotton, 31% Lyocell, 1% Elastane."
+      },
+      "jeans02": {
+        "productName": "River Island tapered jeans with rips in light blue",
+        "price": 45.00,
+        "color": "Blue",
+        "productDetails": [
+          "It's all in the jeans",
+          "Distressed finish",
+          "Regular rise",
+          "Belt loops",
+          "Five pockets",
+          "Regular, tapered fit",
+          "A standard cut around the thigh with a narrow shape through the leg"
+        ],
+        "productDesc": "High-street favourite River Island has been a go-to for decades. Known for adding signature detailing to its designs, expect to see classic looks with an RI twist from our River Island at ASOS edit. Scroll fresh loungewear and everyday jeans and T-shirts, or suit up in sharp tailoring, from smart shirts and shoes to suit jackets and trousers – just name the occasion.",
+        "brandName": "River Island",
+        "madeOf": "Main: 98% Cotton, 2% Elastane."
+      },
+      "jeans03": {
+        "productName": "ASOS DESIGN stretch slim jeans in black",
+        "price": 25.00,
+        "color": "Black",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Black wash ",
+          "Regular rise",
+          "Zip fly",
+          "Functional pockets",
+          "Slim fit",
+          "A narrow cut from hips to hem"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 99% Cotton, 1% Elastane."
+      },
+      "jeans04": {
+        "productName": "Jack & Jones Intelligence Liam skinny fit stretch jeans in blue black",
+        "price": 30.00,
+        "color": "Blue Denim",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Dark-blue wash",
+          "Belt loops",
+          "Zip fly",
+          "Five pockets",
+          "Skinny fit",
+          "Cut very closely from hips to hem"
+        ],
+        "productDesc": "Founded in 1989, Jack & Jones is a Danish brand that offers cool, relaxed designs that express a strong visual style through their diffusion lines, Jack & Jones intelligence and Jack & Jones vintage. Using innovative treatments and cuts Jack & Jones place their signature laid back style on to a whole range of clothing from print t-shirts to jeans.",
+        "brandName": "Jack & Jones",
+        "madeOf": "Fabric: 91% Cotton, 7% Polyester, 2% Elastane."
+      },
+      "jeans05": {
+        "productName": "Burton Menswear tapered jeans in washed black",
+        "price": 20.00,
+        "color": "Black",
+        "productDetails": [
+          "It's all in the jeans",
+          "Regular rise",
+          "Belt loops",
+          "Five pockets",
+          "Regular, tapered fit",
+          "A standard cut around the thigh with a narrow shape through the leg"
+        ],
+        "productDesc": "British brand Burton Menswear London combines a long heritage of tailoring with a modern take on relaxed formal and casualwear to bring an added hint of freshness to every occasion. Expect classic shirting and knitwear.",
+        "brandName": "Burton",
+        "madeOf": "Main: 99% Cotton, 1% Elastane."
+      }
+    },
+    "shirts": {
+      "shirts01": {
+        "productName": "Jack & Jones Originals fleece overshirt in navy",
+        "price": 35.00,
+        "color": "Navy blazer",
+        "productDetails": [
+          "Layered looks",
+          "Spread collar",
+          "Button placket",
+          "Chest pocket",
+          "Long sleeves",
+          "Button cuffs",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "Founded in the 90s as a jeanswear brand, Danish label Jack & Jones has since gone on to expand its sartorial offering to include everything from jumpers, jackets and T-shirts to shoes, underwear and accessories (alongside more of its flex-worthy denim, of course). Scroll the Jack & Jones at ASOS edit to check out our latest drop of the brand’s laid-back pieces.",
+        "brandName": "Jack & Jones",
+        "madeOf": "Fabric: 100% Polyester."
+      },
+      "shirts02": {
+        "productName": "ASOS DESIGN 90s oversized style cord shirt in college green",
+        "price": 25.00,
+        "color": "Green",
+        "productDetails": [
+          "All the retro vibes",
+          "Button-down collar",
+          "Button placket",
+          "Chest pocket",
+          "Drop shoulders",
+          "Button cuffs",
+          "Oversized fit",
+          "Relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 100% Cotton."
+      },
+      "shirts03": {
+        "productName": "Polo Ralph Lauren oxford shirt in slim fit white",
+        "price": 99.00,
+        "color": "White",
+        "productDetails": [
+          "Breathable cotton",
+          "Fastened point collar",
+          "Button placket",
+          "Embroidered logo",
+          "Slim fit - cut closely to the body ",
+          "Machine wash",
+          "100% Cotton",
+          "Our model wears a size Medium and is 193cm/6'4 tall",
+          "Open with care – product may be pinned"
+        ],
+        "productDesc": "Naming his brand after a game that embodies classic style, Ralph Lauren created Polo Ralph Lauren in 1967 initially selling men's ties. Interested in longevity, timelessness and style, Polo Ralph Lauren has since grown into a complete collection of preppy polo shirts and accessories with a rich history of design.",
+        "brandName": "Polo Ralph Lauren",
+        "madeOf": "Body: 100% Cotton."
+      },
+      "shirts04": {
+        "productName": "ASOS DESIGN 90s oversized organic denim shirt in grape",
+        "price": 25.00,
+        "color": "Grape",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Spread collar",
+          "Button placket",
+          "Chest pocket",
+          "Long sleeves",
+          "Button cuffs",
+          "Oversized fit",
+          "Relaxed and roomy "
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Body: 100% Organic Cotton."
+      },
+      "shirts05": {
+        "productName": "Deus Ex Machina marcus flannel heavyweight overshirt in khaki",
+        "price": 160.00,
+        "color": "Khaki",
+        "productDetails": [
+          "Layered looks",
+          "Point collar",
+          "Button placket",
+          "Button chest pockets",
+          "Contrast embroidery to chest",
+          "Long sleeves",
+          "Button cuffs",
+          "'Way Off Life' embroidery to reverse",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "Founded in 2006, Deus Ex Machina hails from Australia. Originally launching with customised motorcycles, the guys at Deus Ex quickly developed a clothing range and we're glad they did. Describing themselves as a culture rather than a brand, they bring the cultures of skateboard, surfing and motorcycling together into one collection.",
+        "brandName": "Deus Ex Machina",
+        "madeOf": "Fabric: 60% Polyester, 40% Wool."
+      }
+    },
+    "tops": {
+      "tops01": {
+        "productName": "Carhartt WIP Chase t-shirt in grey",
+        "price": 24.50,
+        "color": "Grey heather/gold",
+        "productDetails": [
+          "Your staple logo tee",
+          "Crew neck",
+          "Carhartt WIP logo",
+          "Relaxed fit",
+          "Falls loosely over the body"
+        ],
+        "productDesc": "More than a century after Hamilton Carhartt established his Detroit business, Carhartt Work In Progress (WIP) launched in London, tailoring its workwear focus for a new audience. Collaborations with the likes of A.P.C. and Vans as well as inspiring figures in music and sport have since followed, making it a go-to for logo tees, hoodies and accessories.",
+        "brandName": "Carhertt",
+        "madeOf": "Fabric: 100% Cotton."
+      },
+      "tops02": {
+        "productName": "Burton Menswear peace out t-shirt in washed khaki",
+        "price": 16.00,
+        "color": "Khaki",
+        "productDetails": [
+          "Your new flex",
+          "Washed design",
+          "Crew neck",
+          "Short sleeves",
+          "'Peace Out' slogan embroidery",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "British brand Burton Menswear London combines a long heritage of tailoring with a modern take on relaxed formal and casualwear to bring an added hint of freshness to every occasion. Expect classic shirting and knitwear.",
+        "brandName": "Burton",
+        "madeOf": "Main: 100% Cotton."
+      },
+      "tops03": {
+        "productName": "ASOS DESIGN oversized waffle t-shirt with deep hem and cuff in washed blue",
+        "price": 16.00,
+        "color": "Vintage indigo",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Crew neck",
+          "Drop shoulders",
+          "Chest pocket",
+          "Deep cuffs and hem",
+          "Oversized fit",
+          "Relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 100% Cotton."
+      },
+      "tops04": {
+        "productName": "ASOS DESIGN oversized t-shirt in blue towelling with text chest print",
+        "price": 20.00,
+        "color": "Mineral blue",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Crew neck",
+          "Drop shoulders",
+          "'Blessings and Growth' slogan embroidery ",
+          "Oversized fit",
+          "Relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 83% Cotton, 17% Polyester."
+      },
+      "tops05": {
+        "productName": "American Eagle thermal front logo long sleeve top in charcoal marl",
+        "price": 34.95,
+        "color": "Charcoal heather gray",
+        "productDetails": [
+          "Act casual",
+          "Crew neck",
+          "Long sleeves",
+          "Logo print to chest",
+          "Fitted cuffs",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "Inclusive and empowering, American Eagle is a clothing brand that celebrates individuality through its staples and standout pieces. Expect everything from cosy hoodies and casual T-shirts to jackets and jeans in a range of classic washes – think all-American vibes with a fresh, youthful twist. Whatever you’re after, we’ve got it all and more in our American Eagle at ASOS edit.",
+        "brandName": "American Eagle",
+        "madeOf": "Main: 60% Cotton, 40% Polyester."
+      }
+    }
+  },
+  "womens": {
+    "jackets": {
+      "jacket01": {
+        "productName": "ASOS DESIGN double breasted textured coat in khaki",
+        "price": 52.00,
+        "color": "Khaki",
+        "productDetails": [
+          "That new-coat feeling",
+          "Notch lapels",
+          "Double-breasted style",
+          "Button placket",
+          "Drop shoulders",
+          "Side pockets",
+          "Relaxed fit",
+          "Slouchy cut"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Lining: 100% Polyester, Main: 100% Polyester."
+      },
+      "jacket02": {
+        "productName": "ASOS DESIGN oversized padded shacket in khaki",
+        "price": 40.00  ,
+        "color": "Khaki",
+        "productDetails": [
+          "It's layering season",
+          "Padded design",
+          "Spread collar",
+          "Press-stud placket",
+          "Drop shoulders",
+          "Chest pockets",
+          "Side pockets",
+          "Oversized fit",
+          "Relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Body Lining: 100% Polyester, Padding: 100% Polyester, Shell: 100% Polyester."
+      },
+      "jacket03": {
+        "productName": "QED London borg coat in tan",
+        "price": 62.00,
+        "color": "Tan",
+        "productDetails": [
+          "Turn up the texture",
+          "Notch lapels",
+          "Single-breasted style",
+          "Three-button fastening",
+          "Side pockets",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "",
+        "brandName": "QED London",
+        "madeOf": "Main: 100% Polyester."
+      },
+      "jacket04": {
+        "productName": "Threadbare overcoat in dusky blue",
+        "price": 22.95,
+        "color": "Dusty Blue",
+        "productDetails": [
+          "That new-coat feeling",
+          "Notch lapels",
+          "Double-breasted style",
+          "Button placket",
+          "Side pockets",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "",
+        "brandName": "Threadbare",
+        "madeOf": "Main: 76% Polyester, 23% Viscose, 1% Elastane, Lining: 100% Polyester."
+      },
+      "jacket05": {
+        "productName": "Jayley faux fur stripe zip through jacket in black",
+        "price": 120.00,
+        "color": "Black",
+        "productDetails": [
+          "Go with the faux",
+          "Panelled design",
+          "Spread collar",
+          "Zip fastening",
+          "Long sleeves",
+          "Relaxed fit",
+          "Slouchy cut"
+        ],
+        "productDesc": "Mixing classic cape designs with cool details, accessory brand Jayley has nailed the cape trend. Inspired by fine fabrics and premium craftsmanship, its collection includes handcrafted capes in a range of soft and colourful silks. We’re crushing on its longline styles with festival-friendly fringing.",
+        "brandName": "Jayley",
+        "madeOf": "Fabric 1: 85% Modacrylic, 15% Acrylic, Fabric 2: 77% Polyester, 23% Elastane."
+      }
+    },
+    "jeans": {
+      "jeans01": {
+        "productName": "Stradivarius organic cotton slim mom jean with stretch in washed blue",
+        "price": 19.99,
+        "color": "Blue",
+        "productDetails": [
+          "Part of our responsible edit",
+          "High-rise waist",
+          "Belt loops",
+          "Zip fly",
+          "Five pockets",
+          "Slim tapered leg",
+          "Sits on the ankle",
+          "Relaxed fit"
+        ],
+        "productDesc": "Barcelona-born clothing brand Stradivarius moves to its own beat. With an eye for minimalism and trend-led detail, expect classic silhouettes and a neutral colour palette (with the odd print thrown in for good measure). The perfect stop for a wardrobe refresh, our Stradivarius at ASOS edit has everything from floaty day dresses and blouses to staple jeans and T-shirts. Looking for layers? Check out the brand’s jumpers, jackets and blazers.",
+        "brandName": "Stradivarius",
+        "madeOf": "Main: 99% Cotton, 1% Elastane."
+      },
+      "jeans02": {
+        "productName": "Urban Bliss mom jeans in mid wash",
+        "price": 20.00,
+        "color": "Midwash",
+        "productDetails": [
+          "For all your nice tops",
+          "High rise",
+          "Belt loops",
+          "Zip fly",
+          "Five pockets",
+          "Sits on the ankle",
+          "Straight fit",
+          "Regular on the waist "
+        ],
+        "productDesc": "Designed in Manchester, Urban Bliss' hot trend pieces and forever staples are all kinds of wardrobe worthy. From distressed minis to ripped skinnies, do your denim differently with its deconstructed skirts, jeans and jackets.",
+        "brandName": "Urban Bliss",
+        "madeOf": "Main: 99% Cotton, 1% Elastane."
+      },
+      "jeans03": {
+        "productName": "Levi's utility mile high ankle jeans in black",
+        "price": 60.00,
+        "color": "Black",
+        "productDetails": [
+          "Part of our responsible edit",
+          "High rise",
+          "Belt loops",
+          "Functional pockets",
+          "Logo patch to reverse",
+          "Sits on the ankle",
+          "Slim fit",
+          "Close-fitting, regular on the waist"
+        ],
+        "productDesc": "Since creating the first ever pair of blue jeans back in 1873, American label Levi's has gone on to become one of the world’s most iconic denim brands – but you already knew that. Today, its collection has expanded to include jeans in a range of cuts and washes, as well as shirts, T-shirts and jackets. Look out for the brand’s 501 Original jeans, for an all-American, all-you look.",
+        "brandName": "Levi's",
+        "madeOf": "Main: 64% Cotton, 34% Polyester, 2% Elastane."
+      },
+      "jeans04": {
+        "productName": "Bershka high rise skinny jean in bleach blue",
+        "price": 19.99,
+        "color": "Blue",
+        "productDetails": [
+          "It's all in the jeans",
+          "High rise",
+          "Belt loops",
+          "Five pockets",
+          "Skinny fit",
+          "Tight cut, regular on the waist"
+        ],
+        "productDesc": "Serving new-new fashion and the best of basics, Bershka gets its inspiration from the latest music, technology and social media trends. Think jeans that hit different, fresh new outerwear, all-over-print dresses and cosy knitwear and sweats – when we say this brand has you covered, we’re not kidding. Scroll the Bershka at ASOS edit and get to know our pick of its clothing, shoes and accessories. Next stop: checkout.",
+        "brandName": "Bershka",
+        "madeOf": "Main: 71% Cotton, 18% Polyester, 8% Viscose, 3% Elastane."
+      },
+      "jeans05": {
+        "productName": "ASOS DESIGN high rise 'slouchy' mom jeans in midwash with rips",
+        "price": 35.00,
+        "color": "Midwash",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Super high rise",
+          "Belt loops",
+          "Zip fly",
+          "Five pockets",
+          "Double turn-up cuffs",
+          "Sits on the ankle",
+          "Oversized, tapered fit",
+          "Cut loosely around the thigh with a tapered leg"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "100% Cotton."
+      }
+    },
+    "dresses": {
+      "dresses01": {
+        "productName": "ASOS DESIGN nipped in waist mini dress in black",
+        "price": 28.00,
+        "color": "Black",
+        "productDetails": [
+          "One for your wardrobe ",
+          "Round neck",
+          "Short sleeves",
+          "Cinched waist",
+          "Zip-back fastening",
+          "Regular fit",
+          "A standard cut for a classic shape"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 96% Polyester, 4% Elastane."
+      },
+      "dresses02": {
+        "productName": "Femme Luxe long sleeve ruched detail mini dress in pistachio",
+        "price": 8.75,
+        "color": "Khaki",
+        "productDetails": [
+          "Crack the dress code",
+          "High neck",
+          "Long sleeves",
+          "Ruched skirt",
+          "Drawstring front with tie detail",
+          "Bodycon fit ",
+          "Figure-hugging cut "
+        ],
+        "productDesc": "Founded in 2017, Femme Luxe is big on bold, fresh fashion. Based in Manchester, the brand’s trend-led range brings glitter, glamour and standout styling to your wardrobe – think luxe fabrics and streamlined silhouettes. Our Femme Luxe at ASOS edit includes bodycon dresses, corset-style tops and high-waisted trousers, for when blending in just isn’t on the agenda.",
+        "brandName": "Femme Luxe",
+        "madeOf": "Fabric: 95% Polyester, 5% Elastane."
+      },
+      "dresses03": {
+        "productName": "Missguided tea dress with ruched side in red polka",
+        "price": 26.00,
+        "color": "Red",
+        "productDetails": [
+          "Your new favourite dress",
+          "Polka-dot design ",
+          "Crew neck ",
+          "Volume sleeves",
+          "Elasticated cuffs",
+          "Ruched side panel",
+          "Tie detail ",
+          "Ruffle hem",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "From casual daytime pieces to elevated weekend styles, add some newness to your line-up with our Missguided at ASOS edit. Filling up our social feeds and Saved Items since 2009, the brand’s collection of slogan T-shirts, crop tops, jeans and joggers helps dial up everyday dressing, while bodycon dresses, co-ords, heels and accessories are ideal for your next calendar event.",
+        "brandName": "Missguided",
+        "madeOf": "Main: 100% Polyester."
+      },
+      "dresses04": {
+        "productName": "ASOS DESIGN super oversized frill sleeve smock dress in rose",
+        "price": 18.00,
+        "color": "Rose",
+        "productDetails": [
+          "Part of our responsible edit",
+          "Plain design",
+          "Crew neck",
+          "Smock style",
+          "Super-oversized fit",
+          "Relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 100% Cotton."
+      },
+      "dresses05": {
+        "productName": "Weekday Kai organic cotton jersey dress with shoulder pads in black",
+        "price": 25.00,
+        "color": "Black",
+        "productDetails": [
+          "Worn and shot by one of our models at home",
+          "Part of our responsible edit",
+          "Crew neck",
+          "Padded shoulders",
+          "Sleeveless style",
+          "Split side",
+          "Relaxed fit",
+          "Loose cut",
+          "#AtHomeWithASOS"
+        ],
+        "productDesc": "With Scandi roots and a street-style vibe, Weekday offers up that coveted laid-back, minimal look. Founded in 2002, the Swedish brand draws inspiration from art, pop and youth culture to create its super-fresh collections. Scroll our Weekday at ASOS edit for relaxed basics, including T-shirts, dresses, jackets and staple denim pieces, or filter by swimwear, lingerie and accessories to discover everything from bikini separates and soft-cup bras to pared-back-but-playful jewellery and sunglasses.",
+        "brandName": "Weekday",
+        "madeOf": "Main: 100% Organic Cotton."
+      }
+    },
+    "tops": {
+      "tops01": {
+        "productName": "AllSaints Coni tank in green",
+        "price": 16.20,
+        "color": "Green",
+        "productDetails": [
+          "Stick it on repeat",
+          "Plain design ",
+          "Crew neck ",
+          "Padded shoulders",
+          "Sleeveless style",
+          "Regular fit",
+          "True to size "
+        ],
+        "productDesc": "East London born and bred, AllSaints turned heads in the mid-90s with its investment leather jackets. Today, worn-in denim, draped cuts and classic jersey pieces reflect the laid-back attitude at the heart of the brand.",
+        "brandName": "All Saints",
+        "madeOf": "Body: 100% Cotton."
+      },
+      "tops02": {
+        "productName": "ASOS DESIGN long sleeved cropped check shirt in black and cream",
+        "price": 22.22,
+        "color": "Multi",
+        "productDetails": [
+          "For the rotation",
+          "Check design ",
+          "Spread collar",
+          "Button placket",
+          "Drop shoulders",
+          "Button cuffs",
+          "Cropped length",
+          "Relaxed fit",
+          "Slouchy cut"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 100% Cotton."
+      },
+      "tops03": {
+        "productName": "ASOS DESIGN long sleeve top with slash neck in black",
+        "price": 12.00,
+        "color": "Black",
+        "productDetails": [
+          "For the rotation",
+          "Plain design",
+          "Slash neck",
+          "Long sleeves",
+          "Cropped length",
+          "Slim fit",
+          "Close-fitting cut"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 96% Viscose, 4% Elastane."
+      },
+      "tops04": {
+        "productName": "ASOS DESIGN super oversized t-shirt with stitch detail in washed teal",
+        "price": 16.00,
+        "color": "Green",
+        "productDetails": [
+          "The baggier, the better",
+          "Crew neck",
+          "Drop shoulders",
+          "Stitch detailing ",
+          "Super-oversized fit ",
+          "Very relaxed and roomy"
+        ],
+        "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "brandName": "ASOS",
+        "madeOf": "Main: 100% Cotton."
+      },
+      "tops05": {
+        "productName": "Stradivarius v neck shoulder pad t-shirt in lilac",
+        "price": 4.70,
+        "color": "Lilac",
+        "productDetails": [
+          "File under: staples",
+          "V-neck",
+          "Sleeveless style",
+          "Shoulder pads",
+          "Regular fit",
+          "True to size"
+        ],
+        "productDesc": "Launched back in 1994 with its iconic treble clef logo, Spanish label Stradivarius' line of clothing, footwear and accessories moves to its own beat. Influenced by developing international trends, the brand’s selection of denim, jersey and tailored separates helps future-proof your wardrobe. For the finishing touches, choose from sock boots, blanket scarves and hats.",
+        "brandName": "Stradivarius",
+        "madeOf": "Main: 100% Cotton."
+      }
+    }
+  }
+
+}
