@@ -7,6 +7,7 @@ const Navbar = () => (
     </div>
     <div>
       <a href="/">Home </a>
+      <a href="/ProductPageContainer">ProductPage </a>
     </div>
   </div>
 );
