@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProductListInfoComponent from './ProductListInfoComponent';
 import ProductListImageComponent from './ProductListImageComponent';
+import ProductListInfoComponent from './ProductListInfoComponent';
 
 const ProductListComponent = ({ productName, price, images }) => (
   <div>
-    <ProductListImageComponent productName={productName} price={price} />
-    <ProductListInfoComponent images={images} />
+    <ProductListImageComponent images={images} />
+    <ProductListInfoComponent
+      productName={productName}
+      price={price}
+    />
   </div>
 );
 

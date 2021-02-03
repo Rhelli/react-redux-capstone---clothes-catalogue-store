@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent';
 
-const ProductPageContainer = ({ productData, fetchProducts }) => {
+const HomePageContainer = ({ productData, fetchProducts }) => {
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -34,18 +34,20 @@ const ProductPageContainer = ({ productData, fetchProducts }) => {
   );
 };
 
-ProductPageContainer.propTypes = {
-  productData: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    productName: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    color: PropTypes.string.isRequired,
-    productDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
-    productDesc: PropTypes.string.isRequired,
-    brandName: PropTypes.string.isRequired,
-    madeOf: PropTypes.string.isRequired,
-  }).isRequired,
+HomePageContainer.propTypes = {
+  productData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      images: PropTypes.arrayOf(PropTypes.string).isRequired,
+      productName: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      color: PropTypes.string.isRequired,
+      productDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
+      productDesc: PropTypes.string.isRequired,
+      brandName: PropTypes.string.isRequired,
+      madeOf: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
   fetchProducts: PropTypes.func.isRequired,
 };
 
@@ -57,4 +59,4 @@ const mapDispatchToProps = dispatch => ({
   fetchProducts: () => dispatch(fetchProducts()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProductPageContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer);
