@@ -30,8 +30,8 @@ const HomePageContainer = ({ filterCategory, productData, fetchProducts }) => {
     if (filter === 'All') {
       return arr;
     }
-    return arr.filter(item)
-  }
+    return arr.filter(item);
+  };
 
   let response;
   if (productData.loading) {
