@@ -1,7 +1,7 @@
 import FILTER_CATEGORY from './categoryActions';
 
 const initialState = {
-  category: 'All',
+  category: [],
 };
 
 const categoryReducer = (state = initialState, action) => {
@@ -10,7 +10,7 @@ const categoryReducer = (state = initialState, action) => {
       if (action.payload === 'All') {
         return {
           ...state,
-          category: action.payload,
+          category: '',
         };
       }
       return {
