@@ -3,7 +3,8 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchProducts } from '../../state/product/productActions';
+import fetchProducts from '../../api/clothesAPI';
+import ProductListComponent from './components/ProductListComponent';
 
 const ProductPageContainer = ({ productData, fetchProducts }) => {
   useEffect(() => {
@@ -20,7 +21,13 @@ const ProductPageContainer = ({ productData, fetchProducts }) => {
       <h2>Product List</h2>
       <div>
         {
-          productData.products[0][0][0].map(jacket => <p>{jacket.productName}</p>)
+          productData.products.map(item => (
+            <ProductListComponent
+              productName={item.productName}
+              price={item.price}
+              images={item.images[0]}
+            />
+          ))
         }
       </div>
     </div>
