@@ -1,0 +1,3 @@
+const FILTER_CATEGORY = 'FILTER_CATEGORY';
+
+export default FILTER_CATEGORY;

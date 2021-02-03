@@ -1,8 +1,11 @@
-{
-  "mens": {
-    "jackets": {
-      "jacket01": {
+[
+  [
+    [
+      [
+        {
         "id": 612690,
+        "type": "jacket",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/n77550845531.webp",
           "https://beeimg.com/images/q80110857421.webp",
@@ -13,16 +16,26 @@
         "price": 120.00,
         "color": "Black",
         "productDetails": [
-          "Layer up", "Colour-block design", "High collar", "Zip fastening", "Woven panels",
-          "Zip chest pockets", "Zip side pockets", "Logo patch details", "Long sleeves", "Regular Fit",
+          "Layer up",
+          "Colour-block design",
+          "High collar",
+          "Zip fastening",
+          "Woven panels",
+          "Zip chest pockets",
+          "Zip side pockets",
+          "Logo patch details",
+          "Long sleeves",
+          "Regular Fit",
           "True to size"
         ],
         "productDesc": "With a rich New England heritage, Timberland's signature work boots were quickly adopted by a new wave of youth culture. With a rugged feel and reputation for quality, Timberland keeps it laid-back and low-key across a range of boots, jersey pieces and outerwear.",
         "brandName": "Timberland",
         "madeOf": "Fabric: 100% Cotton."
-      },
-      "jacket02": {
+        },
+        {
         "id": 773205,
+        "type": "jacket",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/p51516871011.webp",
           "https://beeimg.com/images/s72563517963.webp",
@@ -44,9 +57,11 @@
         "productDesc": "With a rich heritage dating back to 1894, quintessentially British brand, Barbour have garnered a reputation for quality and durability, across their collection of high performance outerwear. Expanding their country-wear roots, Barbour rework their original cuts in contemporary nylon and leather finishes, whilst the Heritage line champions the brand's signature style with classic quilted jackets sitting alongside the waxed cotton Beadnell.",
         "brandName": "Barbour",
         "madeOf": "Main: 100% Cotton, Sleeve: 100% Polyester, Inner: 100% Cotton."
-      },
-      "jacket03": {
+        },
+        {
         "id": 193998,
+        "type": "jacket",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/y94914354214.webp",
           "https://beeimg.com/images/v98974490311.webp",
@@ -69,9 +84,11 @@
         "productDesc": "Founded in 1990, Jack & Jones is a Danish brand that offers cool, relaxed designs that express a strong visual style through their diffusion lines, Jack & Jones intelligence and Jack & Jones vintage. Using innovative treatments and cuts Jack & Jones place their signature laid back style on to a whole range of clothing from print t-shirts to jeans.",
         "brandName": "Jack & Jones",
         "madeOf": "Fabric: 100% Polyester."
-      },
-      "jacket04": {
+        },
+        {
         "id": 994075,
+        "type": "jacket",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/r94065218553.webp",
           "https://beeimg.com/images/z27287180543.webp",
@@ -95,9 +112,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Fabric: 100% Polyester."
-      },
-      "jacket05": {
+        },
+        {
         "id": 371669,
+        "type": "jacket",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/g50046885074.webp",
           "https://beeimg.com/images/e81333154644.webp",
@@ -120,11 +139,13 @@
         "productDesc": "Made for the modern man, Bershka's contemporary casuals are influenced by the latest music, technology and social media trends. Comfort meets cools with its earthy-toned longline T-shirts, joggers and washed denim, while the brand's activewear freshens up your keep-fit kit.",
         "brandName": "Bershka",
         "madeOf": "Fabric: 100% Cotton."
-      }
-    },
-    "jeans": {
-      "jeans01": {
+        }
+      ],
+      [
+        {
         "id": 252143,
+        "type": "jeans",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/e73669685431.webp",
           "https://beeimg.com/images/l49571878383.webp",
@@ -145,9 +166,11 @@
         "productDesc": "Since creating the first ever pair of blue jeans back in 1873, American label Levi's has gone on to become one of the world’s most iconic denim brands – but you already knew that. Today, its collection has expanded to include jeans in a range of cuts and washes, as well as shirts, T-shirts and jackets. Look out for the brand’s 501 Original jeans, for an all-American, all-you look.",
         "brandName": "Levi",
         "madeOf": "Main: 68% Cotton, 31% Lyocell, 1% Elastane."
-      },
-      "jeans02": {
+        },
+        {
         "id": 709159,
+        "type": "jeans",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/k28034227583.webp",
           "https://beeimg.com/images/h48967632831.webp",
@@ -169,9 +192,11 @@
         "productDesc": "High-street favourite River Island has been a go-to for decades. Known for adding signature detailing to its designs, expect to see classic looks with an RI twist from our River Island at ASOS edit. Scroll fresh loungewear and everyday jeans and T-shirts, or suit up in sharp tailoring, from smart shirts and shoes to suit jackets and trousers – just name the occasion.",
         "brandName": "River Island",
         "madeOf": "Main: 98% Cotton, 2% Elastane."
-      },
-      "jeans03": {
+        },
+        {
         "id": 487021,
+        "type": "jeans",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/l21872209811.webp",
           "https://beeimg.com/images/t66310252154.webp",
@@ -193,9 +218,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 99% Cotton, 1% Elastane."
-      },
-      "jeans04": {
+        },
+        {
         "id": 96327,
+        "type": "jeans",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/d95055216173.webp",
           "https://beeimg.com/images/l49713163301.webp",
@@ -217,9 +244,11 @@
         "productDesc": "Founded in 1989, Jack & Jones is a Danish brand that offers cool, relaxed designs that express a strong visual style through their diffusion lines, Jack & Jones intelligence and Jack & Jones vintage. Using innovative treatments and cuts Jack & Jones place their signature laid back style on to a whole range of clothing from print t-shirts to jeans.",
         "brandName": "Jack & Jones",
         "madeOf": "Fabric: 91% Cotton, 7% Polyester, 2% Elastane."
-      },
-      "jeans05": {
+        },
+        {
         "id": 382592,
+        "type": "jeans",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/n63241034824.webp",
           "https://beeimg.com/images/v49376310031.webp",
@@ -240,11 +269,13 @@
         "productDesc": "British brand Burton Menswear London combines a long heritage of tailoring with a modern take on relaxed formal and casualwear to bring an added hint of freshness to every occasion. Expect classic shirting and knitwear.",
         "brandName": "Burton",
         "madeOf": "Main: 99% Cotton, 1% Elastane."
-      }
-    },
-    "shirts": {
-      "shirts01": {
+        }
+      ],
+      [
+        {
         "id": 992303,
+        "type": "shirts",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/z81726644674.webp",
           "https://beeimg.com/images/y44829178473.webp",
@@ -267,9 +298,11 @@
         "productDesc": "Founded in the 90s as a jeanswear brand, Danish label Jack & Jones has since gone on to expand its sartorial offering to include everything from jumpers, jackets and T-shirts to shoes, underwear and accessories (alongside more of its flex-worthy denim, of course). Scroll the Jack & Jones at ASOS edit to check out our latest drop of the brand’s laid-back pieces.",
         "brandName": "Jack & Jones",
         "madeOf": "Fabric: 100% Polyester."
-      },
-      "shirts02": {
+        },
+        {
         "id": 14716,
+        "type": "shirts",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/z37800446901.webp",
           "https://beeimg.com/images/s86078608244.webp",
@@ -292,9 +325,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 100% Cotton."
-      },
-      "shirts03": {
+        },
+        {
         "id": 200051,
+        "type": "shirts",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/n44747763171.webp",
           "https://beeimg.com/images/d05155416831.webp",
@@ -318,9 +353,11 @@
         "productDesc": "Naming his brand after a game that embodies classic style, Ralph Lauren created Polo Ralph Lauren in 1967 initially selling men's ties. Interested in longevity, timelessness and style, Polo Ralph Lauren has since grown into a complete collection of preppy polo shirts and accessories with a rich history of design.",
         "brandName": "Polo Ralph Lauren",
         "madeOf": "Body: 100% Cotton."
-      },
-      "shirts04": {
+        },
+        {
         "id": 661936,
+        "type": "shirts",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/m57073810874.webp",
           "https://beeimg.com/images/x46595929841.webp",
@@ -343,9 +380,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Body: 100% Organic Cotton."
-      },
-      "shirts05": {
+        },
+        {
         "id": 619732,
+        "type": "shirts",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/t16066848373.webp",
           "https://beeimg.com/images/w17745458254.webp",
@@ -370,11 +409,13 @@
         "productDesc": "Founded in 2006, Deus Ex Machina hails from Australia. Originally launching with customised motorcycles, the guys at Deus Ex quickly developed a clothing range and we're glad they did. Describing themselves as a culture rather than a brand, they bring the cultures of skateboard, surfing and motorcycling together into one collection.",
         "brandName": "Deus Ex Machina",
         "madeOf": "Fabric: 60% Polyester, 40% Wool."
-      }
-    },
-    "tops": {
-      "tops01": {
+        }
+      ],
+      [
+        {
         "id": 268009,
+        "type": "tops",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/h56832300883.webp",
           "https://beeimg.com/images/z78258145454.webp",
@@ -394,9 +435,11 @@
         "productDesc": "More than a century after Hamilton Carhartt established his Detroit business, Carhartt Work In Progress (WIP) launched in London, tailoring its workwear focus for a new audience. Collaborations with the likes of A.P.C. and Vans as well as inspiring figures in music and sport have since followed, making it a go-to for logo tees, hoodies and accessories.",
         "brandName": "Carhertt",
         "madeOf": "Fabric: 100% Cotton."
-      },
-      "tops02": {
+        },
+        {
         "id": 57347,
+        "type": "tops",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/b21140583621.webp",
           "https://beeimg.com/images/f41334512493.webp",
@@ -418,9 +461,11 @@
         "productDesc": "British brand Burton Menswear London combines a long heritage of tailoring with a modern take on relaxed formal and casualwear to bring an added hint of freshness to every occasion. Expect classic shirting and knitwear.",
         "brandName": "Burton",
         "madeOf": "Main: 100% Cotton."
-      },
-      "tops03": {
+        },
+        {
         "id": 799914,
+        "type": "tops",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/k42235740503.webp",
           "https://beeimg.com/images/z13172942471.webp",
@@ -442,9 +487,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 100% Cotton."
-      },
-      "tops04": {
+        },
+        {
         "id": 478576,
+        "type": "tops",
+        "gender": "male",
         "images": [
           "https://beeimg.com/images/y37102411793.webp",
           "https://beeimg.com/images/p38799551751.webp",
@@ -465,9 +512,10 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 83% Cotton, 17% Polyester."
-      },
-      "tops05": {
+        },
+        {
         "id": 803259,
+        "type": "tops",
         "images": [
           "https://beeimg.com/images/t99495665574.webp",
           "https://beeimg.com/images/g26379744494.webp",
@@ -489,13 +537,17 @@
         "productDesc": "Inclusive and empowering, American Eagle is a clothing brand that celebrates individuality through its staples and standout pieces. Expect everything from cosy hoodies and casual T-shirts to jackets and jeans in a range of classic washes – think all-American vibes with a fresh, youthful twist. Whatever you’re after, we’ve got it all and more in our American Eagle at ASOS edit.",
         "brandName": "American Eagle",
         "madeOf": "Main: 60% Cotton, 40% Polyester."
-      }
-    }
-  },
-  "womens": {
-    "jackets": {
-      "jacket01": {
+        }
+      ]
+    ]
+  ],
+  [
+    [
+      [
+        {
         "id": 640463,
+        "type": "jacket",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/z45360642733.webp",
           "https://beeimg.com/images/w71083195231.webp",
@@ -518,9 +570,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Lining: 100% Polyester, Main: 100% Polyester."
-      },
-      "jacket02": {
+        },
+        {
         "id": 699224,
+        "type": "jacket",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/r12977143484.webp",
           "https://beeimg.com/images/w24132940593.webp",
@@ -528,7 +582,7 @@
           "https://beeimg.com/images/a90486585873.webp"
         ],
         "productName": "ASOS DESIGN oversized padded shacket in khaki",
-        "price": 40.00  ,
+        "price": 40.00,
         "color": "Khaki",
         "productDetails": [
           "It's layering season",
@@ -544,9 +598,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Body Lining: 100% Polyester, Padding: 100% Polyester, Shell: 100% Polyester."
-      },
-      "jacket03": {
+        },
+        {
         "id": 881716,
+        "type": "jacket",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/w57151226711.webp",
           "https://beeimg.com/images/y96895978451.webp",
@@ -568,9 +624,11 @@
         "productDesc": "",
         "brandName": "QED London",
         "madeOf": "Main: 100% Polyester."
-      },
-      "jacket04": {
+        },
+        {
         "id": 85124,
+        "type": "jacket",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/o35277481941.webp",
           "https://beeimg.com/images/p11777598571.webp",
@@ -592,9 +650,11 @@
         "productDesc": "",
         "brandName": "Threadbare",
         "madeOf": "Main: 76% Polyester, 23% Viscose, 1% Elastane, Lining: 100% Polyester."
-      },
-      "jacket05": {
+        },
+        {
         "id": 306479,
+        "type": "jacket",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/p33824477323.webp",
           "https://beeimg.com/images/b23730355734.webp",
@@ -616,11 +676,13 @@
         "productDesc": "Mixing classic cape designs with cool details, accessory brand Jayley has nailed the cape trend. Inspired by fine fabrics and premium craftsmanship, its collection includes handcrafted capes in a range of soft and colourful silks. We’re crushing on its longline styles with festival-friendly fringing.",
         "brandName": "Jayley",
         "madeOf": "Fabric 1: 85% Modacrylic, 15% Acrylic, Fabric 2: 77% Polyester, 23% Elastane."
-      }
-    },
-    "jeans": {
-      "jeans01": {
+        }
+      ],
+      [
+        {
         "id": 895652,
+        "type": "jeans",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/g44285470884.webp",
           "https://beeimg.com/images/h35665867121.webp",
@@ -643,9 +705,11 @@
         "productDesc": "Barcelona-born clothing brand Stradivarius moves to its own beat. With an eye for minimalism and trend-led detail, expect classic silhouettes and a neutral colour palette (with the odd print thrown in for good measure). The perfect stop for a wardrobe refresh, our Stradivarius at ASOS edit has everything from floaty day dresses and blouses to staple jeans and T-shirts. Looking for layers? Check out the brand’s jumpers, jackets and blazers.",
         "brandName": "Stradivarius",
         "madeOf": "Main: 99% Cotton, 1% Elastane."
-      },
-      "jeans02": {
+        },
+        {
         "id": 285656,
+        "type": "jeans",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/h44264189694.webp",
           "https://beeimg.com/images/s07289973971.webp",
@@ -668,9 +732,11 @@
         "productDesc": "Designed in Manchester, Urban Bliss' hot trend pieces and forever staples are all kinds of wardrobe worthy. From distressed minis to ripped skinnies, do your denim differently with its deconstructed skirts, jeans and jackets.",
         "brandName": "Urban Bliss",
         "madeOf": "Main: 99% Cotton, 1% Elastane."
-      },
-      "jeans03": {
+        },
+        {
         "id": 993599,
+        "type": "jeans",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/b71735248441.webp",
           "https://beeimg.com/images/c49827379664.webp",
@@ -693,9 +759,11 @@
         "productDesc": "Since creating the first ever pair of blue jeans back in 1873, American label Levi's has gone on to become one of the world’s most iconic denim brands – but you already knew that. Today, its collection has expanded to include jeans in a range of cuts and washes, as well as shirts, T-shirts and jackets. Look out for the brand’s 501 Original jeans, for an all-American, all-you look.",
         "brandName": "Levi's",
         "madeOf": "Main: 64% Cotton, 34% Polyester, 2% Elastane."
-      },
-      "jeans04": {
+        },
+        {
         "id": 218575,
+        "type": "jeans",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/t54621939124.webp",
           "https://beeimg.com/images/b56734723781.webp",
@@ -716,9 +784,11 @@
         "productDesc": "Serving new-new fashion and the best of basics, Bershka gets its inspiration from the latest music, technology and social media trends. Think jeans that hit different, fresh new outerwear, all-over-print dresses and cosy knitwear and sweats – when we say this brand has you covered, we’re not kidding. Scroll the Bershka at ASOS edit and get to know our pick of its clothing, shoes and accessories. Next stop: checkout.",
         "brandName": "Bershka",
         "madeOf": "Main: 71% Cotton, 18% Polyester, 8% Viscose, 3% Elastane."
-      },
-      "jeans05": {
+        },
+        {
         "id": 587553,
+        "type": "jeans",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/i19351115271.webp",
           "https://beeimg.com/images/x69152950124.webp",
@@ -742,11 +812,13 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "100% Cotton."
-      }
-    },
-    "dresses": {
-      "dresses01": {
+        }
+      ],
+      [
+        {
         "id": 108186,
+        "type": "dresses",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/r08532261121.webp",
           "https://beeimg.com/images/m26341758573.webp",
@@ -768,9 +840,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 96% Polyester, 4% Elastane."
-      },
-      "dresses02": {
+        },
+        {
         "id": 559481,
+        "type": "dresses",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/g70077191023.webp",
           "https://beeimg.com/images/m70482919241.webp",
@@ -792,9 +866,11 @@
         "productDesc": "Founded in 2017, Femme Luxe is big on bold, fresh fashion. Based in Manchester, the brand’s trend-led range brings glitter, glamour and standout styling to your wardrobe – think luxe fabrics and streamlined silhouettes. Our Femme Luxe at ASOS edit includes bodycon dresses, corset-style tops and high-waisted trousers, for when blending in just isn’t on the agenda.",
         "brandName": "Femme Luxe",
         "madeOf": "Fabric: 95% Polyester, 5% Elastane."
-      },
-      "dresses03": {
+        },
+        {
         "id": 217728,
+        "type": "dresses",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/j84686640831.webp",
           "https://beeimg.com/images/v74784107261.webp",
@@ -819,9 +895,11 @@
         "productDesc": "From casual daytime pieces to elevated weekend styles, add some newness to your line-up with our Missguided at ASOS edit. Filling up our social feeds and Saved Items since 2009, the brand’s collection of slogan T-shirts, crop tops, jeans and joggers helps dial up everyday dressing, while bodycon dresses, co-ords, heels and accessories are ideal for your next calendar event.",
         "brandName": "Missguided",
         "madeOf": "Main: 100% Polyester."
-      },
-      "dresses04": {
+        },
+        {
         "id": 654311,
+        "type": "dresses",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/m27644328214.webp",
           "https://beeimg.com/images/h74149929163.webp",
@@ -842,9 +920,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 100% Cotton."
-      },
-      "dresses05": {
+        },
+        {
         "id": 330788,
+        "type": "dresses",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/g21682477991.webp",
           "https://beeimg.com/images/d59238942414.webp",
@@ -868,11 +948,13 @@
         "productDesc": "With Scandi roots and a street-style vibe, Weekday offers up that coveted laid-back, minimal look. Founded in 2002, the Swedish brand draws inspiration from art, pop and youth culture to create its super-fresh collections. Scroll our Weekday at ASOS edit for relaxed basics, including T-shirts, dresses, jackets and staple denim pieces, or filter by swimwear, lingerie and accessories to discover everything from bikini separates and soft-cup bras to pared-back-but-playful jewellery and sunglasses.",
         "brandName": "Weekday",
         "madeOf": "Main: 100% Organic Cotton."
-      }
-    },
-    "tops": {
-      "tops01": {
+        }
+      ],
+      [
+        {
         "id": 945542,
+        "type": "tops",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/v38503418793.webp",
           "https://beeimg.com/images/a15875014161.webp",
@@ -894,9 +976,11 @@
         "productDesc": "East London born and bred, AllSaints turned heads in the mid-90s with its investment leather jackets. Today, worn-in denim, draped cuts and classic jersey pieces reflect the laid-back attitude at the heart of the brand.",
         "brandName": "All Saints",
         "madeOf": "Body: 100% Cotton."
-      },
-      "tops02": {
+        },
+        {
         "id": 709469,
+        "type": "tops",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/p05094436784.webp",
           "https://beeimg.com/images/r12557014754.webp",
@@ -920,9 +1004,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 100% Cotton."
-      },
-      "tops03": {
+        },
+        {
         "id": 303474,
+        "type": "tops",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/e43416102133.webp",
           "https://beeimg.com/images/g97299617393.webp",
@@ -944,9 +1030,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 96% Viscose, 4% Elastane."
-      },
-      "tops04": {
+        },
+        {
         "id": 311365,
+        "type": "tops",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/b80424911401.webp",
           "https://beeimg.com/images/z99863517481.webp",
@@ -967,9 +1055,11 @@
         "productDesc": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "brandName": "ASOS",
         "madeOf": "Main: 100% Cotton."
-      },
-      "tops05": {
+        },
+        {
         "id": 455498,
+        "type": "tops",
+        "gender": "female",
         "images": [
           "https://beeimg.com/images/t45850701744.webp",
           "https://beeimg.com/images/s47125745174.webp",
@@ -990,8 +1080,8 @@
         "productDesc": "Launched back in 1994 with its iconic treble clef logo, Spanish label Stradivarius' line of clothing, footwear and accessories moves to its own beat. Influenced by developing international trends, the brand’s selection of denim, jersey and tailored separates helps future-proof your wardrobe. For the finishing touches, choose from sock boots, blanket scarves and hats.",
         "brandName": "Stradivarius",
         "madeOf": "Main: 100% Cotton."
-      }
-    }
-  }
-
-}
+        }
+      ]
+    ]
+  ]
+]

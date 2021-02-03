@@ -1,4 +1,4 @@
-const FILTER_CATEGORY = 'FILTER_CATEGORY';
+import FILTER_CATEGORY from './categoryFilterTypes';
 
 const filterCategory = category => ({
   type: FILTER_CATEGORY,

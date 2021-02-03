@@ -1,4 +1,4 @@
-import { ADD_BASKET_ITEM, REMOVE_BASKET_ITEM } from './shoppingBasketActions';
+import { ADD_BASKET_ITEM, REMOVE_BASKET_ITEM } from './shoppingBasketTypes';
 
 const initialState = {
   shoppingBasket: [],
