@@ -43,17 +43,20 @@ const initialState = {
 };
 
 const categoryReducer = (state = initialState, action) => {
+  // eslint-disable-next-line no-console
+  console.log(action.payload);
+  const name = action.payload[0];
+  const filterType = action.payload[1];
   switch (action.type) {
     case FILTER_CATEGORY:
-      if (action.payload === 'All') {
-        return {
-          ...state,
-          category: '',
-        };
-      }
       return {
         ...state,
-        category: action.payload,
+        enabledTags: {
+          [filterType]: {
+            ...state.enabledTags[filterType],
+            [name]: !state.enabledTags[filterType][name],
+          },
+        },
       };
 
     default: return {

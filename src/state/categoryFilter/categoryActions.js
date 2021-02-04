@@ -1,8 +1,8 @@
 import FILTER_CATEGORY from './categoryFilterTypes';
 
-const filterCategory = category => ({
+const filterCategory = filterInfo => ({
   type: FILTER_CATEGORY,
-  payload: category,
+  payload: filterInfo,
 });
 
 export default filterCategory;

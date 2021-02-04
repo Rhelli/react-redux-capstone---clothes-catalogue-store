@@ -93,5 +93,3 @@ const CategoryFilterComponent = ({ filterCategory }) => {
 CategoryFilterComponent.propTypes = {
   filterCategory: PropTypes.func.isRequired,
 };
-
-export default CategoryFilterComponent;

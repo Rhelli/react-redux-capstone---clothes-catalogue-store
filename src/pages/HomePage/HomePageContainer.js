@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
@@ -7,14 +8,16 @@ import PropTypes from 'prop-types';
 import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
-import CategoryComponent from './components/CategoryComponent';
-import filterCategory from '../../state/categoryFilter/categoryActions';
+import CategoryFilterComponent from './components/CategoryComponentv2';
 
-const HomePageContainer = ({ filterCategory, productData, fetchProducts }) => {
+const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   useEffect(() => {
     fetchProducts();
   }, []);
 
+  const {
+    clothesFilter, genderFilter, colorFilter, priceFilter,
+  } = categoryData;
   const history = useHistory();
 
   const itemClickThrough = product => {
@@ -22,15 +25,37 @@ const HomePageContainer = ({ filterCategory, productData, fetchProducts }) => {
     history.push(`/products/${product.gender}/${product.type}/${product.id}`);
   };
 
-  const enableFilter = event => {
-    filterCategory(event.target.value);
+  const filterSelectedTags = () => {
+    const enabledTags = {
+      clothesCategory: [],
+      genderCategory: [],
+      colorCategory: [],
+    };
+
+    for (const clothesKey in clothesFilter) {
+      if (clothesFilter[clothesKey]) enabledTags.clothesCategory.push(clothesKey);
+    }
+
+    for (const genderKey in genderFilter) {
+      if (genderFilter[genderKey]) enabledTags.genderCategory.push(genderKey);
+    }
+
+    for (const colorKey in colorFilter) {
+      if (colorFilter[colorKey]) enabledTags.colorCategory.push(colorKey);
+    }
+
+    return enabledTags;
   };
 
-  const productPreFilter = (arr, filter) => {
-    if (filter === 'All') {
-      return arr;
-    }
-    return arr.filter(item);
+  const filterProducts = (products, filters) => {
+    const filterKeys = Object.keys(filters);
+    return products.filter(product => filterKeys.every(key => {
+      if (!filters[key].length) return true;
+      if (Array.isArray(product[key])) {
+        return product[key].some(keyElement => filters[key].includes(keyElement));
+      }
+      return filters[key].includes(product[key]);
+    }));
   };
 
   let response;
@@ -41,11 +66,16 @@ const HomePageContainer = ({ filterCategory, productData, fetchProducts }) => {
   } else {
     response = (
       <div>
-        <CategoryComponent enableFilter={enableFilter} />
+        <CategoryFilterComponent
+          clothesFilter={clothesFilter}
+          colorFilter={colorFilter}
+          genderFilter={genderFilter}
+          priceFilter={priceFilter}
+        />
         <h2>Product List</h2>
         <div>
           {
-            productData.products.map(item => (
+            filterProducts(productData.products, filterSelectedTags()).map(item => (
               <ProductListComponent
                 key={item.id}
                 itemClickThrough={() => itemClickThrough(item)}
@@ -86,14 +116,11 @@ HomePageContainer.propTypes = {
 
 const mapStateToProps = state => ({
   productData: state.productStore,
-  productFiler: state.categoryStore,
+  categoryData: state.categoryStore,
 });
 
 const mapDispatchToProps = dispatch => ({
   fetchProducts: () => dispatch(fetchProducts()),
-  filterCategory: category => {
-    dispatch(filterCategory(category));
-  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer);
