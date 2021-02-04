@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
@@ -25,39 +24,6 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
     history.push(`/products/${product.gender}/${product.type}/${product.id}`);
   };
 
-  const filterSelectedTags = () => {
-    const enabledTags = {
-      clothesCategory: [],
-      genderCategory: [],
-      colorCategory: [],
-    };
-
-    for (const clothesKey in clothesFilter) {
-      if (clothesFilter[clothesKey]) enabledTags.clothesCategory.push(clothesKey);
-    }
-
-    for (const genderKey in genderFilter) {
-      if (genderFilter[genderKey]) enabledTags.genderCategory.push(genderKey);
-    }
-
-    for (const colorKey in colorFilter) {
-      if (colorFilter[colorKey]) enabledTags.colorCategory.push(colorKey);
-    }
-
-    return enabledTags;
-  };
-
-  const filterProducts = (products, filters) => {
-    const filterKeys = Object.keys(filters);
-    return products.filter(product => filterKeys.every(key => {
-      if (!filters[key].length) return true;
-      if (Array.isArray(product[key])) {
-        return product[key].some(keyElement => filters[key].includes(keyElement));
-      }
-      return filters[key].includes(product[key]);
-    }));
-  };
-
   let response;
   if (productData.loading) {
     response = <h2>Loading Store...</h2>;
@@ -75,7 +41,7 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
         <h2>Product List</h2>
         <div>
           {
-            filterProducts(productData.products, filterSelectedTags()).map(item => (
+            productData.products.map(item => (
               <ProductListComponent
                 key={item.id}
                 itemClickThrough={() => itemClickThrough(item)}
