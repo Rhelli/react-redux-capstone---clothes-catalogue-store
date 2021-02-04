@@ -4,7 +4,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
-import filterCategory from '../../../state/categoryFilter/categoryActions';
+import {
+  filterCategory, searchCategory, executeSearch, deleteSearch,
+} from '../../../state/categoryFilter/categoryActions';
 import CategoryFilterInputComponent from './CategoryFilterInputComponent';
 
 const enableSelectedFilter = (event, filter) => {
@@ -13,40 +15,43 @@ const enableSelectedFilter = (event, filter) => {
 
 const CategoryFilterComponent = ({ categoryData, productData }) => {
   const {
-    clothesFilter, genderFilter, colorFilter,
+    enabledTags,
   } = categoryData;
 
-  const filterProducts = (products, filters) => {
-    const filterKeys = Object.keys(filters);
-    return products.filter(product => filterKeys.every(key => {
-      if (!filters[key].length) return true;
-      if (Array.isArray(product[key])) {
-        return product[key].some(keyElement => filters[key].includes(keyElement));
-      }
-      return filters[key].includes(product[key]);
-    }));
+  const searchListener = event => {
+    event.preventDefault();
+    searchCategory(event.target.value);
+  };
+
+  const searchSubmitListener = event => {
+    event.preventDefault();
+    executeSearch(categoryData.searchQuery);
+  };
+
+  const cancelSearch = () => {
+    deleteSearch();
   };
 
   const filterSelectedTags = () => {
-    const enabledTags = {
+    const catTags = {
       clothesCategory: [],
       genderCategory: [],
       colorCategory: [],
     };
 
-    for (const clothesKey in clothesFilter) {
-      if (clothesFilter[clothesKey]) enabledTags.clothesCategory.push(clothesKey);
+    for (const clothesKey in enabledTags.clothesFilter) {
+      if (enabledTags.clothesFilter[clothesKey]) catTags.clothesCategory.push(clothesKey);
     }
 
-    for (const genderKey in genderFilter) {
-      if (genderFilter[genderKey]) enabledTags.genderCategory.push(genderKey);
+    for (const genderKey in enabledTags.genderFilter) {
+      if (enabledTags.genderFilter[genderKey]) catTags.genderCategory.push(genderKey);
     }
 
-    for (const colorKey in colorFilter) {
-      if (colorFilter[colorKey]) enabledTags.colorCategory.push(colorKey);
+    for (const colorKey in enabledTags.colorFilter) {
+      if (enabledTags.colorFilter[colorKey]) catTags.colorCategory.push(colorKey);
     }
 
-    return enabledTags;
+    return catTags;
   };
 
   const multiPropsFilter = (products, filters) => {
@@ -72,14 +77,19 @@ const CategoryFilterComponent = ({ categoryData, productData }) => {
 
   return (
     <div>
-      <CategoryFilterInputComponent
-        genderFilter={genderFilter}
-        clothesFilter={clothesFilter}
-        colorFilter={colorFilter}
-        enableSelectedFilter={enableSelectedFilter}
-      />
+      <div>
+        <CategoryFilterInputComponent
+          categoryData={categoryData}
+          searchListener={searchListener}
+          searchSubmitListener={searchSubmitListener}
+          cancelSearch={cancelSearch}
+        />
+      </div>
+      <div>
+        <ProductListComponent
+      </div>
     </div>
-  )
+  );
 };
 
 CategoryFilterComponent.propTypes = {
@@ -125,6 +135,7 @@ CategoryFilterComponent.propTypes = {
       }).isRequired,
     }).isRequired,
   }).isRequired,
+  productData: PropTypes.arrayOf(PropTypes.objects).isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -135,6 +146,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   enabledSelectedFilter: (event, filter) => {
     dispatch(enableSelectedFilter(event, filter));
+  },
+  searchCategory: event => {
+    dispatch(searchCategory(event));
   },
 });
 

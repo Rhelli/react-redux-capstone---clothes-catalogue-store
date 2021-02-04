@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
@@ -5,13 +6,25 @@ import PropTypes from 'prop-types';
 
 const CategoryTagsComponent = props => {
   const {
-    enableSelectedFilter, genderFilter, colorFilter, clothesFilter,
+    enabledTags, enableSelectedFilter, deleteSearch,
   } = props;
 
   return (
     <div>
       {() => {
-        if (genderFilter.male) {
+        if (enabledTags.search.input.length) {
+          return (
+            <div onClick={deleteSearch}>
+              <h6 onClick={deleteSearch}>{enabledTags.search.input}</h6>
+            </div>
+          );
+        }
+        return (
+          null
+        );
+      }}
+      {() => {
+        if (enabledTags.genderFilter.male) {
           return (
             <div
               data-name="male"
@@ -26,7 +39,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (genderFilter.female) {
+        if (enabledTags.genderFilter.female) {
           return (
             <div
               data-name="female"
@@ -41,7 +54,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (clothesFilter.jackets) {
+        if (enabledTags.clothesFilter.jackets) {
           return (
             <div
               data-name="jackets"
@@ -56,7 +69,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (clothesFilter.jeans) {
+        if (enabledTags.clothesFilter.jeans) {
           return (
             <div
               data-name="jeans"
@@ -71,7 +84,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (clothesFilter.shirts) {
+        if (enabledTags.clothesFilter.shirts) {
           return (
             <div
               data-name="shirts"
@@ -86,7 +99,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (clothesFilter.tops) {
+        if (enabledTags.clothesFilter.tops) {
           return (
             <div
               data-name="tops"
@@ -101,7 +114,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (clothesFilter.dresses) {
+        if (enabledTags.clothesFilter.dresses) {
           return (
             <div
               data-name="dresses"
@@ -116,7 +129,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.black) {
+        if (enabledTags.colorFilter.black) {
           return (
             <div
               data-name="black"
@@ -131,7 +144,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.darkestSpruce) {
+        if (enabledTags.colorFilter.darkestSpruce) {
           return (
             <div
               data-name="darkestSpruce"
@@ -146,7 +159,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.multi) {
+        if (enabledTags.colorFilter.multi) {
           return (
             <div
               data-name="multi"
@@ -161,7 +174,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.blue) {
+        if (enabledTags.colorFilter.blue) {
           return (
             <div
               data-name="blue"
@@ -176,7 +189,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.blueDenim) {
+        if (enabledTags.colorFilter.blueDenim) {
           return (
             <div
               data-name="blueDenim"
@@ -191,7 +204,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.navy) {
+        if (enabledTags.colorFilter.navy) {
           return (
             <div
               data-name="navy"
@@ -206,7 +219,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.green) {
+        if (enabledTags.colorFilter.green) {
           return (
             <div
               data-name="green"
@@ -221,7 +234,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.white) {
+        if (enabledTags.colorFilter.white) {
           return (
             <div
               data-name="white"
@@ -236,7 +249,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.grape) {
+        if (enabledTags.colorFilter.grape) {
           return (
             <div
               data-name="grape"
@@ -251,7 +264,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.khaki) {
+        if (enabledTags.colorFilter.khaki) {
           return (
             <div
               data-name="khaki"
@@ -266,7 +279,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.grey) {
+        if (enabledTags.colorFilter.grey) {
           return (
             <div
               data-name="grey"
@@ -281,10 +294,10 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.vintageIndigo) {
+        if (enabledTags.colorFilter.vintageIndigo) {
           return (
             <div
-              data-name=""
+              data-name="vintageIndigo"
               onClick={event => enableSelectedFilter(event, 'colorFilter')}
             >
               <h6 data-name="">Vintage Indigo</h6>
@@ -296,7 +309,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.mineralBlue) {
+        if (enabledTags.colorFilter.mineralBlue) {
           return (
             <div
               data-name="mineralBlue"
@@ -311,7 +324,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.charcoal) {
+        if (enabledTags.colorFilter.charcoal) {
           return (
             <div
               data-name="charcoal"
@@ -326,7 +339,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.tan) {
+        if (enabledTags.colorFilter.tan) {
           return (
             <div
               data-name="tan"
@@ -341,7 +354,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.dustyBlue) {
+        if (enabledTags.colorFilter.dustyBlue) {
           return (
             <div
               data-name="dustyBlue"
@@ -356,7 +369,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.midwash) {
+        if (enabledTags.colorFilter.midwash) {
           return (
             <div
               data-name="midwash"
@@ -371,7 +384,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.red) {
+        if (enabledTags.colorFilter.red) {
           return (
             <div
               data-name="red"
@@ -386,7 +399,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.rose) {
+        if (enabledTags.colorFilter.rose) {
           return (
             <div
               data-name="rose"
@@ -401,7 +414,7 @@ const CategoryTagsComponent = props => {
         );
       }}
       {() => {
-        if (colorFilter.lilac) {
+        if (enabledTags.colorFilter.lilac) {
           return (
             <div
               data-name="lilac"
@@ -421,9 +434,45 @@ const CategoryTagsComponent = props => {
 
 CategoryTagsComponent.propTypes = {
   enableSelectedFilter: PropTypes.func.isRequired,
-  genderFilter: PropTypes.string.isRequired,
-  colorFilter: PropTypes.string.isRequired,
-  clothesFilter: PropTypes.string.isRequired,
+  deleteSearch: PropTypes.func.isRequired,
+  enabledTags: PropTypes.shape({
+    search: PropTypes.shape({
+      input: PropTypes.string,
+    }),
+    clothesFilter: PropTypes.shape({
+      jackets: PropTypes.bool.isRequired,
+      jeans: PropTypes.bool.isRequired,
+      shirts: PropTypes.bool.isRequired,
+      tops: PropTypes.bool.isRequired,
+      dresses: PropTypes.bool.isRequired,
+    }).isRequired,
+    genderFilter: PropTypes.shape({
+      male: PropTypes.bool.isRequired,
+      female: PropTypes.bool.isRequired,
+    }).isRequired,
+    colorFilter: PropTypes.shape({
+      black: PropTypes.bool.isRequired,
+      darkestSpruce: PropTypes.bool.isRequired,
+      multi: PropTypes.bool.isRequired,
+      blue: PropTypes.bool.isRequired,
+      blueDenim: PropTypes.bool.isRequired,
+      navy: PropTypes.bool.isRequired,
+      green: PropTypes.bool.isRequired,
+      white: PropTypes.bool.isRequired,
+      grape: PropTypes.bool.isRequired,
+      khaki: PropTypes.bool.isRequired,
+      grey: PropTypes.bool.isRequired,
+      vintageIndigo: PropTypes.bool.isRequired,
+      mineralBlue: PropTypes.bool.isRequired,
+      charcoal: PropTypes.bool.isRequired,
+      tan: PropTypes.bool.isRequired,
+      dustyBlue: PropTypes.bool.isRequired,
+      midwash: PropTypes.bool.isRequired,
+      red: PropTypes.bool.isRequired,
+      rose: PropTypes.bool.isRequired,
+      lilac: PropTypes.bool.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default CategoryTagsComponent;

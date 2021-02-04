@@ -2,26 +2,24 @@ import {
   FILTER_CATEGORY,
   SEARCH_CATEGORY,
   EXECUTE_SEARCH,
-  DELETE_SEARCH
+  DELETE_SEARCH,
 } from './categoryFilterTypes';
 
-const filterCategory = filterInfo => ({
+export const filterCategory = filterInfo => ({
   type: FILTER_CATEGORY,
   payload: filterInfo,
 });
 
-const searchCategory = searchQuery => ({
+export const searchCategory = searchQuery => ({
   type: SEARCH_CATEGORY,
   payload: searchQuery,
 });
 
-const executeSearch = searchQuery => ({
-  type: EXECTUTE_SEARCH,
+export const executeSearch = searchQuery => ({
+  type: EXECUTE_SEARCH,
   payload: searchQuery,
 });
 
-const deleteSearch = () => ({
+export const deleteSearch = () => ({
   type: DELETE_SEARCH,
 });
-
-export default filterCategory;
