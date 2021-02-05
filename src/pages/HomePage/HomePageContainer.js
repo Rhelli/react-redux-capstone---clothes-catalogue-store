@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
@@ -15,7 +16,7 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   }, []);
 
   const {
-    clothesFilter, genderFilter, colorFilter, priceFilter,
+    clothesFilter, genderFilter, colorFilter,
   } = categoryData;
   const history = useHistory();
 
@@ -24,40 +25,60 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
     history.push(`/products/${product.gender}/${product.type}/${product.id}`);
   };
 
-  let response;
-  if (productData.loading) {
-    response = <h2>Loading Store...</h2>;
-  } else if (productData.error) {
-    response = <h2>{productData.error}</h2>;
-  } else {
-    response = (
-      <div>
-        <CategoryFilterComponent
-          clothesFilter={clothesFilter}
-          colorFilter={colorFilter}
-          genderFilter={genderFilter}
-          priceFilter={priceFilter}
-        />
-        <h2>Product List</h2>
-        <div>
-          {
-            productData.products.map(item => (
-              <ProductListComponent
-                key={item.id}
-                itemClickThrough={() => itemClickThrough(item)}
-                productName={item.productName}
-                price={item.price}
-                images={item.images[0]}
-              />
-            ))
-          }
-        </div>
-      </div>
-    );
-  }
+  const activeFilters = () => {
+    const activeFilters = {
+      gender: [],
+      clothes: [],
+      color: [],
+    };
+
+    for (const genderKey in genderFilter) {
+      if (genderFilter[genderKey]) activeFilters.gender.push(genderKey);
+    }
+    for (const clothesKey in clothesFilter) {
+      if (clothesFilter[clothesKey]) activeFilters.clothes.push(clothesKey);
+    }
+    for (const colorKey in colorFilter) {
+      if (colorFilter[colorKey]) activeFilters.color.push(colorKey);
+    }
+    return activeFilters;
+  };
+
+  const multiPropsFilter = (products, filters) => {
+    const filterKeys = Object.keys(filters);
+    return products.filter(product => filterKeys.every(key => {
+      if (!filters[key].length) return true;
+      if (Array.isArray(product[key])) {
+        return product[key].some(keyElement => filters[key].includes(keyElement));
+      }
+      return filters[key].includes(product[key]);
+    }));
+  };
 
   // eslint-disable-next-line no-nested-ternary
-  return response;
+  return productData.loading ? (
+    <h2>Loading Text...</h2>
+  ) : productData.error ? (
+    <h2>{productData.error}</h2>
+  ) : (
+    <div>
+      <CategoryFilterComponent />
+      <h2>Product List</h2>
+      <div>
+        {
+          multiPropsFilter(productData.products, activeFilters()).map(item => (
+            <ProductListComponent
+              key={item.id}
+              itemClickThrough={() => itemClickThrough(item)}
+              productName={item.productName}
+              price={item.price}
+              images={item.images[0]}
+            />
+          ))
+        }
+      </div>
+    </div>
+  );
 };
 
 HomePageContainer.propTypes = {
@@ -77,7 +98,6 @@ HomePageContainer.propTypes = {
     ),
   }).isRequired,
   fetchProducts: PropTypes.func.isRequired,
-  filterCategory: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({

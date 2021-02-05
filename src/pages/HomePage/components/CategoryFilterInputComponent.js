@@ -1,29 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CategoryTagsComponent from './CategoryTagsComponent';
-import CategorySearchComponent from './CategorySearchComponent';
 import FilterTagsComponent from './FilterTagsComponent';
 
 const CategoryFilterInputComponent = props => {
   const {
     enabledTags, enableSelectedFilter,
-    searchQuery, searchSubmitListener, searchListener, cancelSearch,
   } = props;
 
   return (
     <div>
       <div>
         <CategoryTagsComponent
-          cancelSearch={cancelSearch}
           enableSelectedFilter={enableSelectedFilter}
           enabledTags={enabledTags}
-        />
-      </div>
-      <div>
-        <CategorySearchComponent
-          searchListener={searchListener}
-          searchSubmitListener={searchSubmitListener}
-          searchQuery={searchQuery}
         />
       </div>
       <div>
@@ -35,8 +25,6 @@ const CategoryFilterInputComponent = props => {
 
 CategoryFilterInputComponent.propTypes = {
   enableSelectedFilter: PropTypes.func.isRequired,
-  searchQuery: PropTypes.string.isRequired,
-  cancelSearch: PropTypes.func.isRequired,
   enabledTags: PropTypes.shape({
     search: PropTypes.shape({
       input: PropTypes.string,
@@ -75,8 +63,7 @@ CategoryFilterInputComponent.propTypes = {
       lilac: PropTypes.bool.isRequired,
     }).isRequired,
   }).isRequired,
-  searchListener: PropTypes.func.isRequired,
-  searchSubmitListener: PropTypes.func.isRequired,
+
 };
 
 export default CategoryFilterInputComponent;

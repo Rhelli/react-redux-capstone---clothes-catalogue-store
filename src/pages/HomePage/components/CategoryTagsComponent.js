@@ -6,23 +6,11 @@ import PropTypes from 'prop-types';
 
 const CategoryTagsComponent = props => {
   const {
-    enabledTags, enableSelectedFilter, deleteSearch,
+    enabledTags, enableSelectedFilter,
   } = props;
 
   return (
     <div>
-      {() => {
-        if (enabledTags.search.input.length) {
-          return (
-            <div onClick={deleteSearch}>
-              <h6 onClick={deleteSearch}>{enabledTags.search.input}</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
       {() => {
         if (enabledTags.genderFilter.male) {
           return (
@@ -434,7 +422,6 @@ const CategoryTagsComponent = props => {
 
 CategoryTagsComponent.propTypes = {
   enableSelectedFilter: PropTypes.func.isRequired,
-  deleteSearch: PropTypes.func.isRequired,
   enabledTags: PropTypes.shape({
     search: PropTypes.shape({
       input: PropTypes.string,
