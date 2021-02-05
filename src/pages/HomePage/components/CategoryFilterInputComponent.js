@@ -5,7 +5,7 @@ import FilterTagsComponent from './FilterTagsComponent';
 
 const CategoryFilterInputComponent = props => {
   const {
-    enabledTags, enableSelectedFilter,
+    categoryData, enableSelectedFilter,
   } = props;
 
   return (
@@ -13,7 +13,7 @@ const CategoryFilterInputComponent = props => {
       <div>
         <CategoryTagsComponent
           enableSelectedFilter={enableSelectedFilter}
-          enabledTags={enabledTags}
+          categoryData={categoryData}
         />
       </div>
       <div>
@@ -27,10 +27,7 @@ const CategoryFilterInputComponent = props => {
 
 CategoryFilterInputComponent.propTypes = {
   enableSelectedFilter: PropTypes.func.isRequired,
-  enabledTags: PropTypes.shape({
-    search: PropTypes.shape({
-      input: PropTypes.string,
-    }),
+  categoryData: PropTypes.shape({
     clothesFilter: PropTypes.shape({
       jackets: PropTypes.bool.isRequired,
       jeans: PropTypes.bool.isRequired,

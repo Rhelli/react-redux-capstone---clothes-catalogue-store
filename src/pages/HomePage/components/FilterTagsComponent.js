@@ -71,7 +71,6 @@ const FilterTagsComponent = props => {
         </div>
         <div
           data-name="darkestSpruce"
-          data-filter="sprucestDark"
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
           <h6 data-name="darkestSpruce">Darkest Spruce</h6>

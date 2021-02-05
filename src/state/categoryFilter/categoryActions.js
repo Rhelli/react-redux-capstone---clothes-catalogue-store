@@ -7,7 +7,7 @@ import {
 
 export const filterCategory = (name, filter) => {
   // eslint-disable-next-line no-console
-  console.log('Filter action');
+  console.log(name, filter);
   return {
     type: FILTER_CATEGORY,
     payload: [name, filter],

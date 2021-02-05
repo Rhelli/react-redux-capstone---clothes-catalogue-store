@@ -27,6 +27,7 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   };
 
   const enableSelectedFilter = (event, filter) => {
+    event.preventDefault();
     // eslint-disable-next-line no-console
     console.log(event.target.dataset.name, filter);
     const { name } = event.target.dataset;
@@ -70,7 +71,10 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
     <h2>{productData.error}</h2>
   ) : (
     <div>
-      <CategoryFilterComponent enableSelectedFilter={enableSelectedFilter} />
+      <CategoryFilterComponent
+        enableSelectedFilter={enableSelectedFilter}
+        categoryData={categoryData}
+      />
       <h2>Product List</h2>
       <div>
         {
