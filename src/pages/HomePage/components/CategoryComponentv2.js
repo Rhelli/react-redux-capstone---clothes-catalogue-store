@@ -4,30 +4,17 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
-import {
-  filterCategory,
-} from '../../../state/categoryFilter/categoryActions';
 import CategoryFilterInputComponent from './CategoryFilterInputComponent';
 
-const enableSelectedFilter = (event, filter) => {
-  filterCategory(event.target.dataset.name, filter);
-};
-
-const CategoryFilterComponent = ({ categoryData }) => {
-  // eslint-disable-next-line no-console
-  console.log(categoryData.enabledTags);
-
-  return (
+const CategoryFilterComponent = ({ categoryData }) => (
+  <div>
     <div>
-      <div>
-        <CategoryFilterInputComponent
-          enabledTags={categoryData.enabledTags}
-          enableSelectedFilter={enableSelectedFilter}
-        />
-      </div>
+      <CategoryFilterInputComponent
+        enabledTags={categoryData.enabledTags}
+      />
     </div>
-  );
-};
+  </div>
+);
 
 CategoryFilterComponent.propTypes = {
   categoryData: PropTypes.shape({
@@ -78,10 +65,4 @@ const mapStateToProps = state => ({
   categoryData: state.categoryStore,
 });
 
-const mapDispatchToProps = dispatch => ({
-  enabledSelectedFilter: (event, filter) => {
-    dispatch(enableSelectedFilter(event, filter));
-  },
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(CategoryFilterComponent);
+export default connect(mapStateToProps)(CategoryFilterComponent);

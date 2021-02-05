@@ -1,10 +1,16 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { filterCategory } from '../../../state/categoryFilter/categoryActions';
 
-const FilterTagsComponent = props => {
-  const { enableSelectedFilter } = props;
+const FilterTagsComponent = () => {
+  const enableSelectedFilter = (event, filter) => {
+    // eslint-disable-next-line no-console
+    console.log(event.target.dataset.name, filter);
+    const arr = [event, filter];
+    filterCategory(arr);
+  };
 
   return (
     <div>
@@ -183,8 +189,10 @@ const FilterTagsComponent = props => {
   );
 };
 
-FilterTagsComponent.propTypes = {
-  enableSelectedFilter: PropTypes.func.isRequired,
-};
+const mapDispatchToProps = dispatch => ({
+  filterCategory: (name, filter) => {
+    dispatch(filterCategory(name, filter));
+  },
+});
 
-export default FilterTagsComponent;
+export default connect(mapDispatchToProps)(FilterTagsComponent);

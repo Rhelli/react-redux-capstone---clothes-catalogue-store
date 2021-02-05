@@ -2,426 +2,244 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { filterCategory } from '../../../state/categoryFilter/categoryActions';
 
 const CategoryTagsComponent = props => {
   const {
-    enabledTags, enableSelectedFilter,
+    enabledTags,
   } = props;
+
+  const disableSelectedFilter = (event, filter) => {
+    // eslint-disable-next-line no-console
+    console.log(event.target.dataset.name, filter);
+    filterCategory(event.target.dataset.name, filter);
+  };
 
   return (
     <div>
-      {() => {
-        if (enabledTags.genderFilter.male) {
-          return (
-            <div
-              data-name="male"
-              onClick={event => enableSelectedFilter(event, 'genderFilter')}
-            >
-              <h6 data-name="male">Mens</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.genderFilter.female) {
-          return (
-            <div
-              data-name="female"
-              onClick={event => enableSelectedFilter(event, 'genderFilter')}
-            >
-              <h6 data-name="female">Womens</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.clothesFilter.jackets) {
-          return (
-            <div
-              data-name="jackets"
-              onClick={event => enableSelectedFilter(event, 'clothesFilter')}
-            >
-              <h6 data-name="jackets">Coats & Jackets</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.clothesFilter.jeans) {
-          return (
-            <div
-              data-name="jeans"
-              onClick={event => enableSelectedFilter(event, 'clothesFilter')}
-            >
-              <h6 data-name="jeans">Jeans</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.clothesFilter.shirts) {
-          return (
-            <div
-              data-name="shirts"
-              onClick={event => enableSelectedFilter(event, 'clothesFilter')}
-            >
-              <h6 data-name="shirts">Shirts</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.clothesFilter.tops) {
-          return (
-            <div
-              data-name="tops"
-              onClick={event => enableSelectedFilter(event, 'clothesFilter')}
-            >
-              <h6 data-name="tops">Tops</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.clothesFilter.dresses) {
-          return (
-            <div
-              data-name="dresses"
-              onClick={event => enableSelectedFilter(event, 'clothesFilter')}
-            >
-              <h6 data-name="dresses">Dresses</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.black) {
-          return (
-            <div
-              data-name="black"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="black">Black</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.darkestSpruce) {
-          return (
-            <div
-              data-name="darkestSpruce"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="darkestSpruce">Darkest Spruce</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.multi) {
-          return (
-            <div
-              data-name="multi"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="multi">Multi</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.blue) {
-          return (
-            <div
-              data-name="blue"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="blue">Blue</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.blueDenim) {
-          return (
-            <div
-              data-name="blueDenim"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="blueDenim">Blue Denim</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.navy) {
-          return (
-            <div
-              data-name="navy"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="navy">Navy</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.green) {
-          return (
-            <div
-              data-name="green"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="green">Green</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.white) {
-          return (
-            <div
-              data-name="white"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="white">White</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.grape) {
-          return (
-            <div
-              data-name="grape"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="grape">Grape</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.khaki) {
-          return (
-            <div
-              data-name="khaki"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="khaki">Khaki</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.grey) {
-          return (
-            <div
-              data-name="grey"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="grey">Grey</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.vintageIndigo) {
-          return (
-            <div
-              data-name="vintageIndigo"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="">Vintage Indigo</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.mineralBlue) {
-          return (
-            <div
-              data-name="mineralBlue"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="mineralBlue">Mineral Blue</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.charcoal) {
-          return (
-            <div
-              data-name="charcoal"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="charcoal">Charcoal</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.tan) {
-          return (
-            <div
-              data-name="tan"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="tan">Tan</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.dustyBlue) {
-          return (
-            <div
-              data-name="dustyBlue"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="dustyBlue">Dusty Blue</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.midwash) {
-          return (
-            <div
-              data-name="midwash"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="midwash">Midwash</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.red) {
-          return (
-            <div
-              data-name="red"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="red">Red</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.rose) {
-          return (
-            <div
-              data-name="rose"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="rose">Rose</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
-      {() => {
-        if (enabledTags.colorFilter.lilac) {
-          return (
-            <div
-              data-name="lilac"
-              onClick={event => enableSelectedFilter(event, 'colorFilter')}
-            >
-              <h6 data-name="lilac">Lilac</h6>
-            </div>
-          );
-        }
-        return (
-          null
-        );
-      }}
+      { enabledTags.genderFilter.male ? (
+        <div
+          data-name="male"
+          onClick={event => disableSelectedFilter(event, 'genderFilter')}
+        >
+          <h6 data-name="male">Mens</h6>
+        </div>
+      ) : null}
+      { enabledTags.genderFilter.female ? (
+        <div
+          data-name="female"
+          onClick={event => disableSelectedFilter(event, 'genderFilter')}
+        >
+          <h6 data-name="female">Womens</h6>
+        </div>
+      ) : null}
+      { enabledTags.clothesFilter.jackets ? (
+        <div
+          data-name="jackets"
+          onClick={event => disableSelectedFilter(event, 'clothesFilter')}
+        >
+          <h6 data-name="jackets">Coats & Jackets</h6>
+        </div>
+      ) : null}
+      { enabledTags.clothesFilter.jeans ? (
+        <div
+          data-name="jeans"
+          onClick={event => disableSelectedFilter(event, 'clothesFilter')}
+        >
+          <h6 data-name="jeans">Jeans</h6>
+        </div>
+      ) : null}
+      { enabledTags.clothesFilter.shirts ? (
+        <div
+          data-name="shirts"
+          onClick={event => disableSelectedFilter(event, 'clothesFilter')}
+        >
+          <h6 data-name="shirts">Shirts</h6>
+        </div>
+      ) : null}
+      { enabledTags.clothesFilter.tops ? (
+        <div
+          data-name="tops"
+          onClick={event => disableSelectedFilter(event, 'clothesFilter')}
+        >
+          <h6 data-name="tops">Tops</h6>
+        </div>
+      ) : null}
+      { enabledTags.clothesFilter.dresses ? (
+        <div
+          data-name="dresses"
+          onClick={event => disableSelectedFilter(event, 'clothesFilter')}
+        >
+          <h6 data-name="dresses">Dresses</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.black ? (
+        <div
+          data-name="black"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="black">Black</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.darkestSpruce ? (
+        <div
+          data-name="darkestSpruce"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="darkestSpruce">Darkest Spruce</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.multi ? (
+        <div
+          data-name="multi"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="multi">Multi</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.blue ? (
+        <div
+          data-name="blue"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="blue">Blue</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.blueDenim ? (
+        <div
+          data-name="blueDenim"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="blueDenim">Blue Denim</h6>
+        </div>
+      ) : null }
+      { enabledTags.colorFilter.navy ? (
+        <div
+          data-name="navy"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="navy">Navy</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.green ? (
+        <div
+          data-name="green"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="green">Green</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.white ? (
+        <div
+          data-name="white"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="white">White</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.grape ? (
+        <div
+          data-name="grape"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="grape">Grape</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.khaki ? (
+        <div
+          data-name="khaki"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="khaki">Khaki</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.grey ? (
+        <div
+          data-name="grey"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="grey">Grey</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.vintageIndigo ? (
+        <div
+          data-name="vintageIndigo"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="">Vintage Indigo</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.mineralBlue ? (
+        <div
+          data-name="mineralBlue"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="mineralBlue">Mineral Blue</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.charcoal ? (
+        <div
+          data-name="charcoal"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="charcoal">Charcoal</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.tan ? (
+        <div
+          data-name="tan"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="tan">Tan</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.dustyBlue ? (
+        <div
+          data-name="dustyBlue"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="dustyBlue">Dusty Blue</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.midwash ? (
+        <div
+          data-name="midwash"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="midwash">Midwash</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.red ? (
+        <div
+          data-name="red"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="red">Red</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.rose ? (
+        <div
+          data-name="rose"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="rose">Rose</h6>
+        </div>
+      ) : null}
+      { enabledTags.colorFilter.lilac ? (
+        <div
+          data-name="lilac"
+          onClick={event => disableSelectedFilter(event, 'colorFilter')}
+        >
+          <h6 data-name="lilac">Lilac</h6>
+        </div>
+      ) : null}
     </div>
   );
 };
 
 CategoryTagsComponent.propTypes = {
-  enableSelectedFilter: PropTypes.func.isRequired,
   enabledTags: PropTypes.shape({
     search: PropTypes.shape({
       input: PropTypes.string,
@@ -462,4 +280,8 @@ CategoryTagsComponent.propTypes = {
   }).isRequired,
 };
 
-export default CategoryTagsComponent;
+const mapDispatchToProps = dispatch => ({
+  filterCategory: () => dispatch(filterCategory),
+});
+
+export default connect(mapDispatchToProps)(CategoryTagsComponent);

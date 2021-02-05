@@ -2,29 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CategoryTagsComponent from './CategoryTagsComponent';
 import FilterTagsComponent from './FilterTagsComponent';
+import { filterCategory } from '../../../state/categoryFilter/categoryActions';
 
 const CategoryFilterInputComponent = props => {
   const {
-    enabledTags, enableSelectedFilter,
+    enabledTags,
   } = props;
 
   return (
     <div>
       <div>
         <CategoryTagsComponent
-          enableSelectedFilter={enableSelectedFilter}
+          filterCategory={filterCategory}
           enabledTags={enabledTags}
         />
       </div>
       <div>
-        <FilterTagsComponent enableSelectedFilter={enableSelectedFilter} />
+        <FilterTagsComponent
+          filterCategory={filterCategory}
+        />
       </div>
     </div>
   );
 };
 
 CategoryFilterInputComponent.propTypes = {
-  enableSelectedFilter: PropTypes.func.isRequired,
   enabledTags: PropTypes.shape({
     search: PropTypes.shape({
       input: PropTypes.string,
@@ -63,7 +65,6 @@ CategoryFilterInputComponent.propTypes = {
       lilac: PropTypes.bool.isRequired,
     }).isRequired,
   }).isRequired,
-
 };
 
 export default CategoryFilterInputComponent;
