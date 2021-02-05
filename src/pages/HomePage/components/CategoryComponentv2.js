@@ -1,22 +1,21 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable no-restricted-syntax */
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 import CategoryFilterInputComponent from './CategoryFilterInputComponent';
 
-const CategoryFilterComponent = ({ categoryData }) => (
+const CategoryFilterComponent = ({ categoryData, enableSelectedFilter }) => (
   <div>
     <div>
       <CategoryFilterInputComponent
         enabledTags={categoryData.enabledTags}
+        enableSelectedFilter={enableSelectedFilter}
       />
     </div>
   </div>
 );
 
 CategoryFilterComponent.propTypes = {
+  enableSelectedFilter: PropTypes.func.isRequired,
   categoryData: PropTypes.shape({
     categoryInputComponentClicked: PropTypes.bool.isRequired,
     searchQuery: PropTypes.string,
@@ -65,4 +64,4 @@ const mapStateToProps = state => ({
   categoryData: state.categoryStore,
 });
 
-export default connect(mapStateToProps)(CategoryFilterComponent);
+export default connect(mapStateToProps, null)(CategoryFilterComponent);

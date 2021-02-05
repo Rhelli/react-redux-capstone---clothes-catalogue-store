@@ -1,29 +1,26 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import { connect } from 'react-redux';
-import { filterCategory } from '../../../state/categoryFilter/categoryActions';
+import PropTypes from 'prop-types';
+import styles from './FilterTagsComponent.module.css';
 
-const FilterTagsComponent = () => {
-  const enableSelectedFilter = (event, filter) => {
-    // eslint-disable-next-line no-console
-    console.log(event.target.dataset.name, filter);
-    const arr = [event, filter];
-    filterCategory(arr);
-  };
+const FilterTagsComponent = props => {
+  const { enableSelectedFilter } = props;
 
   return (
-    <div>
-      <div className="genderFilter filter">
+    <div className={styles.filterTagsContainer}>
+      <div className={styles.filterCategory}>
         <h4>Gender</h4>
         <div>
           <div
+            className={styles.tag}
             data-name="male"
             onClick={event => enableSelectedFilter(event, 'genderFilter')}
           >
             <h6 data-name="mens">Mens</h6>
           </div>
           <div
+            className={styles.tag}
             data-name="female"
             onClick={event => enableSelectedFilter(event, 'genderFilter')}
           >
@@ -31,7 +28,8 @@ const FilterTagsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="clothesFilter filter">
+      <div className={styles.filterCategory}>
+        <h4>Clothes</h4>
         <div
           data-name="jackets"
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
@@ -63,7 +61,8 @@ const FilterTagsComponent = () => {
           <h6 data-name="dresses">Dresses</h6>
         </div>
       </div>
-      <div className="colorFilter filter">
+      <div className={[styles.filterCategory, styles.colorCategory].join(' ')}>
+        <h4>Color</h4>
         <div
           data-name="black"
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
@@ -72,6 +71,7 @@ const FilterTagsComponent = () => {
         </div>
         <div
           data-name="darkestSpruce"
+          data-filter="sprucestDark"
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
           <h6 data-name="darkestSpruce">Darkest Spruce</h6>
@@ -189,10 +189,8 @@ const FilterTagsComponent = () => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  filterCategory: (name, filter) => {
-    dispatch(filterCategory(name, filter));
-  },
-});
+FilterTagsComponent.propTypes = {
+  enableSelectedFilter: PropTypes.func.isRequired,
+};
 
-export default connect(mapDispatchToProps)(FilterTagsComponent);
+export default FilterTagsComponent;

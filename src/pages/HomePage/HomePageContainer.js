@@ -9,6 +9,7 @@ import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterComponent from './components/CategoryComponentv2';
+import { filterCategory } from '../../state/categoryFilter/categoryActions';
 
 const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   useEffect(() => {
@@ -23,6 +24,13 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   const itemClickThrough = product => {
     fetchProductID(product);
     history.push(`/products/${product.gender}/${product.type}/${product.id}`);
+  };
+
+  const enableSelectedFilter = (event, filter) => {
+    // eslint-disable-next-line no-console
+    console.log(event.target.dataset.name, filter);
+    const { name } = event.target.dataset;
+    filterCategory(name, filter);
   };
 
   const activeFilters = () => {
@@ -62,11 +70,11 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
     <h2>{productData.error}</h2>
   ) : (
     <div>
-      <CategoryFilterComponent />
+      <CategoryFilterComponent enableSelectedFilter={enableSelectedFilter} />
       <h2>Product List</h2>
       <div>
         {
-          multiPropsFilter(productData.products, activeFilters()).map(item => (
+          multiPropsFilter(productData.products, activeFilters).map(item => (
             <ProductListComponent
               key={item.id}
               itemClickThrough={() => itemClickThrough(item)}
@@ -105,8 +113,15 @@ const mapStateToProps = state => ({
   categoryData: state.categoryStore,
 });
 
-const mapDispatchToProps = dispatch => ({
-  fetchProducts: () => dispatch(fetchProducts()),
-});
+const mapDispatchToProps = dispatch => {
+  // eslint-disable-next-line no-console
+  console.log('This is dispatch');
+  return {
+    fetchProducts: () => dispatch(fetchProducts()),
+    filterCategory: (name, filter) => {
+      dispatch(filterCategory(name, filter));
+    },
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer);

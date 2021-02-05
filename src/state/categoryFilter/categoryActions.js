@@ -5,10 +5,14 @@ import {
   DELETE_SEARCH,
 } from './categoryFilterTypes';
 
-export const filterCategory = filterInfo => ({
-  type: FILTER_CATEGORY,
-  payload: filterInfo,
-});
+export const filterCategory = (name, filter) => {
+  // eslint-disable-next-line no-console
+  console.log('Filter action');
+  return {
+    type: FILTER_CATEGORY,
+    payload: [name, filter],
+  };
+};
 
 export const searchCategory = searchQuery => ({
   type: SEARCH_CATEGORY,

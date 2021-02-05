@@ -54,6 +54,8 @@ const initialState = {
 };
 
 const categoryReducer = (state = initialState, action) => {
+  // eslint-disable-next-line no-console
+  console.log('categoryReducerCalled');
   switch (action.type) {
     case FILTER_CATEGORY:
       // eslint-disable-next-line no-console
@@ -70,20 +72,26 @@ const categoryReducer = (state = initialState, action) => {
         },
       };
 
-    case SEARCH_CATEGORY: return {
-      ...state,
-      searchQuery: action.payload,
-    };
+    case SEARCH_CATEGORY:
+      // eslint-disable-next-line no-console
+      console.log(action.payload);
+      return {
+        ...state,
+        searchQuery: action.payload,
+      };
 
-    case EXECUTE_SEARCH: return {
-      ...state,
-      enabledTags: {
-        ...state.enabledTags,
-        search: {
-          input: action.payload,
+    case EXECUTE_SEARCH:
+      // eslint-disable-next-line no-console
+      console.log(action.payload);
+      return {
+        ...state,
+        enabledTags: {
+          ...state.enabledTags,
+          search: {
+            input: action.payload,
+          },
         },
-      },
-    };
+      };
 
     case DELETE_SEARCH: return {
       ...state,
@@ -97,7 +105,6 @@ const categoryReducer = (state = initialState, action) => {
 
     default: return {
       ...state,
-      category: '',
     };
   }
 };

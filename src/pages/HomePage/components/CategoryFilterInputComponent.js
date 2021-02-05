@@ -2,24 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CategoryTagsComponent from './CategoryTagsComponent';
 import FilterTagsComponent from './FilterTagsComponent';
-import { filterCategory } from '../../../state/categoryFilter/categoryActions';
 
 const CategoryFilterInputComponent = props => {
   const {
-    enabledTags,
+    enabledTags, enableSelectedFilter,
   } = props;
 
   return (
     <div>
       <div>
         <CategoryTagsComponent
-          filterCategory={filterCategory}
+          enableSelectedFilter={enableSelectedFilter}
           enabledTags={enabledTags}
         />
       </div>
       <div>
         <FilterTagsComponent
-          filterCategory={filterCategory}
+          enableSelectedFilter={enableSelectedFilter}
         />
       </div>
     </div>
@@ -27,6 +26,7 @@ const CategoryFilterInputComponent = props => {
 };
 
 CategoryFilterInputComponent.propTypes = {
+  enableSelectedFilter: PropTypes.func.isRequired,
   enabledTags: PropTypes.shape({
     search: PropTypes.shape({
       input: PropTypes.string,
