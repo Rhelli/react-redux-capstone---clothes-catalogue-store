@@ -9,7 +9,7 @@ import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterComponent from './components/CategoryComponentv2';
-import { filterCategory } from '../../state/categoryFilter/categoryActions';
+import filterCategory from '../../state/categoryFilter/categoryActions';
 
 const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   useEffect(() => {
@@ -27,11 +27,9 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   };
 
   const enableSelectedFilter = (event, filter) => {
-    event.preventDefault();
     // eslint-disable-next-line no-console
     console.log(event.target.dataset.name, filter);
-    const { name } = event.target.dataset;
-    filterCategory(name, filter);
+    filterCategory(event.target.dataset.name, filter);
   };
 
   const activeFilters = () => {
@@ -122,9 +120,7 @@ const mapDispatchToProps = dispatch => {
   console.log('This is dispatch');
   return {
     fetchProducts: () => dispatch(fetchProducts()),
-    filterCategory: (name, filter) => {
-      dispatch(filterCategory(name, filter));
-    },
+    filterCategory: (event, filter) => dispatch(filterCategory(event, filter)),
   };
 };
 

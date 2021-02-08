@@ -1,9 +1,5 @@
-import {
-  FILTER_CATEGORY,
-  SEARCH_CATEGORY,
-  EXECUTE_SEARCH,
-  DELETE_SEARCH,
-} from './categoryFilterTypes';
+/* eslint-disable no-case-declarations */
+import FILTER_CATEGORY from './categoryFilterTypes';
 
 const initialState = {
   clothesFilter: {
@@ -49,45 +45,11 @@ const categoryReducer = (state = initialState, action) => {
   // eslint-disable-next-line no-console
   console.log('categoryReducerCalled');
   switch (action.type) {
-    case FILTER_CATEGORY:
-      // eslint-disable-next-line no-console
-      console.log(action.payload[1]);
-      return {
-        ...state,
-        [action.payload[1]]: {
-          ...state[action.payload[1]],
-          [action.payload[0]]: !state[action.payload[1]][action.payload[0]],
-        },
-      };
-
-    case SEARCH_CATEGORY:
-      // eslint-disable-next-line no-console
-      console.log(action.payload);
-      return {
-        ...state,
-        searchQuery: action.payload,
-      };
-
-    case EXECUTE_SEARCH:
-      // eslint-disable-next-line no-console
-      console.log(action.payload);
-      return {
-        ...state,
-        enabledTags: {
-          ...state.enabledTags,
-          search: {
-            input: action.payload,
-          },
-        },
-      };
-
-    case DELETE_SEARCH: return {
+    case FILTER_CATEGORY: return {
       ...state,
-      enabledTags: {
-        ...state.enabledTags,
-        search: {
-          input: '',
-        },
+      [action.filter]: {
+        ...state[action.filter],
+        [action.name]: !state[action.filter][action.name],
       },
     };
 
