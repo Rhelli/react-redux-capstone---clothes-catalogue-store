@@ -11,7 +11,9 @@ import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterComponent from './components/CategoryComponentv2';
 import filterCategory from '../../state/categoryFilter/categoryActions';
 
-const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
+const HomePageContainer = ({
+  filterCategory, categoryData, productData, fetchProducts,
+}) => {
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -27,8 +29,6 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
   };
 
   const enableSelectedFilter = (event, filter) => {
-    // eslint-disable-next-line no-console
-    console.log(event.target.dataset.name, filter);
     filterCategory(event.target.dataset.name, filter);
   };
 
@@ -48,6 +48,9 @@ const HomePageContainer = ({ categoryData, productData, fetchProducts }) => {
     for (const colorKey in colorFilter) {
       if (colorFilter[colorKey]) activeFilters.color.push(colorKey);
     }
+
+    // eslint-disable-next-line no-console
+    console.log(activeFilters);
     return activeFilters;
   };
 
@@ -115,13 +118,9 @@ const mapStateToProps = state => ({
   categoryData: state.categoryStore,
 });
 
-const mapDispatchToProps = dispatch => {
-  // eslint-disable-next-line no-console
-  console.log('This is dispatch');
-  return {
-    fetchProducts: () => dispatch(fetchProducts()),
-    filterCategory: (event, filter) => dispatch(filterCategory(event, filter)),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  fetchProducts: () => dispatch(fetchProducts()),
+  filterCategory: (event, filter) => dispatch(filterCategory(event, filter)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer);

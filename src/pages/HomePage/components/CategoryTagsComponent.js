@@ -160,7 +160,7 @@ const CategoryTagsComponent = props => {
           data-name="vintageIndigo"
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="">Vintage Indigo</h6>
+          <h6 data-name="vintageIndigo">Vintage Indigo</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.mineralBlue ? (

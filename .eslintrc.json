@@ -29,6 +29,7 @@
         ]
       }
     ],
+    "linebreak-style": ["error", "windows"],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
