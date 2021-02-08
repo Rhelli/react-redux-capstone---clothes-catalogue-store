@@ -1,34 +1,39 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import ProductImageComponent from './components/ProductImageComponent';
 
-const ProductPageContainer = ({ productData }) => {
+const ProductPageContainer = ({ singleProduct }) => {
   const {
-    id, type,
-  } = productData;
+    type, images, brandName,
+  } = singleProduct;
+
+  console.log(images);
 
   // eslint-disable-next-line no-console
-  console.log(productData);
+  console.log(singleProduct);
 
   return (
     <div styles="height: 100px; width: 100px; background-color: red;">
-      <div>
-        <h2>This is the ProductPageContainer</h2>
-        <p>{id}</p>
-        <p>{type}</p>
-      </div>
+      <ProductImageComponent
+        images={images}
+        brandName={brandName}
+        type={type}
+      />
     </div>
   );
 };
 
 const mapStateToProps = state => ({
-  productData: state.productStore.singleProduct,
+  singleProduct: state.productStore.singleProduct,
+  productData: state.productStore.products,
 });
 
 ProductPageContainer.propTypes = {
-  productData: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+  singleProduct: PropTypes.shape({
     type: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    brandName: PropTypes.string.isRequired,
   }).isRequired,
 };
 
