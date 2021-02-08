@@ -1,8 +1,13 @@
 import FILTER_CATEGORY from './categoryFilterTypes';
 
-const filterCategory = category => ({
-  type: FILTER_CATEGORY,
-  payload: category,
-});
+const filterCategory = (name, filter) => {
+  // eslint-disable-next-line no-console
+  console.log(name, filter);
+  return {
+    type: FILTER_CATEGORY,
+    name,
+    filter,
+  };
+};
 
 export default filterCategory;

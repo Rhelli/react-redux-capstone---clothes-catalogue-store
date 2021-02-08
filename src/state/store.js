@@ -7,8 +7,8 @@ import productReducer from './product/productReducer';
 
 const root = combineReducers({
   basketStore: shoppingBasketReducer,
-  categoryStore: categoryReducer,
   currencyStore: currencyReducer,
+  categoryStore: categoryReducer,
   productStore: productReducer,
 });
 

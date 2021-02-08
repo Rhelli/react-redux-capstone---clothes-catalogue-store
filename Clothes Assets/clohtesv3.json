@@ -12,6 +12,7 @@
     "productName": "Timberland sherpa jacket in black/blue",
     "price": "120.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "Layer up",
       "Colour-block design",
@@ -42,6 +43,7 @@
     "productName": "Barbour Ashby wax jacket in black",
     "price": "146.30",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "Feel the benefit",
       "Check lining with one internal pocket",
@@ -68,6 +70,7 @@
     "productName": "Jack & Jones Core hooded puffer in green",
     "price": "33.00",
     "color": "Darkest Spruce",
+    "colorTool": "darkestSpruce",
     "productDetails": [
       "Feel the benefit",
       "Padded design",
@@ -95,6 +98,7 @@
     "productName": "ASOS DESIGN oversized polar fleece sweatshirt with half zip in all over geo print",
     "price": "32.00",
     "color": "Multi",
+    "colorTool": "multi",
     "productDetails": [
       "Aesthetic: on point ",
       "Geometric design",
@@ -123,6 +127,7 @@
     "productName": "Bershka denim jacket in light blue",
     "price": "25.27",
     "color": "Blue",
+    "colorTool": "blue",
     "productDetails": [
       "It's layering season",
       "Spread collar",
@@ -150,6 +155,7 @@
     "productName": "Levi's skinny tapered fit jeans in eat the popcorn advanced light wash",
     "price": "95.00",
     "color": "Blue",
+    "colorTool": "blue",
     "productDetails": [
       "Part of our responsible edit",
       "Regular rise",
@@ -175,6 +181,7 @@
     "productName": "River Island tapered jeans with rips in light blue",
     "price": "45.00",
     "color": "Blue",
+    "colorTool": "blue",
     "productDetails": [
       "It's all in the jeans",
       "Distressed finish",
@@ -201,6 +208,7 @@
     "productName": "ASOS DESIGN stretch slim jeans in black",
     "price": "25.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "Part of our responsible edit",
       "Black wash ",
@@ -227,6 +235,7 @@
     "productName": "Jack & Jones Intelligence Liam skinny fit stretch jeans in blue black",
     "price": "30.00",
     "color": "Blue Denim",
+    "colorTool": "blueDenim",
     "productDetails": [
       "Part of our responsible edit",
       "Dark-blue wash",
@@ -253,6 +262,7 @@
     "productName": "Burton Menswear tapered jeans in washed black",
     "price": "20.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "It's all in the jeans",
       "Regular rise",
@@ -278,6 +288,7 @@
     "productName": "Jack & Jones Originals fleece overshirt in navy",
     "price": "35.00",
     "color": "Navy blazer",
+    "colorTool": "navy",
     "productDetails": [
       "Layered looks",
       "Spread collar",
@@ -305,6 +316,7 @@
     "productName": "ASOS DESIGN 90s oversized style cord shirt in college green",
     "price": "25.00",
     "color": "Green",
+    "colorTool": "green",
     "productDetails": [
       "All the retro vibes",
       "Button-down collar",
@@ -332,6 +344,7 @@
     "productName": "Polo Ralph Lauren oxford shirt in slim fit white",
     "price": "99.00",
     "color": "White",
+    "colorTool": "white",
     "productDetails": [
       "Breathable cotton",
       "Fastened point collar",
@@ -360,6 +373,7 @@
     "productName": "ASOS DESIGN 90s oversized organic denim shirt in grape",
     "price": "25.00",
     "color": "Grape",
+    "colorTool": "grape",
     "productDetails": [
       "Part of our responsible edit",
       "Spread collar",
@@ -387,6 +401,7 @@
     "productName": "Deus Ex Machina marcus flannel heavyweight overshirt in khaki",
     "price": "160.00",
     "color": "Khaki",
+    "colorTool": "khaki",
     "productDetails": [
       "Layered looks",
       "Point collar",
@@ -416,6 +431,7 @@
     "productName": "Carhartt WIP Chase t-shirt in grey",
     "price": "24.50",
     "color": "Grey",
+    "colorTool": "grey",
     "productDetails": [
       "Your staple logo tee",
       "Crew neck",
@@ -440,6 +456,7 @@
     "productName": "Burton Menswear peace out t-shirt in washed khaki",
     "price": "16.00",
     "color": "Khaki",
+    "colorTool": "khaki",
     "productDetails": [
       "Your new flex",
       "Washed design",
@@ -466,6 +483,7 @@
     "productName": "ASOS DESIGN oversized waffle t-shirt with deep hem and cuff in washed blue",
     "price": "16.00",
     "color": "Vintage indigo",
+    "colorTool": "vintageIndigo",
     "productDetails": [
       "Part of our responsible edit",
       "Crew neck",
@@ -492,6 +510,7 @@
     "productName": "ASOS DESIGN oversized t-shirt in blue towelling with text chest print",
     "price": "20.00",
     "color": "Mineral blue",
+    "colorTool": "mineralBlue",
     "productDetails": [
       "Part of our responsible edit",
       "Crew neck",
@@ -516,6 +535,7 @@
     "productName": "American Eagle thermal front logo long sleeve top in charcoal marl",
     "price": "34.95",
     "color": "Charcoal",
+    "colorTool": "charcoal",
     "productDetails": [
       "Act casual",
       "Crew neck",
@@ -542,6 +562,7 @@
     "productName": "ASOS DESIGN double breasted textured coat in khaki",
     "price": "52.00",
     "color": "Khaki",
+    "colorTool": "khaki",
     "productDetails": [
       "That new-coat feeling",
       "Notch lapels",
@@ -569,6 +590,7 @@
     "productName": "ASOS DESIGN oversized padded shacket in khaki",
     "price": "40.00",
     "color": "Khaki",
+    "colorTool": "khaki",
     "productDetails": [
       "It's layering season",
       "Padded design",
@@ -597,6 +619,7 @@
     "productName": "QED London borg coat in tan",
     "price": "62.00",
     "color": "Tan",
+    "colorTool": "tan",
     "productDetails": [
       "Turn up the texture",
       "Notch lapels",
@@ -623,6 +646,7 @@
     "productName": "Threadbare overcoat in dusky blue",
     "price": "22.95",
     "color": "Dusty Blue",
+    "colorTool": "dustyBlue",
     "productDetails": [
       "That new-coat feeling",
       "Notch lapels",
@@ -649,6 +673,7 @@
     "productName": "Jayley faux fur stripe zip through jacket in black",
     "price": "120.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "Go with the faux",
       "Panelled design",
@@ -675,6 +700,7 @@
     "productName": "Stradivarius organic cotton slim mom jean with stretch in washed blue",
     "price": "19.99",
     "color": "Blue",
+    "colorTool": "blue",
     "productDetails": [
       "Part of our responsible edit",
       "High-rise waist",
@@ -702,6 +728,7 @@
     "productName": "Urban Bliss mom jeans in mid wash",
     "price": "20.00",
     "color": "Midwash",
+    "colorTool": "midwash",
     "productDetails": [
       "For all your nice tops",
       "High rise",
@@ -729,6 +756,7 @@
     "productName": "Levi's utility mile high ankle jeans in black",
     "price": "60.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "Part of our responsible edit",
       "High rise",
@@ -756,6 +784,7 @@
     "productName": "Bershka high rise skinny jean in bleach blue",
     "price": "19.99",
     "color": "Blue",
+    "colorTool": "blue",
     "productDetails": [
       "It's all in the jeans",
       "High rise",
@@ -781,6 +810,7 @@
     "productName": "ASOS DESIGN high rise 'slouchy' mom jeans in midwash with rips",
     "price": "35.00",
     "color": "Midwash",
+    "colorTool": "midwash",
     "productDetails": [
       "Part of our responsible edit",
       "Super high rise",
@@ -809,6 +839,7 @@
     "productName": "ASOS DESIGN nipped in waist mini dress in black",
     "price": "28.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "One for your wardrobe ",
       "Round neck",
@@ -835,6 +866,7 @@
     "productName": "Femme Luxe long sleeve ruched detail mini dress in pistachio",
     "price": "8.75",
     "color": "Khaki",
+    "colorTool": "khaki",
     "productDetails": [
       "Crack the dress code",
       "High neck",
@@ -861,6 +893,7 @@
     "productName": "Missguided tea dress with ruched side in red polka",
     "price": "26.00",
     "color": "Red",
+    "colorTool": "red",
     "productDetails": [
       "Your new favourite dress",
       "Polka-dot design ",
@@ -890,6 +923,7 @@
     "productName": "ASOS DESIGN super oversized frill sleeve smock dress in rose",
     "price": "18.00",
     "color": "Rose",
+    "colorTool": "rose",
     "productDetails": [
       "Part of our responsible edit",
       "Plain design",
@@ -915,6 +949,7 @@
     "productName": "Weekday Kai organic cotton jersey dress with shoulder pads in black",
     "price": "25.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "Worn and shot by one of our models at home",
       "Part of our responsible edit",
@@ -943,6 +978,7 @@
     "productName": "AllSaints Coni tank in green",
     "price": "16.20",
     "color": "Green",
+    "colorTool": "green",
     "productDetails": [
       "Stick it on repeat",
       "Plain design ",
@@ -969,6 +1005,7 @@
     "productName": "ASOS DESIGN long sleeved cropped check shirt in black and cream",
     "price": "22.22",
     "color": "Multi",
+    "colorTool": "multi",
     "productDetails": [
       "For the rotation",
       "Check design ",
@@ -997,6 +1034,7 @@
     "productName": "ASOS DESIGN long sleeve top with slash neck in black",
     "price": "12.00",
     "color": "Black",
+    "colorTool": "black",
     "productDetails": [
       "For the rotation",
       "Plain design",
@@ -1023,6 +1061,7 @@
     "productName": "ASOS DESIGN super oversized t-shirt with stitch detail in washed teal",
     "price": "16.00",
     "color": "Green",
+    "colorTool": "green",
     "productDetails": [
       "The baggier, the better",
       "Crew neck",
@@ -1048,6 +1087,7 @@
     "productName": "Stradivarius v neck shoulder pad t-shirt in lilac",
     "price": "4.70",
     "color": "Lilac",
+    "colorTool": "lilac",
     "productDetails": [
       "File under: staples",
       "V-neck",

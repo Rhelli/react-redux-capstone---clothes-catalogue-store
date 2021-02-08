@@ -1,0 +1,20 @@
+.filterTagsContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 40vh;
+}
+
+.filterCategory {
+  width: auto;
+}
+
+.colorCategory {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+.tag {
+  width: auto;
+}

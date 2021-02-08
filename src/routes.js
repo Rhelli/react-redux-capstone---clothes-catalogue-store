@@ -6,8 +6,8 @@ import ProductPageContainer from './pages/ProductPage/ProductPageContainer';
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={HomePageContainer} />
-      <Route exact path="/ProductPageContainer/:id" component={ProductPageContainer} />
+      <Route exact path="/" render={() => <HomePageContainer />} />
+      <Route exact path="/ProductPageContainer/:id" render={() => <ProductPageContainer />} />
     </Switch>
   </BrowserRouter>
 );
