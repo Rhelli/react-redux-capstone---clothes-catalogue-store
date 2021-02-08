@@ -31,10 +31,10 @@ const FilterTagsComponent = props => {
       <div className={styles.filterCategory}>
         <h4>Clothes</h4>
         <div
-          data-name="jackets"
+          data-name="jacket"
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="jackets">Coats & Jackets</h6>
+          <h6 data-name="jacket">Coats & Jackets</h6>
         </div>
         <div
           data-name="jeans"

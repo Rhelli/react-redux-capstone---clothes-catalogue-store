@@ -3,7 +3,7 @@ import FILTER_CATEGORY from './categoryFilterTypes';
 
 const initialState = {
   clothesFilter: {
-    jackets: false,
+    jacket: false,
     jeans: false,
     shirts: false,
     tops: false,

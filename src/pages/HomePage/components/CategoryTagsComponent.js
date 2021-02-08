@@ -27,12 +27,12 @@ const CategoryTagsComponent = props => {
           <h6 data-name="female">Womens</h6>
         </div>
       ) : null}
-      { categoryData.clothesFilter.jackets ? (
+      { categoryData.clothesFilter.jacket ? (
         <div
-          data-name="jackets"
+          data-name="jacket"
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="jackets">Coats & Jackets</h6>
+          <h6 data-name="jacket">Coats & Jackets</h6>
         </div>
       ) : null}
       { categoryData.clothesFilter.jeans ? (
@@ -234,7 +234,7 @@ const CategoryTagsComponent = props => {
 CategoryTagsComponent.propTypes = {
   categoryData: PropTypes.shape({
     clothesFilter: PropTypes.shape({
-      jackets: PropTypes.bool.isRequired,
+      jacket: PropTypes.bool.isRequired,
       jeans: PropTypes.bool.isRequired,
       shirts: PropTypes.bool.isRequired,
       tops: PropTypes.bool.isRequired,

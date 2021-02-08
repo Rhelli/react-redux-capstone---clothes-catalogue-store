@@ -3,7 +3,7 @@ import { fetchProductsRequest, fetchProductsSuccess, fetchProductsError } from '
 
 const fetchProducts = () => dispatch => {
   dispatch(fetchProductsRequest);
-  axios.get('https://api.jsonbin.io/b/6019ae7ddde2a87f921d3310/10', {
+  axios.get('https://api.jsonbin.io/b/6019ae7ddde2a87f921d3310/11', {
     headers: {
       'secret-key': '$2b$10$KohMVQ3o0eP5PqDh/Xwvj.qwMZWdi4NhVvLYWhT8KgvM4sBsn9z.2',
     },

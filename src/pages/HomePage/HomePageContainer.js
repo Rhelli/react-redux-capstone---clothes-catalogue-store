@@ -21,6 +21,7 @@ const HomePageContainer = ({
   const {
     clothesFilter, genderFilter, colorFilter,
   } = categoryData;
+
   const history = useHistory();
 
   const itemClickThrough = product => {
@@ -35,18 +36,18 @@ const HomePageContainer = ({
   const activeFilters = () => {
     const activeFilters = {
       gender: [],
-      clothes: [],
-      color: [],
+      type: [],
+      colorTool: [],
     };
 
     for (const genderKey in genderFilter) {
       if (genderFilter[genderKey]) activeFilters.gender.push(genderKey);
     }
     for (const clothesKey in clothesFilter) {
-      if (clothesFilter[clothesKey]) activeFilters.clothes.push(clothesKey);
+      if (clothesFilter[clothesKey]) activeFilters.type.push(clothesKey);
     }
     for (const colorKey in colorFilter) {
-      if (colorFilter[colorKey]) activeFilters.color.push(colorKey);
+      if (colorFilter[colorKey]) activeFilters.colorTool.push(colorKey);
     }
 
     // eslint-disable-next-line no-console
@@ -79,7 +80,7 @@ const HomePageContainer = ({
       <h2>Product List</h2>
       <div>
         {
-          multiPropsFilter(productData.products, activeFilters).map(item => (
+          multiPropsFilter(productData.products, activeFilters()).map(item => (
             <ProductListComponent
               key={item.id}
               itemClickThrough={() => itemClickThrough(item)}

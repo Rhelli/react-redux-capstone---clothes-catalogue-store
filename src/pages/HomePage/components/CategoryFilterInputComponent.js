@@ -29,7 +29,7 @@ CategoryFilterInputComponent.propTypes = {
   enableSelectedFilter: PropTypes.func.isRequired,
   categoryData: PropTypes.shape({
     clothesFilter: PropTypes.shape({
-      jackets: PropTypes.bool.isRequired,
+      jacket: PropTypes.bool.isRequired,
       jeans: PropTypes.bool.isRequired,
       shirts: PropTypes.bool.isRequired,
       tops: PropTypes.bool.isRequired,
