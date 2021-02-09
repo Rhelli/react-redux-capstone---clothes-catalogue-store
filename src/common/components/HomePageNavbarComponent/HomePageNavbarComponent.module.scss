@@ -1,0 +1,18 @@
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDF2E9;
+  height: 60px;
+  border-bottom: 1px solid #DDD4CC;
+  -webkit-box-shadow: 0px 6px 5px -4px rgba(158,151,146,1);
+  -moz-box-shadow: 0px 6px 5px -4px rgba(158,151,146,1);
+  box-shadow: 0px 6px 5px -4px rgba(158,151,146,1);
+}
+
+.navbarTitle {
+  font: 700 20px/20px 'Playfair Display', sans-serif;
+  color: #303030;
+  padding: 12px 16px;
+}
+

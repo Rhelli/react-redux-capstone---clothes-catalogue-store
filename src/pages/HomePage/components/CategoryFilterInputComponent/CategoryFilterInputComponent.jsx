@@ -11,14 +11,14 @@ const CategoryFilterInputComponent = props => {
   return (
     <div>
       <div>
-        <CategoryTagsComponent
+        <FilterTagsComponent
           enableSelectedFilter={enableSelectedFilter}
-          categoryData={categoryData}
         />
       </div>
       <div>
-        <FilterTagsComponent
+        <CategoryTagsComponent
           enableSelectedFilter={enableSelectedFilter}
+          categoryData={categoryData}
         />
       </div>
     </div>

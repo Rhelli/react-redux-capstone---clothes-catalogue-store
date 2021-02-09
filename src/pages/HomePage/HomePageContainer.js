@@ -5,10 +5,11 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
-import CategoryFilterComponent from './components/CategoryComponent/CategoryComponent';
+import CategoryFilterInputComponent from './components/CategoryFilterInputComponent/CategoryFilterInputComponent';
 import filterCategory from '../../state/categoryFilter/categoryActions';
 import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent/HomePageNavbarComponent';
 
@@ -73,7 +74,11 @@ const HomePageContainer = ({
   ) : (
     <div>
       <HomePageNavbarComponent />
-      <CategoryFilterComponent
+      <h3>
+        Filters
+        <FontAwesomeIcon icon="fas fa-filter" />
+      </h3>
+      <CategoryFilterInputComponent
         enableSelectedFilter={enableSelectedFilter}
         categoryData={categoryData}
       />

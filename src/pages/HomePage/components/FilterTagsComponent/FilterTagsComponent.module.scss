@@ -1,11 +1,21 @@
 .filterTagsContainer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   width: 100%;
   height: 40vh;
+  margin-bottom: 100px;
 }
 
 .filterCategory {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.categoryTags {
+  display: flex;
+  flex-flow: row nowrap;
   width: auto;
 }
 

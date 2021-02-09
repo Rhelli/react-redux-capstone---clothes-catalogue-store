@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './state/store';
+import './assets/fonts/Playfair Display/stylesheet.css';
+import './assets/fonts/Source Sans Pro/stylesheet.css';
 import './index.scss';
 import Routes from './routes';
 
