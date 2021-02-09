@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import ProductImageComponent from './components/ProductImageComponent';
-import ProductInfoComponent from './components/ProductInfoComponent';
+import ProductImageComponent from './components/ProductImageComponent/ProductImageComponent';
+import ProductInfoComponent from './components/ProductInfoComponent/ProductInfoComponent';
 import ProductPageNavbarComponent from '../../common/components/ProductPageNavbarComponent/ProductPageNavbarComponent';
 
 const ProductPageContainer = ({ singleProduct }) => {

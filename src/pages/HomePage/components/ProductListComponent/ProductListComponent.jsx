@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProductListImageComponent from './ProductListImageComponent';
-import ProductListInfoComponent from './ProductListInfoComponent';
+import ProductListImageComponent from '../ProductListImageComponent/ProductListImageComponent';
+import ProductListInfoComponent from '../ProductListInfoComponent/ProductListInfoComponent';
 
 const ProductListComponent = props => {
   const {

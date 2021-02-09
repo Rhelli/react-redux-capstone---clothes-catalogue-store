@@ -6,9 +6,9 @@ import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import fetchProducts from '../../api/clothesAPI';
-import ProductListComponent from './components/ProductListComponent';
+import ProductListComponent from './components/ProductListComponent/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
-import CategoryFilterComponent from './components/CategoryComponent';
+import CategoryFilterComponent from './components/CategoryComponent/CategoryComponent';
 import filterCategory from '../../state/categoryFilter/categoryActions';
 import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent/HomePageNavbarComponent';
 
@@ -16,7 +16,7 @@ const HomePageContainer = ({
   filterCategory, categoryData, productData, fetchProducts, fetchProductID,
 }) => {
   useEffect(() => {
-    fetchProducts();
+    fetchProducts(productData);
   }, []);
 
   const {

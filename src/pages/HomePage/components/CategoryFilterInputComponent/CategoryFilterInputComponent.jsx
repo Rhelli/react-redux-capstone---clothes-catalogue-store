@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CategoryTagsComponent from './CategoryTagsComponent';
-import FilterTagsComponent from './FilterTagsComponent';
+import CategoryTagsComponent from '../CategoryTagsComponent/CategoryTagsComponent';
+import FilterTagsComponent from '../FilterTagsComponent/FilterTagsComponent';
 
 const CategoryFilterInputComponent = props => {
   const {

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import CategoryFilterInputComponent from './CategoryFilterInputComponent';
+import CategoryFilterInputComponent from '../CategoryFilterInputComponent/CategoryFilterInputComponent';
 
 const CategoryFilterComponent = props => {
   const { categoryData, enableSelectedFilter } = props;
