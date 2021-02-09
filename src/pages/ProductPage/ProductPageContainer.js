@@ -8,7 +8,7 @@ import ProductPageNavbarComponent from '../../common/components/ProductPageNavba
 const ProductPageContainer = ({ singleProduct }) => {
   const {
     id, gender, type, images, brandName, productName, price,
-    color, productDetails, productDesc, madeOf,
+    color, colorTool, productDetails, productDesc, madeOf,
   } = singleProduct;
 
   return (
@@ -30,6 +30,7 @@ const ProductPageContainer = ({ singleProduct }) => {
           productName={productName}
           price={price}
           color={color}
+          colorTool={colorTool}
           productDetails={productDetails}
           productDesc={productDesc}
           madeOf={madeOf}
@@ -54,6 +55,7 @@ ProductPageContainer.propTypes = {
     productName: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
+    colorTool: PropTypes.string.isRequired,
     productDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
     productDesc: PropTypes.string.isRequired,
     madeOf: PropTypes.string.isRequired,

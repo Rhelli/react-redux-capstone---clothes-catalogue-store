@@ -2,11 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { genderParse, caseParse } from '../../../utils/textUtils';
+import getColorPreview from '../../../utils/colorUtil';
 
 const ProductInfoComponent = props => {
   const {
     id, gender, type, brandName, productName, price,
-    color, productDetails, productDesc, madeOf,
+    color, colorTool, productDetails, productDesc, madeOf,
   } = props;
 
   return (
@@ -22,7 +23,8 @@ const ProductInfoComponent = props => {
       </div>
       <div>
         <div>
-          <p>{color}</p>
+          <span><p>{color}</p></span>
+          <span><div style={getColorPreview(colorTool)} /></span>
         </div>
         <div>
           <span>
@@ -89,6 +91,7 @@ ProductInfoComponent.propTypes = {
   productName: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  colorTool: PropTypes.string.isRequired,
   productDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
   productDesc: PropTypes.string.isRequired,
   madeOf: PropTypes.string.isRequired,

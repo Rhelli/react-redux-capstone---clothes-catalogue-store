@@ -16,8 +16,8 @@ const getColorPreview = color => {
           #DCE775 60 %,
           #FFB74D 80 %,
           #BA68C8
-      );`
-    }
+      );`,
+    };
     case 'blue': return {
       backgroundColor: '#3498DB',
     };
