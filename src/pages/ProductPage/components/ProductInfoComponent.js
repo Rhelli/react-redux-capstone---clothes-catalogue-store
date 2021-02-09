@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { genderParse, caseParse } from '../../../utils/textUtils';
+import { genderParse, caseParse } from '../../../utils';
 import getColorPreview from '../../../utils/colorUtil';
 
 const ProductInfoComponent = props => {

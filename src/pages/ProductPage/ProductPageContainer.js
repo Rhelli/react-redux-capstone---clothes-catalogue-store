@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import ProductImageComponent from './components/ProductImageComponent';
 import ProductInfoComponent from './components/ProductInfoComponent';
-import ProductPageNavbarComponent from '../../common/components/ProductPageNavbarComponent';
+import ProductPageNavbarComponent from '../../common/components/ProductPageNavbarComponent/ProductPageNavbarComponent';
 
 const ProductPageContainer = ({ singleProduct }) => {
   const {

@@ -8,9 +8,9 @@ import PropTypes from 'prop-types';
 import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
-import CategoryFilterComponent from './components/CategoryComponentv2';
+import CategoryFilterComponent from './components/CategoryComponent';
 import filterCategory from '../../state/categoryFilter/categoryActions';
-import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent';
+import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent/HomePageNavbarComponent';
 
 const HomePageContainer = ({
   filterCategory, categoryData, productData, fetchProducts, fetchProductID,
@@ -26,8 +26,6 @@ const HomePageContainer = ({
   const history = useHistory();
 
   const itemClickThrough = product => {
-    // eslint-disable-next-line no-console
-    console.log('itemClickThrough');
     fetchProductID(product);
     history.push(`/${product.gender}/${product.type}/${product.id}`);
   };

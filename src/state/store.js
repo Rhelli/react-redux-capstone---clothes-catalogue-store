@@ -3,14 +3,10 @@ import { persistStore, persistReducer } from 'redux-persist';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';
-import shoppingBasketReducer from './shoppingBasket/shoppingBasketReducer';
 import categoryReducer from './categoryFilter/categoryReducer';
-import currencyReducer from './currencyFilter/currencyReducer';
 import productReducer from './product/productReducer';
 
 const root = combineReducers({
-  basketStore: shoppingBasketReducer,
-  currencyStore: currencyReducer,
   categoryStore: categoryReducer,
   productStore: productReducer,
 });

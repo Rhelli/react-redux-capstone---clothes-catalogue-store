@@ -42,8 +42,6 @@ const initialState = {
 };
 
 const categoryReducer = (state = initialState, action) => {
-  // eslint-disable-next-line no-console
-  console.log('categoryReducerCalled');
   switch (action.type) {
     case FILTER_CATEGORY: return {
       ...state,

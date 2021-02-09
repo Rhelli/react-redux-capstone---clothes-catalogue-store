@@ -17,14 +17,14 @@ const FilterTagsComponent = props => {
             data-name="male"
             onClick={event => enableSelectedFilter(event, 'genderFilter')}
           >
-            <h6 data-name="male">Mens</h6>
+            <h6 data-name="male">Men&apo;s</h6>
           </div>
           <div
             className={styles.tag}
             data-name="female"
             onClick={event => enableSelectedFilter(event, 'genderFilter')}
           >
-            <h6 data-name="female">Womens</h6>
+            <h6 data-name="female">Women&apos;s</h6>
           </div>
         </div>
       </div>
