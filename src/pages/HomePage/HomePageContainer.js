@@ -10,9 +10,10 @@ import ProductListComponent from './components/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterComponent from './components/CategoryComponentv2';
 import filterCategory from '../../state/categoryFilter/categoryActions';
+import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent';
 
 const HomePageContainer = ({
-  filterCategory, categoryData, productData, fetchProducts,
+  filterCategory, categoryData, productData, fetchProducts, fetchProductID,
 }) => {
   useEffect(() => {
     fetchProducts();
@@ -25,8 +26,10 @@ const HomePageContainer = ({
   const history = useHistory();
 
   const itemClickThrough = product => {
+    // eslint-disable-next-line no-console
+    console.log('itemClickThrough');
     fetchProductID(product);
-    history.push(`/products/${product.gender}/${product.type}/${product.id}`);
+    history.push(`/${product.gender}/${product.type}/${product.id}`);
   };
 
   const enableSelectedFilter = (event, filter) => {
@@ -50,8 +53,6 @@ const HomePageContainer = ({
       if (colorFilter[colorKey]) activeFilters.colorTool.push(colorKey);
     }
 
-    // eslint-disable-next-line no-console
-    console.log(activeFilters);
     return activeFilters;
   };
 
@@ -73,6 +74,7 @@ const HomePageContainer = ({
     <h2>{productData.error}</h2>
   ) : (
     <div>
+      <HomePageNavbarComponent />
       <CategoryFilterComponent
         enableSelectedFilter={enableSelectedFilter}
         categoryData={categoryData}
@@ -122,6 +124,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   fetchProducts: () => dispatch(fetchProducts()),
   filterCategory: (event, filter) => dispatch(filterCategory(event, filter)),
+  fetchProductID: item => dispatch(fetchProductID(item)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer);

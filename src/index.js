@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './state/store';
-import './index.css';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from './state/store';
+import './index.scss';
 import Routes from './routes';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Routes />
+      <PersistGate loading={null} persistor={persistor}>
+        <Routes />
+      </PersistGate>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

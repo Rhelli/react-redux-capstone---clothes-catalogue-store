@@ -2,11 +2,13 @@ import {
   FETCH_PRODUCTS_REQUEST,
   FETCH_PRODUCTS_SUCCESS,
   FETCH_PRODUCTS_FAILURE,
+  FETCH_PRODUCT_ID,
 } from './productTypes';
 
 const initialState = {
   loading: true,
   products: [],
+  singleProduct: [],
   error: '',
 };
 
@@ -30,6 +32,14 @@ const productReducer = (state = initialState, action) => {
       products: [],
       error: action.payload,
     };
+
+    case FETCH_PRODUCT_ID:
+      // eslint-disable-next-line no-console
+      console.log('fetching id...');
+      return {
+        ...state,
+        singleProduct: action.payload,
+      };
 
     default: return {
       ...state,
