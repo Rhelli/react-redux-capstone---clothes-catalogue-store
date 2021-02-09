@@ -1,4 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';
 import shoppingBasketReducer from './shoppingBasket/shoppingBasketReducer';
 import categoryReducer from './categoryFilter/categoryReducer';
@@ -12,6 +14,14 @@ const root = combineReducers({
   productStore: productReducer,
 });
 
-const store = createStore(root, applyMiddleware(thunk));
+const persistConfig = {
+  key: 'root',
+  storage,
+};
 
-export default store;
+const persistedReducer = persistReducer(persistConfig, root);
+
+const store = createStore(persistedReducer, applyMiddleware(thunk));
+const persistor = persistStore(store);
+
+export { store, persistor };
