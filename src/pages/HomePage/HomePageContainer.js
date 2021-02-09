@@ -10,6 +10,7 @@ import ProductListComponent from './components/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterComponent from './components/CategoryComponentv2';
 import filterCategory from '../../state/categoryFilter/categoryActions';
+import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent';
 
 const HomePageContainer = ({
   filterCategory, categoryData, productData, fetchProducts, fetchProductID,
@@ -73,6 +74,7 @@ const HomePageContainer = ({
     <h2>{productData.error}</h2>
   ) : (
     <div>
+      <HomePageNavbarComponent />
       <CategoryFilterComponent
         enableSelectedFilter={enableSelectedFilter}
         categoryData={categoryData}

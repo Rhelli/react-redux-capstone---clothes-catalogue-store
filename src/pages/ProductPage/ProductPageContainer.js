@@ -2,24 +2,39 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import ProductImageComponent from './components/ProductImageComponent';
+import ProductInfoComponent from './components/ProductInfoComponent';
+import ProductPageNavbarComponent from '../../common/components/ProductPageNavbarComponent';
 
 const ProductPageContainer = ({ singleProduct }) => {
   const {
-    type, images, brandName,
+    id, gender, type, images, brandName, productName, price,
+    color, productDetails, productDesc, madeOf,
   } = singleProduct;
 
-  console.log(images);
-
-  // eslint-disable-next-line no-console
-  console.log(singleProduct);
-
   return (
-    <div styles="height: 100px; width: 100px; background-color: red;">
-      <ProductImageComponent
-        images={images}
-        brandName={brandName}
-        type={type}
-      />
+    <div>
+      <ProductPageNavbarComponent />
+      <div>
+        <ProductImageComponent
+          images={images}
+          brandName={brandName}
+          type={type}
+        />
+      </div>
+      <div>
+        <ProductInfoComponent
+          id={id}
+          gender={gender}
+          type={type}
+          brandName={brandName}
+          productName={productName}
+          price={price}
+          color={color}
+          productDetails={productDetails}
+          productDesc={productDesc}
+          madeOf={madeOf}
+        />
+      </div>
     </div>
   );
 };
@@ -31,9 +46,17 @@ const mapStateToProps = state => ({
 
 ProductPageContainer.propTypes = {
   singleProduct: PropTypes.shape({
+    gender: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     brandName: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    productName: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    productDetails: PropTypes.arrayOf(PropTypes.string).isRequired,
+    productDesc: PropTypes.string.isRequired,
+    madeOf: PropTypes.string.isRequired,
   }).isRequired,
 };
 
