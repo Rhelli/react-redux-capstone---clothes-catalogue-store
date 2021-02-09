@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import styles from './ProductImageComponent.module.scss';
 
 SwiperCore.use([Navigation, Scrollbar, A11y]);
 
@@ -16,16 +17,14 @@ const ProductImageComponent = ({ images, brandName, type }) => (
     spaceBetween={50}
     slidesPerView={1}
     navigation
-    loop
-    initialSlide={0}
-    scrollbar={{ draggable: true }}
     onSlideChange={() => console.log('slide change')}
     onSwiper={swiper => console.log(swiper)}
+    className={styles.swiperGallery}
   >
     {
       images.map((image, index) => (
-        <SwiperSlide key={`${brandName}-${index}`}>
-          <img src={image} alt={`${brandName} ${type}`} />
+        <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index}`}>
+          <img className={styles.swiperGalleryImage} src={image} alt={`${brandName} ${type}`} />
         </SwiperSlide>
       ))
     }
