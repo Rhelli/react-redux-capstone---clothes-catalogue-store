@@ -1,0 +1,31 @@
+.filterInputContainer {
+  margin: 10px 0 10px 0;
+  position: relative;
+  display: inline-block;
+
+  &:hover .filterInputDropdown {
+    display: block;
+  }
+
+  h3 {
+    padding: 6px 16px;
+    font: 400 20px/20px 'Source Sans Pro', monospace;
+  }
+}
+
+.filterIcon {
+  font-size: 14px;
+  color: #303030;
+  margin: 0 0 1px 0;
+}
+
+.filterInputDropdown {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  width: 100vw;
+  z-index: 1;
+  background-color: #fdf2e9;
+  border-top: 1px solid #ede4dc;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import CategoryTagsComponent from '../CategoryTagsComponent/CategoryTagsComponent';
 import FilterTagsComponent from '../FilterTagsComponent/FilterTagsComponent';
+import styles from './CategoryFilterInputComponent.module.scss';
 
 const CategoryFilterInputComponent = props => {
   const {
@@ -9,17 +12,23 @@ const CategoryFilterInputComponent = props => {
   } = props;
 
   return (
-    <div>
-      <div>
-        <FilterTagsComponent
-          enableSelectedFilter={enableSelectedFilter}
-        />
-      </div>
-      <div>
-        <CategoryTagsComponent
-          enableSelectedFilter={enableSelectedFilter}
-          categoryData={categoryData}
-        />
+    <div className={styles.filterInputContainer}>
+      <h3>
+        Filters&nbsp;
+        <FontAwesomeIcon className={styles.filterIcon} icon={faFilter} />
+      </h3>
+      <div className={styles.filterInputDropdown}>
+        <div>
+          <FilterTagsComponent
+            enableSelectedFilter={enableSelectedFilter}
+          />
+        </div>
+        <div>
+          <CategoryTagsComponent
+            enableSelectedFilter={enableSelectedFilter}
+            categoryData={categoryData}
+          />
+        </div>
       </div>
     </div>
   );

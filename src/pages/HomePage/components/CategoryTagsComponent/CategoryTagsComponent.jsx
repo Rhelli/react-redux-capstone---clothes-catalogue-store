@@ -10,7 +10,7 @@ const CategoryTagsComponent = props => {
   } = props;
 
   return (
-    <div className="categoryTagsComponentContainer">
+    <div className="categoryTagsContainer">
       { categoryData.genderFilter.male ? (
         <div
           data-name="male"

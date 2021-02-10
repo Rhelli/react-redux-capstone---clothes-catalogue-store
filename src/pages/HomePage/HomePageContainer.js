@@ -5,7 +5,6 @@ import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fetchProducts from '../../api/clothesAPI';
 import ProductListComponent from './components/ProductListComponent/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
@@ -31,10 +30,6 @@ const HomePageContainer = ({
     history.push(`/${product.gender}/${product.type}/${product.id}`);
   };
 
-  const enableSelectedFilter = (event, filter) => {
-    filterCategory(event.target.dataset.name, filter);
-  };
-
   const activeFilters = () => {
     const activeFilters = {
       gender: [],
@@ -51,8 +46,11 @@ const HomePageContainer = ({
     for (const colorKey in colorFilter) {
       if (colorFilter[colorKey]) activeFilters.colorTool.push(colorKey);
     }
-
     return activeFilters;
+  };
+
+  const enableSelectedFilter = (event, filter) => {
+    filterCategory(event.target.dataset.name, filter);
   };
 
   const multiPropsFilter = (products, filters) => {
@@ -74,10 +72,6 @@ const HomePageContainer = ({
   ) : (
     <div>
       <HomePageNavbarComponent />
-      <h3>
-        Filters
-        <FontAwesomeIcon icon="fas fa-filter" />
-      </h3>
       <CategoryFilterInputComponent
         enableSelectedFilter={enableSelectedFilter}
         categoryData={categoryData}

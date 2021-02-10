@@ -2,21 +2,77 @@
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  height: 40vh;
-  margin-bottom: 100px;
+  height: auto;
+  padding: 10px;
 }
 
 .filterCategory {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  border: 1px solid red;
 }
 
 .categoryTags {
   display: flex;
   flex-flow: row nowrap;
-  width: auto;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 8px 0;
+
+  div {
+    margin-right: 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 1px 4px -1px rgba(71,71,71,1);
+    -moz-box-shadow: 0px 1px 4px -1px rgba(71,71,71,1);
+    box-shadow: 0px 1px 4px -1px rgba(71,71,71,1);
+  }
+
+  h6 {
+    padding: 8px 12px;
+    font: 700 14px/14px 'Source Sans Pro', monospace;
+    white-space: nowrap;
+  }
+
+  .male {
+    background-color: #5DADE2;
+  }
+
+  .female {
+    background-color: #F8BBD0;
+  }
+
+  .jacket {
+    background-color: #F7DC6F;
+  }
+
+  .jeans {
+    background-color: #E59866;
+  }
+
+  .shirts {
+    background-color: #CDDC39;
+  }
+
+  .tops {
+    background-color: #880E4F;
+  }
+
+  .dresses {
+    background-color: #4DB6AC;
+  }
+
+  .multi {
+    background-image: linear-gradient(
+      to right,
+      #64b5f6,
+      #4dd0e1 20%,
+      #81c784 40%,
+      #dce775 60%,
+      #ffb74d 80%,
+      #ba68c8
+    );
+    border: 1px solid #ffffff;
+  }
 }
 
 .colorCategory {
