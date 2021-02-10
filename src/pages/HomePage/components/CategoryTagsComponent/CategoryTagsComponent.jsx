@@ -3,6 +3,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
+import getColorPreview from '../../../../utils/colorUtil';
+import styles from './CategoryTagsComponent.module.scss';
 
 const CategoryTagsComponent = props => {
   const {
@@ -10,221 +12,248 @@ const CategoryTagsComponent = props => {
   } = props;
 
   return (
-    <div className="categoryTagsContainer">
+    <div className={styles.categoryTagsContainer}>
       { categoryData.genderFilter.male ? (
         <div
           data-name="male"
+          className={styles.male}
           onClick={event => enableSelectedFilter(event, 'genderFilter')}
         >
-          <h6 data-name="male">Mens</h6>
+          <h6 data-name="male">Mens&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.genderFilter.female ? (
         <div
           data-name="female"
+          className={styles.female}
           onClick={event => enableSelectedFilter(event, 'genderFilter')}
         >
-          <h6 data-name="female">Womens</h6>
+          <h6 data-name="female">Womens&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.clothesFilter.jacket ? (
         <div
           data-name="jacket"
+          className={styles.jacket}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="jacket">Coats & Jackets</h6>
+          <h6 data-name="jacket">Coats & Jackets&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.clothesFilter.jeans ? (
         <div
           data-name="jeans"
+          className={styles.jeans}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="jeans">Jeans</h6>
+          <h6 data-name="jeans">Jeans&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.clothesFilter.shirts ? (
         <div
           data-name="shirts"
+          className={styles.shirts}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="shirts">Shirts</h6>
+          <h6 data-name="shirts">Shirts&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.clothesFilter.tops ? (
         <div
           data-name="tops"
+          className={styles.tops}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="tops">Tops</h6>
+          <h6 data-name="tops">Tops&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.clothesFilter.dresses ? (
         <div
           data-name="dresses"
+          className={styles.dresses}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
         >
-          <h6 data-name="dresses">Dresses</h6>
+          <h6 data-name="dresses">Dresses&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.black ? (
         <div
           data-name="black"
+          style={getColorPreview('black')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="black">Black</h6>
+          <h6 data-name="black">Black&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.darkestSpruce ? (
         <div
           data-name="darkestSpruce"
+          style={getColorPreview('darkestSpruce')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="darkestSpruce">Darkest Spruce</h6>
+          <h6 data-name="darkestSpruce">Darkest Spruce&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.multi ? (
         <div
           data-name="multi"
+          className={styles.multi}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="multi">Multi</h6>
+          <h6 data-name="multi">Multi&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.blue ? (
         <div
           data-name="blue"
+          style={getColorPreview('blue')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="blue">Blue</h6>
+          <h6 data-name="blue">Blue&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.blueDenim ? (
         <div
           data-name="blueDenim"
+          style={getColorPreview('blueDenim')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="blueDenim">Blue Denim</h6>
+          <h6 data-name="blueDenim">Blue Denim&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null }
       { categoryData.colorFilter.navy ? (
         <div
           data-name="navy"
+          style={getColorPreview('navy')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="navy">Navy</h6>
+          <h6 data-name="navy">Navy&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.green ? (
         <div
           data-name="green"
+          style={getColorPreview('green')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="green">Green</h6>
+          <h6 data-name="green">Green&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.white ? (
         <div
           data-name="white"
+          style={getColorPreview('white')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="white">White</h6>
+          <h6 data-name="white">White&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.grape ? (
         <div
           data-name="grape"
+          style={getColorPreview('grape')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="grape">Grape</h6>
+          <h6 data-name="grape">Grape&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.khaki ? (
         <div
           data-name="khaki"
+          style={getColorPreview('khaki')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="khaki">Khaki</h6>
+          <h6 data-name="khaki">Khaki&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.grey ? (
         <div
           data-name="grey"
+          style={getColorPreview('grey')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="grey">Grey</h6>
+          <h6 data-name="grey">Grey&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.vintageIndigo ? (
         <div
           data-name="vintageIndigo"
+          style={getColorPreview('vintageIndigo')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="vintageIndigo">Vintage Indigo</h6>
+          <h6 data-name="vintageIndigo">Vintage Indigo&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.mineralBlue ? (
         <div
           data-name="mineralBlue"
+          style={getColorPreview('mineralBlue')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="mineralBlue">Mineral Blue</h6>
+          <h6 data-name="mineralBlue">Mineral Blue&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.charcoal ? (
         <div
           data-name="charcoal"
+          style={getColorPreview('charcoal')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="charcoal">Charcoal</h6>
+          <h6 data-name="charcoal">Charcoal&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.tan ? (
         <div
           data-name="tan"
+          style={getColorPreview('tan')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="tan">Tan</h6>
+          <h6 data-name="tan">Tan&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.dustyBlue ? (
         <div
           data-name="dustyBlue"
+          style={getColorPreview('dustyBlue')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="dustyBlue">Dusty Blue</h6>
+          <h6 data-name="dustyBlue">Dusty Blue&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.midwash ? (
         <div
           data-name="midwash"
+          style={getColorPreview('midwash')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="midwash">Midwash</h6>
+          <h6 data-name="midwash">Midwash&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.red ? (
         <div
           data-name="red"
+          style={getColorPreview('red')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="red">Red</h6>
+          <h6 data-name="red">Red&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.rose ? (
         <div
           data-name="rose"
+          style={getColorPreview('rose')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="rose">Rose</h6>
+          <h6 data-name="rose">Rose&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
       { categoryData.colorFilter.lilac ? (
         <div
           data-name="lilac"
+          style={getColorPreview('lilac')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
         >
-          <h6 data-name="lilac">Lilac</h6>
+          <h6 data-name="lilac">Lilac&nbsp;&nbsp;&nbsp;×</h6>
         </div>
       ) : null}
     </div>

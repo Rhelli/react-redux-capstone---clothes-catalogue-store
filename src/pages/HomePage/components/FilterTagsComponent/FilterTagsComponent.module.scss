@@ -20,9 +20,9 @@
 .categoryTags {
   display: flex;
   flex-flow: row nowrap;
-  width: 98%;
+  width: 100%;
   overflow-x: scroll;
-  padding: 10px 0;
+  padding: 10px 0 10px 2px;
 
   div {
     margin-right: 10px;
