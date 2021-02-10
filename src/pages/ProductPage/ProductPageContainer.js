@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ProductImageComponent from './components/ProductImageComponent/ProductImageComponent';
 import ProductInfoComponent from './components/ProductInfoComponent/ProductInfoComponent';
 import ProductPageNavbarComponent from '../../common/components/ProductPageNavbarComponent/ProductPageNavbarComponent';
+import styles from './ProductPageContainer.module.scss';
 
 const ProductPageContainer = ({ singleProduct }) => {
   const {
@@ -12,7 +13,7 @@ const ProductPageContainer = ({ singleProduct }) => {
   } = singleProduct;
 
   return (
-    <div>
+    <div className={styles.productPageContainer}>
       <ProductPageNavbarComponent />
       <div>
         <ProductImageComponent

@@ -3,22 +3,20 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
-import SwiperCore, { Navigation, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import styles from './ProductImageComponent.module.scss';
 
-SwiperCore.use([Navigation, Scrollbar, A11y]);
+SwiperCore.use([Pagination, Scrollbar, A11y]);
 
 const ProductImageComponent = ({ images, brandName, type }) => (
   <Swiper
     spaceBetween={50}
     slidesPerView={1}
-    navigation
-    onSlideChange={() => console.log('slide change')}
-    onSwiper={swiper => console.log(swiper)}
+    pagination
     className={styles.swiperGallery}
   >
     {
