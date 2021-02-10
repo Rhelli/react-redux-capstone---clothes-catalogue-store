@@ -1,22 +1,40 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import CategoryFilterInputComponent from './CategoryFilterInputComponent';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import CategoryTagsComponent from '../CategoryTagsComponent/CategoryTagsComponent';
+import FilterTagsComponent from '../FilterTagsComponent/FilterTagsComponent';
+import styles from './CategoryFilterInputComponent.module.scss';
 
-const CategoryFilterComponent = props => {
-  const { categoryData, enableSelectedFilter } = props;
+const CategoryFilterInputComponent = props => {
+  const {
+    categoryData, enableSelectedFilter,
+  } = props;
+
   return (
-    <div>
-      <div>
-        <CategoryFilterInputComponent
-          categoryData={categoryData}
-          enableSelectedFilter={enableSelectedFilter}
-        />
+    <div className={styles.filterInputContainer}>
+      <h3>
+        Filters&nbsp;
+        <FontAwesomeIcon className={styles.filterIcon} icon={faFilter} />
+      </h3>
+      <div className={styles.filterInputDropdown}>
+        <div>
+          <FilterTagsComponent
+            enableSelectedFilter={enableSelectedFilter}
+          />
+        </div>
+        <div>
+          <CategoryTagsComponent
+            enableSelectedFilter={enableSelectedFilter}
+            categoryData={categoryData}
+          />
+        </div>
       </div>
     </div>
   );
 };
 
-CategoryFilterComponent.propTypes = {
+CategoryFilterInputComponent.propTypes = {
   enableSelectedFilter: PropTypes.func.isRequired,
   categoryData: PropTypes.shape({
     clothesFilter: PropTypes.shape({
@@ -55,4 +73,4 @@ CategoryFilterComponent.propTypes = {
   }).isRequired,
 };
 
-export default CategoryFilterComponent;
+export default CategoryFilterInputComponent;

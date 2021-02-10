@@ -6,17 +6,18 @@ import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import fetchProducts from '../../api/clothesAPI';
-import ProductListComponent from './components/ProductListComponent';
+import ProductListComponent from './components/ProductListComponent/ProductListComponent';
 import { fetchProductID } from '../../state/product/productActions';
-import CategoryFilterComponent from './components/CategoryComponent';
+import CategoryFilterInputComponent from './components/CategoryFilterInputComponent/CategoryFilterInputComponent';
 import filterCategory from '../../state/categoryFilter/categoryActions';
 import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent/HomePageNavbarComponent';
+import styles from './HomePageContainer.module.scss';
 
 const HomePageContainer = ({
   filterCategory, categoryData, productData, fetchProducts, fetchProductID,
 }) => {
   useEffect(() => {
-    fetchProducts();
+    fetchProducts(productData);
   }, []);
 
   const {
@@ -28,10 +29,6 @@ const HomePageContainer = ({
   const itemClickThrough = product => {
     fetchProductID(product);
     history.push(`/${product.gender}/${product.type}/${product.id}`);
-  };
-
-  const enableSelectedFilter = (event, filter) => {
-    filterCategory(event.target.dataset.name, filter);
   };
 
   const activeFilters = () => {
@@ -50,8 +47,11 @@ const HomePageContainer = ({
     for (const colorKey in colorFilter) {
       if (colorFilter[colorKey]) activeFilters.colorTool.push(colorKey);
     }
-
     return activeFilters;
+  };
+
+  const enableSelectedFilter = (event, filter) => {
+    filterCategory(event.target.dataset.name, filter);
   };
 
   const multiPropsFilter = (products, filters) => {
@@ -71,14 +71,16 @@ const HomePageContainer = ({
   ) : productData.error ? (
     <h2>{productData.error}</h2>
   ) : (
-    <div>
+    <div className={styles.homePageContainer}>
       <HomePageNavbarComponent />
-      <CategoryFilterComponent
-        enableSelectedFilter={enableSelectedFilter}
-        categoryData={categoryData}
-      />
-      <h2>Product List</h2>
-      <div>
+      <div className={styles.titleCategoryContainer}>
+        <h2 className={styles.productListTitle}>Our Collection</h2>
+        <CategoryFilterInputComponent
+          enableSelectedFilter={enableSelectedFilter}
+          categoryData={categoryData}
+        />
+      </div>
+      <div className={styles.productListContainer}>
         {
           multiPropsFilter(productData.products, activeFilters()).map(item => (
             <ProductListComponent

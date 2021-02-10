@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePageContainer from './pages/HomePage/HomePageContainer';
 import ProductPageContainer from './pages/ProductPage/ProductPageContainer';

@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './ProductListImageComponent.module.scss';
 
 const ProductListImageComponent = ({ images }) => (
-  <div>
-    <div>
-      <img alt="" src={images} />
-    </div>
+  <div className={styles.productListImage}>
+    <img alt="" src={images} />
   </div>
 );
 

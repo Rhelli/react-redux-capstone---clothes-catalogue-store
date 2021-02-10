@@ -2,8 +2,9 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProductListImageComponent from './ProductListImageComponent';
-import ProductListInfoComponent from './ProductListInfoComponent';
+import ProductListImageComponent from '../ProductListImageComponent/ProductListImageComponent';
+import ProductListInfoComponent from '../ProductListInfoComponent/ProductListInfoComponent';
+import styles from './ProductListComponent.module.scss';
 
 const ProductListComponent = props => {
   const {
@@ -11,7 +12,7 @@ const ProductListComponent = props => {
   } = props;
 
   return (
-    <div onClick={itemClickThrough}>
+    <div className={styles.productListItem} onClick={itemClickThrough}>
       <ProductListImageComponent images={images} />
       <ProductListInfoComponent
         productName={productName}
