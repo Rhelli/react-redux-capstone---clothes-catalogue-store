@@ -10,14 +10,19 @@
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
+  margin-bottom: 5px;
+
+  h4 {
+    font: 700 18px/18px 'Playfair Display', monospace;
+  }
 }
 
 .categoryTags {
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 98%;
   overflow-x: scroll;
-  padding: 8px 0;
+  padding: 10px 0;
 
   div {
     margin-right: 10px;
@@ -35,30 +40,44 @@
 
   .male {
     background-color: #5DADE2;
+    border-bottom: 2px solid #4682A9;
+    color: #D6EAF8;
   }
 
   .female {
     background-color: #F8BBD0;
+    border-bottom: 2px solid #BA8C9C;
+    color: #5D464E;
   }
 
   .jacket {
     background-color: #F7DC6F;
+    border-bottom: 2px solid #B9A553;
+    color: #7B6E37;
   }
 
   .jeans {
     background-color: #E59866;
+    border-bottom: 2px solid #AC724D;
+    color: #563926;
   }
 
   .shirts {
     background-color: #CDDC39;
+    border-bottom: 2px solid #9AA52B;
+    color: #808924;
   }
 
   .tops {
     background-color: #880E4F;
+    border-bottom: 2px solid #660A3B;
+    color: #E1C3D3;
   }
 
   .dresses {
     background-color: #4DB6AC;
+    border-bottom: 2px solid #3A8981;
+    color: #D3EDEA;
   }
 
   .multi {
@@ -71,7 +90,10 @@
       #ffb74d 80%,
       #ba68c8
     );
-    border: 1px solid #ffffff;
+    border-top: 2px solid #E1C3D3;
+    border-right: 2px solid #ba68c8;
+    border-bottom: 2px solid #81c784;
+    border-left: 2px solid #64b5f6;
   }
 }
 
