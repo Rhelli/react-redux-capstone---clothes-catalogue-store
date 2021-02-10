@@ -1,0 +1,18 @@
+.productListInfoContainer {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.productListInfoNameContainer {
+  h3 {
+    padding: 4px 0;
+    font: 400 16px/16px 'Playfair Display', monospace;
+  }
+}
+
+.productListInfoPriceContainer {
+  h5 {
+    font: 400 12px/12px 'Source Sans Pro', monospace;
+  }
+}

@@ -11,6 +11,7 @@ import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterInputComponent from './components/CategoryFilterInputComponent/CategoryFilterInputComponent';
 import filterCategory from '../../state/categoryFilter/categoryActions';
 import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent/HomePageNavbarComponent';
+import styles from './HomePageContainer.module.scss';
 
 const HomePageContainer = ({
   filterCategory, categoryData, productData, fetchProducts, fetchProductID,
@@ -70,14 +71,16 @@ const HomePageContainer = ({
   ) : productData.error ? (
     <h2>{productData.error}</h2>
   ) : (
-    <div>
+    <div className={styles.homePageContainer}>
       <HomePageNavbarComponent />
-      <CategoryFilterInputComponent
-        enableSelectedFilter={enableSelectedFilter}
-        categoryData={categoryData}
-      />
-      <h2>Product List</h2>
-      <div>
+      <div className={styles.titleCategoryContainer}>
+        <h2 className={styles.productListTitle}>Our Collection</h2>
+        <CategoryFilterInputComponent
+          enableSelectedFilter={enableSelectedFilter}
+          categoryData={categoryData}
+        />
+      </div>
+      <div className={styles.productListContainer}>
         {
           multiPropsFilter(productData.products, activeFilters()).map(item => (
             <ProductListComponent

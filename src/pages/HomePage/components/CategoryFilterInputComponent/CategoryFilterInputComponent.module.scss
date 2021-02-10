@@ -1,7 +1,7 @@
 .filterInputContainer {
-  margin: 10px 0 10px 1px;
   position: relative;
   display: inline-block;
+  margin-left: auto;
 
   &:hover .filterInputDropdown {
     display: block;
@@ -15,6 +15,12 @@
     color: #E5E5E5;
     border-radius: 35px;
     width: auto;
+    transition: 0.15s;
+
+    &:hover {
+      background-color: #181818;
+      transition: 0.15s;
+    }
   }
 }
 
@@ -27,6 +33,7 @@
 .filterInputDropdown {
   display: none;
   position: absolute;
+  right: -5px;
   margin-top: 5px;
   margin-left: -1px;
   width: 100vw;
