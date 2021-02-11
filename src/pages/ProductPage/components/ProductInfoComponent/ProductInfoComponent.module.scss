@@ -1,6 +1,6 @@
 .productInfoContainer {
   width: 100%;
-  padding: 20px;
+  padding: 20px 30px;
   background-color: #fdf2e9;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -12,7 +12,7 @@
 .productInfoSiteMap {
   display: flex;
   flex-flow: row nowrap;
-  font: 400 12px/12px 'Source Sans Pro', monospace;
+  font: 400 14px/14px 'Source Sans Pro', monospace;
   color: #808B96;
   padding: 6px 0;
 
@@ -24,12 +24,12 @@
 .productInfoTitleBrand {
   padding: 6px 0;
   h2 {
-    font: 700 32px/32px 'Playfair Display', monospace;
-    margin-bottom: 6px;
+    font: 700 36px/36px 'Playfair Display', monospace;
+    margin-bottom: 20px;
   }
 
   h3 {
-    font: 400 22px/22px 'Source Sans Pro', monospace;
+    font: 400 28px/28px 'Source Sans Pro', monospace;
     color: #5F5B57;
   }
 }
@@ -38,7 +38,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  padding: 8px 0;
+  padding: 20px 0;
 
   .productInfoColorPreview {
     display: flex;
@@ -59,9 +59,9 @@
       margin-left: 10px;
       border-radius: 8px;
       background-color: #ffffff;
--webkit-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
--moz-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+      -webkit-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+      -moz-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+      box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
 
       div {
         height: 20px;
@@ -83,9 +83,9 @@ box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
         background-color: white;
         -webkit-appearance: none;
         -moz-appearance: none;
--webkit-box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
--moz-box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
-box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
+        -webkit-box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
+        -moz-box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
+        box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
       }
 
       input[type="radio"]:focus {
@@ -115,5 +115,119 @@ box-shadow: inset 0px 0px 9px -3px rgba(207,207,207,1);
 
 
     }
+  }
+}
+
+.productInfoLikeBuy {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  margin-right: auto;
+  border-bottom: 3px solid #EDE4DC;
+
+  .infoLikeButton {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+    -moz-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+    box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+    transition: 0.15s;
+
+    svg {
+      transition: 0.15s;
+      color: #909090 !important;
+    }
+
+    .likeButtonIcon {
+      font-size: 26px;
+    }
+
+    &:hover {
+      transition: 0.15s;
+      background-color: #F9EBEA;
+      -webkit-box-shadow: 0px 0px 4px -2px rgba(130,130,130,1);
+      -moz-box-shadow: 0px 0px 4px -2px rgba(130,130,130,1);
+      box-shadow: 0px 0px 4px -2px rgba(130,130,130,1);
+
+      svg {
+        transition: 0.15s;
+        color: #808080 !important;
+      }
+    }
+
+    &:focus {
+      outline: none;
+
+      svg {
+        color: #E74C3C !important;
+      }
+    }
+  }
+
+  .productInfoBuyButton {
+    margin-left: auto;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 180px;
+      border: none;
+      border-radius: 8px;
+      background-color: #B2EBF2;
+      font: 400 22px/22px 'Source Sans Pro', monospace;
+      color: #F8F9F9;
+      -webkit-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+      -moz-box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+      box-shadow: 0px 0px 7px -2px rgba(130,130,130,1);
+      transition: 0.15s;
+
+      svg {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background-color: #85B0B5;
+        transition: 0.15s;
+        -webkit-box-shadow: 0px 0px 5px -2px rgba(130,130,130,1);
+        -moz-box-shadow: 0px 0px 5px -2px rgba(130,130,130,1);
+        box-shadow: 0px 0px 5px -2px rgba(130,130,130,1);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.productDescription {
+  padding: 20px 0 0 0;
+  font: 400 20px/24px 'Source Sans Pro', monospace;
+  color: #303030;
+}
+
+.productDetailsList {
+  font: 400 16px/24px 'Source Sans Pro', monospace;
+  border-bottom: 3px solid #EDE4DC;
+  ul {
+    padding-left: 20px;
+  }
+}
+
+.productExtraInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px 0 10px 0;
+  font: 400 14px/14px 'Source Sans Pro', monospace;
+
+  .madeOf {
+    margin-bottom: 10px
   }
 }

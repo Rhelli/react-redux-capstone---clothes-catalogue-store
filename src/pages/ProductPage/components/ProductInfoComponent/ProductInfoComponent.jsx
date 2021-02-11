@@ -1,6 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { genderParse, caseParse } from '../../../../utils';
 import getColorPreview from '../../../../utils/colorUtil';
 import styles from './ProductInfoComponent.module.scss';
@@ -50,36 +52,35 @@ const ProductInfoComponent = props => {
           </span>
         </div>
       </div>
-      <div>
-        <div>
-          <div>
-            Like
-          </div>
-          <div>
-            <button type="button">{`${price} →`}</button>
-          </div>
+      <div className={styles.productInfoLikeBuy}>
+        <button type="button" className={styles.infoLikeButton}>
+          <FontAwesomeIcon icon={faHeart} className={styles.likeButtonIcon} />
+        </button>
+        <div className={styles.productInfoBuyButton}>
+          <button type="button">
+            {`£${price}`}
+            <FontAwesomeIcon className={styles.buyNowIcon} icon={faShoppingBag} />
+          </button>
         </div>
       </div>
-      <div>
+      <div className={styles.productDescription}>
         <p>{productDesc}</p>
       </div>
-      <div>
-        <div>
-          <ul>
-            {
-              productDetails.map((detail, index) => (
-                <li key={`${id}-${index}`}>{detail}</li>
-              ))
-            }
-          </ul>
-        </div>
+      <div className={styles.productDetailsList}>
+        <ul>
+          {
+            productDetails.map((detail, index) => (
+              <li key={`${id}-${index}`}>{detail}</li>
+            ))
+          }
+        </ul>
       </div>
-      <div>
-        <div>
-          <h4>{madeOf}</h4>
+      <div className={styles.productExtraInfo}>
+        <div className={styles.madeOf}>
+          <p>{madeOf}</p>
         </div>
-        <div>
-          <h4>{`ID: ${id}`}</h4>
+        <div className={styles.productID}>
+          <p>{`ID: ${id}`}</p>
         </div>
       </div>
     </div>
