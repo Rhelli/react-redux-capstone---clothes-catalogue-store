@@ -95,6 +95,13 @@ const getColorPreview = color => {
       color: '#F7EFF9',
       borderBottom: '2px solid #A98FAD',
     };
+    case 'multi': return {
+      backgroundImage: 'linear-gradient(to right, #64b5f6 0%, #4dd0e1 20%, #81c784 40%, #dce775 60%, #ffb74d 80%, #ba68c 100%)',
+      borderTop: '2px solid #E1C3D3',
+      borderRight: '2px solid #ba68c8',
+      borderBottom: '2px solid #81c784',
+      borderLeft: '2px solid #64b5f6',
+    };
     default: return {
       backgroundColor: '#00FF33',
     };

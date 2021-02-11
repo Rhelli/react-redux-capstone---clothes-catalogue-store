@@ -1,8 +1,11 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { genderParse, caseParse } from '../../../../utils';
 import getColorPreview from '../../../../utils/colorUtil';
+import styles from './ProductInfoComponent.module.scss';
 
 const ProductInfoComponent = props => {
   const {
@@ -11,72 +14,73 @@ const ProductInfoComponent = props => {
   } = props;
 
   return (
-    <div>
-      <div>
+    <div className={styles.productInfoContainer}>
+      <div className={styles.productInfoSiteMap}>
         <span><p>{genderParse(gender)}</p></span>
-        <span><p> · </p></span>
+        <span><p>&nbsp;›&nbsp;</p></span>
         <span><p>{caseParse(type)}</p></span>
       </div>
-      <div>
+      <div className={styles.productInfoTitleBrand}>
         <h2>{productName}</h2>
         <h3>{brandName}</h3>
       </div>
-      <div>
-        <div>
-          <span><p>{color}</p></span>
-          <span><div style={getColorPreview(colorTool)} /></span>
+      <div className={styles.productInfoColorSize}>
+        <div className={styles.productInfoColorPreview}>
+          <p>{color}</p>
+          <div className={styles.colorPreviewContainer}>
+            <div style={getColorPreview(colorTool)} />
+          </div>
         </div>
-        <div>
-          <span>
+        <div className={styles.productInfoSizeSelect}>
+          <span className={styles.sizeButtonContainer}>
             <label htmlFor="small">
               <input type="radio" id="small" name="size" value="small" />
-              S
+              <span>S</span>
             </label>
           </span>
-          <span>
+          <span className={styles.sizeButtonContainer}>
             <label htmlFor="medium">
               <input type="radio" id="medium" name="size" value="medium" />
-              M
+              <span className={styles.sizeLabelM}>M</span>
             </label>
           </span>
-          <span>
+          <span className={styles.sizeButtonContainer}>
             <label htmlFor="large">
               <input type="radio" id="large" name="size" value="large" />
-              L
+              <span>L</span>
             </label>
           </span>
         </div>
       </div>
-      <div>
-        <div>
-          <div>
-            Like
-          </div>
-          <div>
-            <button type="button">{`${price} →`}</button>
-          </div>
+      <div className={styles.productInfoLikeBuy}>
+        <button type="button" className={styles.infoLikeButton}>
+          <FontAwesomeIcon icon={faHeart} className={styles.likeButtonIcon} />
+        </button>
+        <div className={styles.productInfoBuyButton}>
+          <button type="button">
+            {`£${price}`}
+            <FontAwesomeIcon className={styles.buyNowIcon} icon={faShoppingBag} />
+          </button>
         </div>
       </div>
-      <div>
+      <div className={styles.productDescription}>
         <p>{productDesc}</p>
       </div>
-      <div>
-        <div>
-          <ul>
-            {
-              productDetails.map((detail, index) => (
-                <li key={`${id}-${index}`}>{detail}</li>
-              ))
-            }
-          </ul>
-        </div>
+      <div className={styles.productDetailsList}>
+        <ul>
+          {
+            productDetails.map((detail, index) => (
+              <li key={`${id}-${index}`}>{detail}</li>
+            ))
+          }
+        </ul>
       </div>
-      <div>
-        <div>
-          <h4>{madeOf}</h4>
+      <div className={styles.productExtraInfo}>
+        <div className={styles.madeOf}>
+          <p>{madeOf}</p>
         </div>
-        <div>
-          <h4>{`ID: ${id}`}</h4>
+        <div className={styles.productID}>
+          <p>{`ID: ${id}`}</p>
         </div>
       </div>
     </div>
