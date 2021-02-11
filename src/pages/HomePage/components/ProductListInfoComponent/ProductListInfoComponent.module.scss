@@ -16,3 +16,53 @@
     font: 400 12px/12px 'Source Sans Pro', monospace;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .productListInfoNameContainer {
+    h3 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  .productListInfoPriceContainer {
+    h5 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .productListInfoNameContainer {
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .productListInfoPriceContainer {
+    margin-top: 10px;
+    h5 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .productListInfoNameContainer {
+    h3 {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  .productListInfoPriceContainer {
+    margin-top: 10px;
+    h5 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}

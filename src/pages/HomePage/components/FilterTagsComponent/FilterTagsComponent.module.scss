@@ -106,3 +106,21 @@
 .tag {
   width: auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .filterCategory {
+    h4 {
+      font: 700 22px/22px 'Playfair Display', monospace;
+    }
+  }
+
+  .categoryTags {
+    div {
+      margin-right: 14px;
+      h6 {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+}

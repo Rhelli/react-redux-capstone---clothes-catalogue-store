@@ -95,4 +95,16 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .categoryTagsContainer {
+    div {
+      padding: 8px 10px;
+      h6 {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
 
