@@ -77,8 +77,8 @@
 
     .sizeButtonContainer {
       input[type="radio"] {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         background-color: white;
         -webkit-appearance: none;
@@ -103,14 +103,14 @@
       label span {
         position: relative;
         text-align: center;
-        left: -26px;
-        top: -10px;
+        left: -29px;
+        top: -13px;
         font: 400 22px/12px 'Source Sans Pro', monospace;
         color:  #404040;
       }
 
       .sizeLabelM {
-        left: -28px;
+        left: -31px;
       }
 
 
@@ -229,5 +229,26 @@
 
   .madeOf {
     margin-bottom: 10px
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .productInfoLikeBuy {
+    .infoLikeButton {
+      height: 55px;
+      width: 55px;
+
+      .likeButtonIcon {
+        font-size: 28px;
+      }
+    }
+
+    .productInfoBuyButton {
+      button {
+        height: 55px;
+        width: 250px;
+        font: 400 26px/26px 'Source Sans Pro', monospace;
+      }
+    }
   }
 }

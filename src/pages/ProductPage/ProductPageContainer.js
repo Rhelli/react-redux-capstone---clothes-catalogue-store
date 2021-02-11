@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ProductImageComponent from './components/ProductImageComponent/ProductImageComponent';
 import ProductInfoComponent from './components/ProductInfoComponent/ProductInfoComponent';
 import ProductPageNavbarComponent from '../../common/components/ProductPageNavbarComponent/ProductPageNavbarComponent';
+import SmallPrintComponent from '../../common/components/SmallPrintComponent/SmallPrintComponent';
 import styles from './ProductPageContainer.module.scss';
 
 const ProductPageContainer = ({ singleProduct }) => {
@@ -37,6 +38,7 @@ const ProductPageContainer = ({ singleProduct }) => {
           madeOf={madeOf}
         />
       </div>
+      <SmallPrintComponent />
     </div>
   );
 };
