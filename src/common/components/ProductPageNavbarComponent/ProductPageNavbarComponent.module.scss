@@ -46,3 +46,24 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .navbarContainer {
+    height: 70px;
+  }
+
+  .navbarTitle {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .navbarLink {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbarTitle {
+    font-size: 26px;
+  }
+}

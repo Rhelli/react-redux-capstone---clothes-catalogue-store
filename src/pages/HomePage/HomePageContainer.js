@@ -11,6 +11,7 @@ import { fetchProductID } from '../../state/product/productActions';
 import CategoryFilterInputComponent from './components/CategoryFilterInputComponent/CategoryFilterInputComponent';
 import filterCategory from '../../state/categoryFilter/categoryActions';
 import HomePageNavbarComponent from '../../common/components/HomePageNavbarComponent/HomePageNavbarComponent';
+import SmallPrintComponent from '../../common/components/SmallPrintComponent/SmallPrintComponent';
 import styles from './HomePageContainer.module.scss';
 
 const HomePageContainer = ({
@@ -93,6 +94,7 @@ const HomePageContainer = ({
           ))
         }
       </div>
+      <SmallPrintComponent />
     </div>
   );
 };

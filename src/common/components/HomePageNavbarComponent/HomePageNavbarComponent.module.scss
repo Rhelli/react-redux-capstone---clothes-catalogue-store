@@ -21,3 +21,19 @@
   color: #303030;
   padding: 12px 16px;
 }
+
+@media only screen and (min-width: 768px) {
+  .navbarContainer {
+    height: 70px;
+  }
+
+  .navbarTitle {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbarTitle {
+    font-size: 26px;
+  }
+}

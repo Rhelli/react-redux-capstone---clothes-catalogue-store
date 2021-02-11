@@ -29,7 +29,7 @@ const FilterTagsComponent = props => {
           </div>
         </div>
       </div>
-      <div className={[styles.filterCategory, styles.clothesCategory]}>
+      <div className={styles.filterCategory}>
         <h4 className={styles.categoryTitles}>Clothes</h4>
         <div className={styles.categoryTags}>
           <div
