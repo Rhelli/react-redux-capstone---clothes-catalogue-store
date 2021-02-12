@@ -2,11 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 import ProductListComponent from '../ProductListComponent';
-
-configure({ adapter: new Adapter() });
 
 const productName = 'Black T-Shirt';
 const price = '10.00';
@@ -25,5 +21,5 @@ describe('The appearance of the ProductListComponent', () => {
     const { container } = render(productListComponent);
     expect(container.firstChild.nodeName).toBe('DIV');
     expect(container.firstChild.classList.contains('productListItem')).toBe(true);
-  })
+  });
 });
