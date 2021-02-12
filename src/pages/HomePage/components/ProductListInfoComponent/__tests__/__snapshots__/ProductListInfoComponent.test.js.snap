@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The appearance of the ProductListInfoComponent Matches the ProductListInfoComponent snapshot 1`] = `
+<div
+  className="productListInfoContainer"
+>
+  <div
+    className="productListInfoNameContainer"
+  >
+    <h3>
+      Black T-Shirt
+    </h3>
+  </div>
+  <div
+    className="productListInfoPriceContainer"
+  >
+    <h5>
+      £
+      10.00
+    </h5>
+  </div>
+</div>
+`;
