@@ -63,7 +63,6 @@ const HomePageContainer = ({
     }));
   };
 
-  // eslint-disable-next-line no-nested-ternary
   return productData.loading ? (
     <h2>Loading Text...</h2>
   ) : productData.error ? (

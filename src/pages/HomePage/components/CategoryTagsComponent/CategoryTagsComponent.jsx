@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
 import getColorPreview from '../../../../utils/colorUtil';
@@ -17,6 +15,9 @@ const CategoryTagsComponent = props => {
           data-name="male"
           className={styles.male}
           onClick={event => enableSelectedFilter(event, 'genderFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'genderFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="male">Mens&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -26,6 +27,9 @@ const CategoryTagsComponent = props => {
           data-name="female"
           className={styles.female}
           onClick={event => enableSelectedFilter(event, 'genderFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'genderFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="female">Womens&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -35,6 +39,9 @@ const CategoryTagsComponent = props => {
           data-name="jacket"
           className={styles.jacket}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'clothesFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="jacket">Coats & Jackets&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -44,6 +51,9 @@ const CategoryTagsComponent = props => {
           data-name="jeans"
           className={styles.jeans}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'clothesFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="jeans">Jeans&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -53,6 +63,9 @@ const CategoryTagsComponent = props => {
           data-name="shirts"
           className={styles.shirts}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'clothesFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="shirts">Shirts&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -62,6 +75,9 @@ const CategoryTagsComponent = props => {
           data-name="tops"
           className={styles.tops}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'clothesFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="tops">Tops&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -71,6 +87,9 @@ const CategoryTagsComponent = props => {
           data-name="dresses"
           className={styles.dresses}
           onClick={event => enableSelectedFilter(event, 'clothesFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'clothesFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="dresses">Dresses&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -80,6 +99,9 @@ const CategoryTagsComponent = props => {
           data-name="black"
           style={getColorPreview('black')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="black">Black&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -89,6 +111,9 @@ const CategoryTagsComponent = props => {
           data-name="darkestSpruce"
           style={getColorPreview('darkestSpruce')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="darkestSpruce">Darkest Spruce&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -98,6 +123,9 @@ const CategoryTagsComponent = props => {
           data-name="multi"
           className={styles.multi}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="multi">Multi&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -107,6 +135,9 @@ const CategoryTagsComponent = props => {
           data-name="blue"
           style={getColorPreview('blue')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="blue">Blue&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -116,6 +147,9 @@ const CategoryTagsComponent = props => {
           data-name="blueDenim"
           style={getColorPreview('blueDenim')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="blueDenim">Blue Denim&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -125,6 +159,9 @@ const CategoryTagsComponent = props => {
           data-name="navy"
           style={getColorPreview('navy')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="navy">Navy&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -134,6 +171,9 @@ const CategoryTagsComponent = props => {
           data-name="green"
           style={getColorPreview('green')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="green">Green&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -143,6 +183,9 @@ const CategoryTagsComponent = props => {
           data-name="white"
           style={getColorPreview('white')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="white">White&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -152,6 +195,9 @@ const CategoryTagsComponent = props => {
           data-name="grape"
           style={getColorPreview('grape')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="grape">Grape&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -161,6 +207,9 @@ const CategoryTagsComponent = props => {
           data-name="khaki"
           style={getColorPreview('khaki')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="khaki">Khaki&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -170,6 +219,9 @@ const CategoryTagsComponent = props => {
           data-name="grey"
           style={getColorPreview('grey')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="grey">Grey&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -179,6 +231,9 @@ const CategoryTagsComponent = props => {
           data-name="vintageIndigo"
           style={getColorPreview('vintageIndigo')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="vintageIndigo">Vintage Indigo&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -188,6 +243,9 @@ const CategoryTagsComponent = props => {
           data-name="mineralBlue"
           style={getColorPreview('mineralBlue')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="mineralBlue">Mineral Blue&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -197,6 +255,9 @@ const CategoryTagsComponent = props => {
           data-name="charcoal"
           style={getColorPreview('charcoal')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="charcoal">Charcoal&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -206,6 +267,9 @@ const CategoryTagsComponent = props => {
           data-name="tan"
           style={getColorPreview('tan')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="tan">Tan&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -215,6 +279,9 @@ const CategoryTagsComponent = props => {
           data-name="dustyBlue"
           style={getColorPreview('dustyBlue')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="dustyBlue">Dusty Blue&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -224,6 +291,9 @@ const CategoryTagsComponent = props => {
           data-name="midwash"
           style={getColorPreview('midwash')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="midwash">Midwash&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -233,6 +303,9 @@ const CategoryTagsComponent = props => {
           data-name="red"
           style={getColorPreview('red')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="red">Red&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -242,6 +315,9 @@ const CategoryTagsComponent = props => {
           data-name="rose"
           style={getColorPreview('rose')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="rose">Rose&nbsp;&nbsp;&nbsp;×</h6>
         </div>
@@ -251,6 +327,9 @@ const CategoryTagsComponent = props => {
           data-name="lilac"
           style={getColorPreview('lilac')}
           onClick={event => enableSelectedFilter(event, 'colorFilter')}
+          onKeyPress={event => enableSelectedFilter(event, 'colorFilter')}
+          role="button"
+          tabIndex="-1"
         >
           <h6 data-name="lilac">Lilac&nbsp;&nbsp;&nbsp;×</h6>
         </div>
