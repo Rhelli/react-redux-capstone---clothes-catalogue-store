@@ -1,22 +1,22 @@
 <p align="center">
-  <img src="screens/preview.png" alt="Stay In Touch's Home Page" width="900" height="auto">
+  <img src="demo/clothesIncSplash.png" alt="Clothes Inc Homescreen" width="900" height="auto">
 
-  <h1 align="center"> 🏃🏽‍♀️🏃🏽 Activity Tracker</h1>
+  <h1 align="center">👚👕 Clothes Inc.</h1>
 
 
 <h3 align='center'>
-    An Activity Tracker with Groups, Memberships, Stats and KOMs
+    A Fully Responsive Clothes Catalogue and Store
 </h3>
 <p align="center">
     <br />
-    <a href="https://secret-cliffs-91268.herokuapp.com/"><strong>Visit The Site »</strong></a>
+    <a href="https://clothes-inc.herokuapp.com/"><strong>Visit The Site »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/archive/release/0.1.0.zip">Download this repository</a>
+    <a href="https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/archive/feature/readMe.zip">Download this repository</a>
     |
-    <a href="https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/issues/new/choose">Report A Bug</a>
+    <a href="https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/issues/new/choose">Report A Bug</a>
     |
-    <a href="https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/fork">Fork It</a>
+    <a href="https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/fork">Fork It</a>
   </p>
 </p>
 
@@ -36,102 +36,118 @@
 
 ## 🔰 The Project Brief
 
-This is the Ruby on Rails Capstone Project, to be completed by students of [Microverse](https://www.microverse.org/).
+This is the React & Redux capstone project, to be completed by all students of [Microverse](https://www.microverse.org/).
 
-This project is unlike those that have come before it. We are required to adhere to the following guidelines:
- - Mandatory technical specifications to reach
- - A design brief to follow
- - Presentation of the project once finished, providing a demo, project features, extra features and how we tackled the n+1 problem.
- - 5 day build time for a Minimum Viable Product
+Unlike the projects in the React & Redux module before, this project is performed under timed conditions with milestones, and comes complete with a project brief, business specifications and technical requirements. The purpose of such an undertaking, is to provide and practice scenarios which more closely adhere to the real world - we're not always given an indefinite amount of time and the complete picture, so it pays to practice producing quality software under pressure.
 
-The Capstone therefore demonstrates itself to be a more true-to-form application of our skills to real-world projects, providing us with valuable experience of creating deliverables under time pressure.
+This capstone in particular, following the React & Redux module, focuses on consolidating our acquired skills in both domains. In order to complete this capstone successfully, we are tasked with creating a React web app to the given specification, with either React Hooks, or Redux utilisation for state management.
 
 ## 🛠️ The Nitty Gritty
-The project objective was to build a Ruby on Rails based web application that would group a chosen item together, for example, payments, projects between friends, or in the case of this project, activities.
+### Project Requirements
+This particular project tasked us with creating a catalogue for clothes. The original specification and design for the project followed those of [Denys Chagaida's 'Pimp My Dog Online Store'](https://www.behance.net/gallery/24531031/Pimp-my-DOG-Online-store-E-commerse-project), however, as we were not required to adhere to and directly clone the original design (although it was an option), I opted to change the basis for the store and create the archetypal online clothes store commonly seen today.
 
-The design guidelines followed that of [Snapscan](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=), designed by Gregoire Vella, however a certain amount of wiggle room beyond the colors, typographies and general layout was allowed.
+Within our provided project requirements, it was stated that we must build the page with at least two types of page:
+ - One page where all the displayed items could be filtered via given parameters
+ - A second page for the item details
 
-Beyond the familiar groups, memberships and users features, this project focused on bringing some, albeit rudimentary, statistics to the user - a feature that is commonplace today in activity trackers.
+Additionally, was the extra stipulation that our app must collect data to be used in our web app **externally**. This was to be performed by means of asynchronous API calls.
 
-## 🔬 Tools & Technology Used
+## Architecture
+### File Structure
+  The file structure of this app uses a [View-State Split](https://www.pluralsight.com/guides/how-to-organize-your-react-+-redux-codebase) design, in order to entirely separate each components state management, from it's view.
+
+  The choice for using such a file structure is that it is exceedingly easy to visualise and organise the state of the project - there is no room for confusion. Additionally all redux code is located in one place, with the (predominantly) React based code location in another.
+
+### JSON Design & API
+  Whilst this project required we draw our data into the app from an external source, in searching, I could not find a suitable API which both offered a substantial amount of free calls, nor the desired data-sets.
+
+  Instead, I decided to design and implement my own API solution, using [JSONBIN.io](https://jsonbin.io/). The JSONBIN platform allows you as a user to upload your own JSON data to their web service, store it, and then securely access it via an API call. The folder named `Clothes Assets` found at root, houses the raw assets initially acquired in order to build the relevant API data required in order to make this project.
+
+  Images were hosted on [BeeIMG](https://beeimg.com/) and their URLs we're added to each JSON clothing product.
+
+### API Calls
+  API calls are performed using [Axios](https://github.com/axios/axios) and [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware has been implemented to handle the successful (or, unsuccessful) API return and store it into the Redux state immediately.
+
+### Application State
+  The state for this application was largely maintained using Redux, with the occasional use of Redux hooks.
+
+## 🔬 Languages, Frameworks and Build Tools Used
 **Languages & Frameworks**
- - Ruby 2.7.1
- - Ruby on Rails 6.0.3.1
- - SASS/CSS3
- - Bootstrap
+ - HTML5
+ - SASS
+ - ES6 Javascript
+ - React
+ - Redux
+ - NPM
 
-**Gems of note**
- - [Devise](https://github.com/heartcombo/devise)
- - [Faker](https://github.com/faker-ruby/faker)
- - [HIRB](https://github.com/cldwalker/hirb)  (GOAT Award 🥇)
- - [Bullet](https://github.com/flyerhzm/bullet)
- - [FontAwesome](https://rubygems.org/gems/font-awesome-rails/versions/4.7.0.2)
+**NPM Packages Of Note**
+ - [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+ - [Axios](https://github.com/axios/axios)
+ - [FontAwesome](https://fontawesome.com/)
+ - [React-Router-DOM](https://reactrouter.com/web/guides/quick-start)
+ - [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
+ - [SwiperJS](https://swiperjs.com/)
 
 **Testing**
- - [RSpec 3.9](https://rspec.info/)
-
-**Database**
- - PostgreSQL
+ - [Jest](https://jestjs.io/)
 
 **Linters & Quality Control**
- - [Stickler CI](https://stickler-ci.com/)
- - [Rubocop 0.85.0](https://github.com/rubocop-hq/rubocop-rails)
+ - [ESLint](https://eslint.org/)
+ - [StyleLint](https://stylelint.io/)
 
 **Deployment**
  - Heroku
 
 ### 💻 Setup & Use
-Follow [this link](https://secret-cliffs-91268.herokuapp.com/) to see a live version of the project. If you'd like a closer look, continue reading....
+[Head here](https://clothes-inc.herokuapp.com/) if you'd like to see the live site. If you'd like a closer look, continue reading....
 
 #### Setup
-Setup should be fairly straightforward. You will have to ensure your machine is properly equipped to run the code first:
-  1. Make sure you have both [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and Ruby on Rails ([Mac](https://gorails.com/setup/osx/10.15-catalina) • [Linux](https://gorails.com/setup/ubuntu/19.10) • [Windows](https://gorails.com/setup/windows/10)) installed.
-  2. Download this repository.
-  3. **`cd`** into the root directory of wherever you download this repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
-  4. Whilst at the root (home) directory of this project, enter **`bundle install`** to install the projects software dependencies.
-  5. In your terminal window, enter **`rails server`** to start the server.
-  6. Now navigate to **`localhost:3000`** in your browser to start playing around with the webpages!
+If you would like to tinker with this project a little more, then we will have to ensure your machine is correctly setup.
 
-Alternatively if you'd like to confirm the entire project is passing testing:
-  1. **`cd`** into this repository in your terminal
-  2. Enter **`bundle exec rspec`** to run all tests
+  1. Ensure that you have [Node.js](https://nodejs.org/) installed on your machine. The project will not run without it.
 
+  2. Time to download this repository. Either download the repository [here](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/archive/feature/readMe.zip) or clone this repository onto your computer. [Not sure what 'Cloning' is? Follow this guide.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+  3. Once you have this project downloaded or cloned to your machine, `cd` to the root of the project in your terminal. [Not sure what 'CD' means? Follow this guide.](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
+
+  4. Time for the last step of setup! Type `npm install` into your terminal. This will install all the required packages and software that your machine does not already have.
+
+#### Usage
+Whilst this project has been predominantly built for use as a web page, there are still a few commands you can use to interact with the project:
+
+ - `npm start` - This will start up the project in your default browser. From here, any changes made to the project will update in real time.
+ - `npm test` - This will run all implemented tests using Jest.
+ - `npm build` - This will build a static, production build of the project.
 
 ******
 
 ## 🎬 Feature Previews
+</br>
 
-### Creating Activities, getting statistics and Deleting Activities
-
-
-<a href="screens/creating-activities.gif"><img src="screens/creating-activities.gif" alt="Creating & Destroying Activities" width="800" height="auto"></a>
-
-> Creating an activity will log it immediately, provide you with its statistics on the Activity Page and increment the weekly activity count on the users profile.
-
-### Creating and Destroying Groups
+### Desktop Demo
 
 
-<a href="screens/group-creation.gif"><img src="screens/group-creation.gif" alt="Creating and Destroying Groups" width="800" height="auto"></a>
+<a href="demo/desktopDemo.gif"><img src="demo/desktopDemo.gif" alt="Desktop Demo" width="900" height="auto"></a>
 
-> From the 'My Groups' page, the user can see all their active group memberships, as well as suggested groups not yet joined. Continuing to the 'Create Group' page allows the user to create a new group with a name, description and auto-populated group icon. A new group will appear site wide.
+> A quick look through Clothes Inc, displaying the loading screen whilst API data is collected, the home screen, the clothes filters and finally the individual product page.
 
-### The Group Page, KOMs and Membership
+### Mobile Demo
 
+<p align="center">
+<a href="demo/mobileDemo.gif"><img src="demo/mobileDemo.gif" alt="Creating and Destroying Groups" width="400" height="auto"></a></p>
 
-<a href="screens/group-membership.gif"><img src="screens/group-membership.gif" alt="Creating A New Post" width="800" height="auto"></a>
-
-> Navigating from the 'My Groups' page, the user can find new groups in the 'Suggested Groups' section. On the Group page itself, the user is presented with the option to join (or leave) the group, the current member list with [KOMs](https://en.wikipedia.org/wiki/King_of_the_Mountains) and trophies and recent activities at the bottom.
+> The design of the site is maintained in the mobile view, however everything is shrunk down and resized in order to maintain a pleasant web experience.
 
 *******
 
 ## 🛎️ Contributions, Issues and Forking
 
-Contributions, issues and feature requests are more than welcome!
+Contributions, issues and feature requests are not just welcome, but encouraged!
 
-If you have any problems running or setting this project up, please submit it as a bug on the [issues page.](https://github.com/Rhelli/StayInTouch-Social-Media/issues) right away!
+First and foremost, if you have any problems running or setting this project up, please submit it as a bug on the [issues page.](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/issues/new/choose) right away!
 
 If you want to make your own changes, modifications or improvements, go ahead and Fork it!
-1. [Fork it](https://github.com/Rhelli/StayInTouch-Social-Media/fork)
+1. [Fork it](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
@@ -142,10 +158,10 @@ If you want to make your own changes, modifications or improvements, go ahead an
 Rory Hellier - [Github](https://github.com/Rhelli)
 
 ## 🖐🏼 Show Your Support!
-Give a ⭐️ if you like this project!
+If enjoyed this project, thought the implementation was good or even liked the colour scheme, please do give the project a 🌟. It makes a huge difference!
 
 ## 🍻 Credits & Acknowledgements
-The original design specifications and influence for this project are drawn from [Gregoire Vella's Snapscan](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) design on Behance.
+All images and clothing information contained within this app are sourced from [ASOS](www.asos.com). All credit goes to them for supplying the assets for this project.
 
 ## ⚖️ Licensing
 This project is [MIT](https://github.com/Rhelli/StayInTouch-Social-Media/LICENSE.txt) licensed.
