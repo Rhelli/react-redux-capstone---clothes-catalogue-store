@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -39,15 +36,15 @@ const HomePageContainer = ({
       colorTool: [],
     };
 
-    for (const genderKey in genderFilter) {
+    Object.keys(genderFilter).forEach(genderKey => {
       if (genderFilter[genderKey]) activeFilters.gender.push(genderKey);
-    }
-    for (const clothesKey in clothesFilter) {
+    });
+    Object.keys(clothesFilter).forEach(clothesKey => {
       if (clothesFilter[clothesKey]) activeFilters.type.push(clothesKey);
-    }
-    for (const colorKey in colorFilter) {
+    });
+    Object.keys(colorFilter).forEach(colorKey => {
       if (colorFilter[colorKey]) activeFilters.colorTool.push(colorKey);
-    }
+    });
     return activeFilters;
   };
 
@@ -72,27 +69,38 @@ const HomePageContainer = ({
   ) : productData.error ? (
     <h2>{productData.error}</h2>
   ) : (
-    <div className={styles.homePageContainer}>
-      <HomePageNavbarComponent />
-      <div className={styles.titleCategoryContainer}>
-        <h2 className={styles.productListTitle}>Our Collection</h2>
-        <CategoryFilterInputComponent
-          enableSelectedFilter={enableSelectedFilter}
-          categoryData={categoryData}
-        />
-      </div>
-      <div className={styles.productListContainer}>
-        {
-          multiPropsFilter(productData.products, activeFilters()).map(item => (
-            <ProductListComponent
-              key={item.id}
-              itemClickThrough={() => itemClickThrough(item)}
-              productName={item.productName}
-              price={item.price}
-              images={item.images[0]}
-            />
-          ))
-        }
+    <div className={styles.homePageOuterContainer}>
+      <div className={styles.homePageContainer}>
+        <HomePageNavbarComponent />
+        <div className={styles.titleCategoryContainer}>
+          <h2 className={styles.productListTitle}>Our Collection</h2>
+          <CategoryFilterInputComponent
+            enableSelectedFilter={enableSelectedFilter}
+            categoryData={categoryData}
+          />
+        </div>
+        <div className={styles.productListContainer}>
+          {
+            multiPropsFilter(productData.products, activeFilters()).length > 0 ? (
+              multiPropsFilter(productData.products, activeFilters()).map(item => (
+                <ProductListComponent
+                  key={item.id}
+                  itemClickThrough={() => itemClickThrough(item)}
+                  productName={item.productName}
+                  price={item.price}
+                  images={item.images[0]}
+                />
+              ))
+            ) : (
+              <div className={styles.nothingFound}>
+                <div>
+                  <h2>There&apos;s Nothing Here!</h2>
+                  <p>Try filtering different categories for more clothes.</p>
+                </div>
+              </div>
+            )
+          }
+        </div>
       </div>
       <SmallPrintComponent />
     </div>
@@ -114,8 +122,13 @@ HomePageContainer.propTypes = {
         madeOf: PropTypes.string.isRequired,
       }),
     ),
+    loading: PropTypes.bool.isRequired,
+    error: PropTypes.string,
   }).isRequired,
   fetchProducts: PropTypes.func.isRequired,
+  filterCategory: PropTypes.func.isRequired,
+  categoryData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  fetchProductID: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 const mapStateToProps = state => ({

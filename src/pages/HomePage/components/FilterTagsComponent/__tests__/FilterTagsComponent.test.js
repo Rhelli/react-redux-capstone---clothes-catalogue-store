@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import FilterTagsComponent from '../FilterTagsComponent';
 
 const enableSelectedFilter = jest.fn();
-const filterTagsComponent = <FilterTagsComponent enableSelectedFilter={enableSelectedFilter} />
+const filterTagsComponent = <FilterTagsComponent enableSelectedFilter={enableSelectedFilter} />;
 
 describe('The Appearance and Functionality of the FilterTagsComponent', () => {
   it('Matches the FilterTagsComponent Snapshot', () => {
