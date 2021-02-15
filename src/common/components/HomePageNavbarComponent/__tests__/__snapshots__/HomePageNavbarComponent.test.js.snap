@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The appearance of the HomePageNavbarComponent Matches the HomePageNavbarComponent snapshot 1`] = `
+<div
+  className="navbarContainer"
+>
+  <div
+    className="navbarTitle"
+  >
+    <h1>
+      Clothes Inc.
+    </h1>
+  </div>
+</div>
+`;

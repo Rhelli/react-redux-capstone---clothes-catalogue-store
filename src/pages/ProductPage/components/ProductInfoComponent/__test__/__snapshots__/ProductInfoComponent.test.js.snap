@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The appearance and the functionality of the ProductInfoComponent Matches the ProductInfoComponent snapshot 1`] = `
+<div
+  className="productInfoContainer"
+>
+  <div
+    className="productInfoSiteMap"
+  >
+    <span>
+      <p>
+        Mens
+      </p>
+    </span>
+    <span>
+      <p>
+         › 
+      </p>
+    </span>
+    <span>
+      <p>
+        Cape
+      </p>
+    </span>
+  </div>
+  <div
+    className="productInfoTitleBrand"
+  >
+    <h2>
+      Batman Cape
+    </h2>
+    <h3>
+      ASOS
+    </h3>
+  </div>
+  <div
+    className="productInfoColorSize"
+  >
+    <div
+      className="productInfoColorPreview"
+    >
+      <p>
+        Black
+      </p>
+      <div
+        className="colorPreviewContainer"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#101010",
+              "borderBottom": "2px solid #202020",
+              "color": "#C3C3C3",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="productInfoSizeSelect"
+    >
+      <span
+        className="sizeButtonContainer"
+      >
+        <label
+          htmlFor="small"
+        >
+          <input
+            id="small"
+            name="size"
+            type="radio"
+            value="small"
+          />
+          <span>
+            S
+          </span>
+        </label>
+      </span>
+      <span
+        className="sizeButtonContainer"
+      >
+        <label
+          htmlFor="medium"
+        >
+          <input
+            id="medium"
+            name="size"
+            type="radio"
+            value="medium"
+          />
+          <span
+            className="sizeLabelM"
+          >
+            M
+          </span>
+        </label>
+      </span>
+      <span
+        className="sizeButtonContainer"
+      >
+        <label
+          htmlFor="large"
+        >
+          <input
+            id="large"
+            name="size"
+            type="radio"
+            value="large"
+          />
+          <span>
+            L
+          </span>
+        </label>
+      </span>
+    </div>
+  </div>
+  <div
+    className="productInfoLikeBuy"
+  >
+    <button
+      className="infoLikeButton"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-heart fa-w-16 likeButtonIcon"
+        data-icon="heart"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+    <div
+      className="productInfoBuyButton"
+    >
+      <button
+        type="button"
+      >
+        £99
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-shopping-bag fa-w-14 buyNowIcon"
+          data-icon="shopping-bag"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div
+    className="productDescription"
+  >
+    <p>
+      Something something Dark Knight
+    </p>
+  </div>
+  <div
+    className="productDetailsList"
+  >
+    <ul>
+      <li>
+        Makes you the night
+      </li>
+      <li>
+        Mysterious
+      </li>
+      <li>
+        Rich and Compelling
+      </li>
+    </ul>
+  </div>
+  <div
+    className="productExtraInfo"
+  >
+    <div
+      className="madeOf"
+    >
+      <p>
+        Mournful tears
+      </p>
+    </div>
+    <div
+      className="productID"
+    >
+      <p>
+        ID: 121111
+      </p>
+    </div>
+  </div>
+</div>
+`;

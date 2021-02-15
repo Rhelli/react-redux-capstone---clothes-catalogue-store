@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The appearance of the SmallPrintComponent footer Matches the SmallPrintComponent snapshot 1`] = `
+<footer
+  className="footer"
+>
+  <p>
+    All images are property of ASOS.com. This site is not intended for any commercial purpose.
+  </p>
+  <p
+    className="name"
+  >
+    Made with love, hard work, sweat and tears. Rory Hellier 2021©
+  </p>
+</footer>
+`;

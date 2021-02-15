@@ -1,0 +1,458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Appearance and Functionality of the FilterTagsComponent Matches the FilterTagsComponent Snapshot 1`] = `
+<div
+  className="filterTagsContainer"
+>
+  <div
+    className="filterCategory"
+  >
+    <h4
+      className="categoryTitles"
+    >
+      Gender
+    </h4>
+    <div
+      className="categoryTags"
+    >
+      <div
+        className="male"
+        data-name="male"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="male"
+        >
+          Men's
+        </h6>
+      </div>
+      <div
+        className="female"
+        data-name="female"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="female"
+        >
+          Women's
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div
+    className="filterCategory"
+  >
+    <h4
+      className="categoryTitles"
+    >
+      Clothes
+    </h4>
+    <div
+      className="categoryTags"
+    >
+      <div
+        className="jacket"
+        data-name="jacket"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="jacket"
+        >
+          Coats & Jackets
+        </h6>
+      </div>
+      <div
+        className="jeans"
+        data-name="jeans"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="jeans"
+        >
+          Jeans
+        </h6>
+      </div>
+      <div
+        className="shirts"
+        data-name="shirts"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="shirts"
+        >
+          Shirts
+        </h6>
+      </div>
+      <div
+        className="tops"
+        data-name="tops"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="tops"
+        >
+          Tops
+        </h6>
+      </div>
+      <div
+        className="dresses"
+        data-name="dresses"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="dresses"
+        >
+          Dresses
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div
+    className="filterCategory"
+  >
+    <h4
+      className="categoryTitles"
+    >
+      Colour
+    </h4>
+    <div
+      className="categoryTags"
+    >
+      <div
+        data-name="black"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#101010",
+            "borderBottom": "2px solid #202020",
+            "color": "#C3C3C3",
+          }
+        }
+      >
+        <h6
+          data-name="black"
+        >
+          Black
+        </h6>
+      </div>
+      <div
+        data-name="darkestSpruce"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#0E6251",
+            "borderBottom": "2px solid #0C5647",
+            "color": "#A5C4BE",
+          }
+        }
+      >
+        <h6
+          data-name="darkestSpruce"
+        >
+          Darkest Spruce
+        </h6>
+      </div>
+      <div
+        className="multi"
+        data-name="multi"
+        onClick={[Function]}
+      >
+        <h6
+          data-name="multi"
+        >
+          Multi
+        </h6>
+      </div>
+      <div
+        data-name="blue"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#3498DB",
+            "borderBottom": "2px solid #2E85C0",
+            "color": "#CCE5F6",
+          }
+        }
+      >
+        <h6
+          data-name="blue"
+        >
+          Blue
+        </h6>
+      </div>
+      <div
+        data-name="blueDenim"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#546E7A",
+            "borderBottom": "2px solid #4A606B",
+            "color": "#D4DBDE",
+          }
+        }
+      >
+        <h6
+          data-name="blueDenim"
+        >
+          Blue Denim
+        </h6>
+      </div>
+      <div
+        data-name="navy"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#2C3E50",
+            "borderBottom": "2px solid #212F3C",
+            "color": "#CACFD3",
+          }
+        }
+      >
+        <h6
+          data-name="navy"
+        >
+          Navy
+        </h6>
+      </div>
+      <div
+        data-name="green"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#229954",
+            "borderBottom": "2px solid #1A733F",
+            "color": "#C8E6D4",
+          }
+        }
+      >
+        <h6
+          data-name="green"
+        >
+          Green
+        </h6>
+      </div>
+      <div
+        data-name="white"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "borderBottom": "2px solid #DFDFDF",
+            "color": "#303030",
+          }
+        }
+      >
+        <h6
+          data-name="white"
+        >
+          White
+        </h6>
+      </div>
+      <div
+        data-name="grape"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#884EA0",
+            "borderBottom": "2px solid #663B78",
+            "color": "#E1D3E7",
+          }
+        }
+      >
+        <h6
+          data-name="grape"
+        >
+          Grape
+        </h6>
+      </div>
+      <div
+        data-name="khaki"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#AED581",
+            "borderBottom": "2px solid #83A061",
+            "color": "#6D8551",
+          }
+        }
+      >
+        <h6
+          data-name="khaki"
+        >
+          Khaki
+        </h6>
+      </div>
+      <div
+        data-name="grey"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#BFC9CA",
+            "borderBottom": "2px solid #8F9798",
+            "color": "#777E7E",
+          }
+        }
+      >
+        <h6
+          data-name="grey"
+        >
+          Grey
+        </h6>
+      </div>
+      <div
+        data-name="vintageIndigo"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#7986CB",
+            "borderBottom": "2px solid #5B6598",
+            "color": "#DDE1F2",
+          }
+        }
+      >
+        <h6
+          data-name="vintageIndigo"
+        >
+          Vintage Indigo
+        </h6>
+      </div>
+      <div
+        data-name="mineralBlue"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#80DEEA",
+            "borderBottom": "2px solid #60A6AF",
+            "color": "#406F75",
+          }
+        }
+      >
+        <h6
+          data-name="mineralBlue"
+        >
+          Mineral Blue
+        </h6>
+      </div>
+      <div
+        data-name="charcoal"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#424242",
+            "borderBottom": "2px solid #292929",
+            "color": "#D0D0D0",
+          }
+        }
+      >
+        <h6
+          data-name="charcoal"
+        >
+          Charcoal
+        </h6>
+      </div>
+      <div
+        data-name="tan"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#CA6F1E",
+            "borderBottom": "2px solid #985316",
+            "color": "#F2DBC7",
+          }
+        }
+      >
+        <h6
+          data-name="tan"
+        >
+          Tan
+        </h6>
+      </div>
+      <div
+        data-name="dustyBlue"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#AED6F1",
+            "borderBottom": "2px solid #83A1B5",
+            "color": "#6D8697",
+          }
+        }
+      >
+        <h6
+          data-name="dustyBlue"
+        >
+          Dusty Blue
+        </h6>
+      </div>
+      <div
+        data-name="midwash"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#7FB3D5",
+            "borderBottom": "2px solid #5F86A0",
+            "color": "#DFECF5",
+          }
+        }
+      >
+        <h6
+          data-name="midwash"
+        >
+          Midwash
+        </h6>
+      </div>
+      <div
+        data-name="red"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#E53935",
+            "borderBottom": "2px solid #AC2B28",
+            "color": "#F8CECC",
+          }
+        }
+      >
+        <h6
+          data-name="red"
+        >
+          Red
+        </h6>
+      </div>
+      <div
+        data-name="rose"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#EB9696",
+            "borderBottom": "2px solid #B07171",
+            "color": "#FAE5E5",
+          }
+        }
+      >
+        <h6
+          data-name="rose"
+        >
+          Rose
+        </h6>
+      </div>
+      <div
+        data-name="lilac"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#E1BEE7",
+            "borderBottom": "2px solid #A98FAD",
+            "color": "#F7EFF9",
+          }
+        }
+      >
+        <h6
+          data-name="lilac"
+        >
+          Lilac
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+`;

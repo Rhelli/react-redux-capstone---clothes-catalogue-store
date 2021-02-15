@@ -34,8 +34,6 @@ const productReducer = (state = initialState, action) => {
     };
 
     case FETCH_PRODUCT_ID:
-      // eslint-disable-next-line no-console
-      console.log('fetching id...');
       return {
         ...state,
         singleProduct: action.payload,
