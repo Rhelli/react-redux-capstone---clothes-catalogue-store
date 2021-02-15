@@ -64,9 +64,18 @@ const HomePageContainer = ({
   };
 
   return productData.loading ? (
-    <h2>Loading Text...</h2>
+    <div className={styles.loadingContainer}>
+      <div>
+        <h2>Loading Catalogue...</h2>
+      </div>
+    </div>
   ) : productData.error ? (
-    <h2>{productData.error}</h2>
+    <div className={styles.errorContainer}>
+      <div>
+        <h2>Oops! An Error Occurred!</h2>
+        <p>{productData.error}</p>
+      </div>
+    </div>
   ) : (
     <div className={styles.homePageOuterContainer}>
       <div className={styles.homePageContainer}>
