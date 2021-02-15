@@ -122,7 +122,6 @@ Whilst this project has been predominantly built for use as a web page, there ar
 ******
 
 ## 🎟️ Feature Previews
-</br>
 ### Desktop Demo
 
 
