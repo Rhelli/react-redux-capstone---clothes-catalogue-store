@@ -107,7 +107,7 @@
 
 @media only screen and (min-width: 868px) {
   .productListContainer {
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 }
 
@@ -139,11 +139,20 @@
   .nothingFound {
     div {
       h2 {
-        font: 700 28px/28px 'Playfair Display', monospace;
+        font: 700 20px/20px 'Playfair Display', monospace;
       }
 
       p {
         font: 400 14px/14px 'Source Sans Pro', monospace;
+      }
+    }
+  }
+
+  .loadingContainer {
+    div {
+      h2 {
+        font-size: 20px;
+        line-height: 20px;
       }
     }
   }
