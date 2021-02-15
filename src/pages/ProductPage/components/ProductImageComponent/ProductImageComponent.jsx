@@ -1,7 +1,3 @@
-/* eslint-disable no-nested-ternary */
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 import SwiperCore, { Pagination, Scrollbar, A11y } from 'swiper';
@@ -28,7 +24,7 @@ const ProductImageComponent = ({ images, brandName, type }) => {
     >
       {
         images.map((image, index) => (
-          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index}`}>
+          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index + 1}`}>
             <img className={styles.swiperGalleryImage} src={image} alt={`${brandName} ${type}`} />
           </SwiperSlide>
         ))
@@ -43,7 +39,7 @@ const ProductImageComponent = ({ images, brandName, type }) => {
     >
       {
         images.map((image, index) => (
-          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index}`}>
+          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index + 1}`}>
             <img className={styles.swiperGalleryImage} src={image} alt={`${brandName} ${type}`} />
           </SwiperSlide>
         ))
@@ -58,7 +54,7 @@ const ProductImageComponent = ({ images, brandName, type }) => {
     >
       {
         images.map((image, index) => (
-          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index}`}>
+          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index + 1}`}>
             <img className={styles.swiperGalleryImage} src={image} alt={`${brandName} ${type}`} />
           </SwiperSlide>
         ))
@@ -73,7 +69,7 @@ const ProductImageComponent = ({ images, brandName, type }) => {
     >
       {
         images.map((image, index) => (
-          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index}`}>
+          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index + 1}`}>
             <img className={styles.swiperGalleryImage} src={image} alt={`${brandName} ${type}`} />
           </SwiperSlide>
         ))
@@ -88,7 +84,7 @@ const ProductImageComponent = ({ images, brandName, type }) => {
     >
       {
         images.map((image, index) => (
-          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index}`}>
+          <SwiperSlide className={styles.swiperGallerySlide} key={`${brandName}-${index + 1}`}>
             <img className={styles.swiperGalleryImage} src={image} alt={`${brandName} ${type}`} />
           </SwiperSlide>
         ))

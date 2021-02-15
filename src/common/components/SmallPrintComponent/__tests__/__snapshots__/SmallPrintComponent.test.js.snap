@@ -4,7 +4,9 @@ exports[`The appearance of the SmallPrintComponent footer Matches the SmallPrint
 <footer
   className="footer"
 >
-  <p>
+  <p
+    className="disclaimer"
+  >
     All images are property of ASOS.com. This site is not intended for any commercial purpose.
   </p>
   <p

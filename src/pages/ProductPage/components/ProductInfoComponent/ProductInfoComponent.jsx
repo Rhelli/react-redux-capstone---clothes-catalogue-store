@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -70,7 +69,7 @@ const ProductInfoComponent = props => {
         <ul>
           {
             productDetails.map((detail, index) => (
-              <li key={`${id}-${index}`}>{detail}</li>
+              <li key={`${id}-${index + 1}`}>{detail}</li>
             ))
           }
         </ul>

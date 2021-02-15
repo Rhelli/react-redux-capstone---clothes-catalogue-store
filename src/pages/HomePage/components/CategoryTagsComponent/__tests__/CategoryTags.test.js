@@ -42,7 +42,7 @@ const categoryData = {
 
 const enableSelectedFilter = jest.fn();
 
-const categoryTagsComponent = <CategoryTagsComponent categoryData={categoryData} enableSelectedFilter={enableSelectedFilter} />
+const categoryTagsComponent = <CategoryTagsComponent categoryData={categoryData} enableSelectedFilter={enableSelectedFilter} />;
 
 describe('The CategoryTagsComponent', () => {
   it('Matches the CategoryTagsComponent snapshot', () => {

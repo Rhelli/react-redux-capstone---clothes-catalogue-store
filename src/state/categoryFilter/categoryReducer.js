@@ -1,4 +1,3 @@
-/* eslint-disable no-case-declarations */
 import FILTER_CATEGORY from './categoryFilterTypes';
 
 const initialState = {

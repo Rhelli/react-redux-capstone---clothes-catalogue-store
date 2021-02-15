@@ -3,7 +3,7 @@ import styles from './SmallPrintComponent.module.scss';
 
 const SmallPrintComponent = () => (
   <footer className={styles.footer}>
-    <p>
+    <p className={styles.disclaimer}>
       All images are property of ASOS.com. This site is not intended for any commercial purpose.
     </p>
     <p className={styles.name}>

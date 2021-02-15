@@ -4,6 +4,9 @@ exports[`The appearance of the ProductListComponent Matches the ProductListCompo
 <div
   className="productListItem"
   onClick={[Function]}
+  onKeyUp={[Function]}
+  role="button"
+  tabIndex="-1"
 >
   <div
     className="productListImage"

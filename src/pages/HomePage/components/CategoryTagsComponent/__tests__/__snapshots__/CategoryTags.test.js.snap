@@ -8,6 +8,9 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
     className="female"
     data-name="female"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
   >
     <h6
       data-name="female"
@@ -19,6 +22,9 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
     className="jacket"
     data-name="jacket"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
   >
     <h6
       data-name="jacket"
@@ -30,6 +36,9 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
     className="shirts"
     data-name="shirts"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
   >
     <h6
       data-name="shirts"
@@ -41,6 +50,9 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
     className="dresses"
     data-name="dresses"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
   >
     <h6
       data-name="dresses"
@@ -51,6 +63,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="darkestSpruce"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#0E6251",
@@ -58,6 +72,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#A5C4BE",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="darkestSpruce"
@@ -68,6 +83,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="blue"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#3498DB",
@@ -75,6 +92,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#CCE5F6",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="blue"
@@ -85,6 +103,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="navy"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#2C3E50",
@@ -92,6 +112,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#CACFD3",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="navy"
@@ -102,6 +123,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="white"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#ffffff",
@@ -109,6 +132,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#303030",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="white"
@@ -119,6 +143,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="khaki"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#AED581",
@@ -126,6 +152,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#6D8551",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="khaki"
@@ -136,6 +163,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="vintageIndigo"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#7986CB",
@@ -143,6 +172,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#DDE1F2",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="vintageIndigo"
@@ -153,6 +183,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="charcoal"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#424242",
@@ -160,6 +192,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#D0D0D0",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="charcoal"
@@ -170,6 +203,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="dustyBlue"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#AED6F1",
@@ -177,6 +212,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#6D8697",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="dustyBlue"
@@ -187,6 +223,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="red"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#E53935",
@@ -194,6 +232,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#F8CECC",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="red"
@@ -204,6 +243,8 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
   <div
     data-name="lilac"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
     style={
       Object {
         "backgroundColor": "#E1BEE7",
@@ -211,6 +252,7 @@ exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`
         "color": "#F7EFF9",
       }
     }
+    tabIndex="-1"
   >
     <h6
       data-name="lilac"

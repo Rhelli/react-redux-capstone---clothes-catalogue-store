@@ -19,6 +19,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="male"
         data-name="male"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="male"
@@ -30,6 +33,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="female"
         data-name="female"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="female"
@@ -54,6 +60,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="jacket"
         data-name="jacket"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="jacket"
@@ -65,6 +74,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="jeans"
         data-name="jeans"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="jeans"
@@ -76,6 +88,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="shirts"
         data-name="shirts"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="shirts"
@@ -87,6 +102,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="tops"
         data-name="tops"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="tops"
@@ -98,6 +116,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="dresses"
         data-name="dresses"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="dresses"
@@ -121,6 +142,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="black"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#101010",
@@ -128,6 +151,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#C3C3C3",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="black"
@@ -138,6 +162,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="darkestSpruce"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#0E6251",
@@ -145,6 +171,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#A5C4BE",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="darkestSpruce"
@@ -156,6 +183,9 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
         className="multi"
         data-name="multi"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="-1"
       >
         <h6
           data-name="multi"
@@ -166,6 +196,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="blue"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#3498DB",
@@ -173,6 +205,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#CCE5F6",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="blue"
@@ -183,6 +216,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="blueDenim"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#546E7A",
@@ -190,6 +225,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#D4DBDE",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="blueDenim"
@@ -200,6 +236,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="navy"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#2C3E50",
@@ -207,6 +245,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#CACFD3",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="navy"
@@ -217,6 +256,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="green"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#229954",
@@ -224,6 +265,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#C8E6D4",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="green"
@@ -234,6 +276,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="white"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#ffffff",
@@ -241,6 +285,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#303030",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="white"
@@ -251,6 +296,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="grape"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#884EA0",
@@ -258,6 +305,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#E1D3E7",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="grape"
@@ -268,6 +316,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="khaki"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#AED581",
@@ -275,6 +325,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#6D8551",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="khaki"
@@ -285,6 +336,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="grey"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#BFC9CA",
@@ -292,6 +345,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#777E7E",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="grey"
@@ -302,6 +356,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="vintageIndigo"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#7986CB",
@@ -309,6 +365,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#DDE1F2",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="vintageIndigo"
@@ -319,6 +376,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="mineralBlue"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#80DEEA",
@@ -326,6 +385,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#406F75",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="mineralBlue"
@@ -336,6 +396,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="charcoal"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#424242",
@@ -343,6 +405,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#D0D0D0",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="charcoal"
@@ -353,6 +416,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="tan"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#CA6F1E",
@@ -360,6 +425,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#F2DBC7",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="tan"
@@ -370,6 +436,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="dustyBlue"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#AED6F1",
@@ -377,6 +445,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#6D8697",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="dustyBlue"
@@ -387,6 +456,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="midwash"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#7FB3D5",
@@ -394,6 +465,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#DFECF5",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="midwash"
@@ -404,6 +476,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="red"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#E53935",
@@ -411,6 +485,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#F8CECC",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="red"
@@ -421,6 +496,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="rose"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#EB9696",
@@ -428,6 +505,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#FAE5E5",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="rose"
@@ -438,6 +516,8 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
       <div
         data-name="lilac"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
         style={
           Object {
             "backgroundColor": "#E1BEE7",
@@ -445,6 +525,7 @@ exports[`The Appearance and Functionality of the FilterTagsComponent Matches the
             "color": "#F7EFF9",
           }
         }
+        tabIndex="-1"
       >
         <h6
           data-name="lilac"
