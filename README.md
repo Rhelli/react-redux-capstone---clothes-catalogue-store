@@ -1,11 +1,11 @@
 <p align="center">
   <img src="demo/clothesIncSplash.png" alt="Clothes Inc Homescreen" width="900" height="auto">
 
-  <h1 align="center">👚👕 Clothes Inc.</h1>
+  <h1 align="center">🧥 👖 Clothes Inc.</h1>
 
 
 <h3 align='center'>
-    A Fully Responsive Clothes Catalogue and Store
+    A Fully Responsive Clothes Catalogue and Store Built with React & Redux
 </h3>
 <p align="center">
     <br />
@@ -22,16 +22,17 @@
 
 
 ## 📑 Table of Contents
-  - [The Project Brief](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-the-project-brief)
-  - [The Nitty Gritty](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#%EF%B8%8F-the-nitty-gritty)
+  - [The Project Brief](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-the-project-brief)
+  - [The Technical Requirements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#%EF%B8%8F-the-nitty-gritty)
+  - [Architecture](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#architecture)
   - [Tools & Technology Used](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-tools--technology-used)
-  - [Setup & Use](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-setup--use)
-  - [Showcase](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-feature-previews)
-  - [Contributions, Issues and Forking](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#%EF%B8%8F-contributions-issues-and-forking)
-  - [Creator](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-creator)
-  - [Show Your Support!](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-show-your-support)
-  - [Credit & Acknowledgements](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#credits--acknowledgements)
-  - [Licensing](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#%EF%B8%8F-licensing)
+  - [Setup & Use](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-setup--use)
+  - [Showcase](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-feature-previews)
+  - [Contributions, Issues and Forking](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#%EF%B8%8F-contributions-issues-and-forking)
+  - [Creator](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-creator)
+  - [Show Your Support!](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-show-your-support)
+  - [Credit & Acknowledgements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-credits--acknowledgements)
+  - [Licensing](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#%EF%B8%8F-licensing)
 
 
 ## 🔰 The Project Brief
@@ -42,8 +43,7 @@ Unlike the projects in the React & Redux module before, this project is performe
 
 This capstone in particular, following the React & Redux module, focuses on consolidating our acquired skills in both domains. In order to complete this capstone successfully, we are tasked with creating a React web app to the given specification, with either React Hooks, or Redux utilisation for state management.
 
-## 🛠️ The Nitty Gritty
-### Project Requirements
+## 🚦 The Technical Requirements
 This particular project tasked us with creating a catalogue for clothes. The original specification and design for the project followed those of [Denys Chagaida's 'Pimp My Dog Online Store'](https://www.behance.net/gallery/24531031/Pimp-my-DOG-Online-store-E-commerse-project), however, as we were not required to adhere to and directly clone the original design (although it was an option), I opted to change the basis for the store and create the archetypal online clothes store commonly seen today.
 
 Within our provided project requirements, it was stated that we must build the page with at least two types of page:
@@ -52,7 +52,7 @@ Within our provided project requirements, it was stated that we must build the p
 
 Additionally, was the extra stipulation that our app must collect data to be used in our web app **externally**. This was to be performed by means of asynchronous API calls.
 
-## Architecture
+## ⚙️ Architecture
 ### File Structure
   The file structure of this app uses a [View-State Split](https://www.pluralsight.com/guides/how-to-organize-your-react-+-redux-codebase) design, in order to entirely separate each components state management, from it's view.
 
@@ -71,7 +71,7 @@ Additionally, was the extra stipulation that our app must collect data to be use
 ### Application State
   The state for this application was largely maintained using Redux, with the occasional use of Redux hooks.
 
-## 🔬 Languages, Frameworks and Build Tools Used
+## 🧰 Languages, Frameworks and Build Tools Used
 **Languages & Frameworks**
  - HTML5
  - SASS
@@ -98,7 +98,7 @@ Additionally, was the extra stipulation that our app must collect data to be use
 **Deployment**
  - Heroku
 
-### 💻 Setup & Use
+### 🚀 Setup & Use
 [Head here](https://clothes-inc.herokuapp.com/) if you'd like to see the live site. If you'd like a closer look, continue reading....
 
 #### Setup
@@ -121,9 +121,8 @@ Whilst this project has been predominantly built for use as a web page, there ar
 
 ******
 
-## 🎬 Feature Previews
+## 🎟️ Feature Previews
 </br>
-
 ### Desktop Demo
 
 
@@ -164,4 +163,4 @@ If enjoyed this project, thought the implementation was good or even liked the c
 All images and clothing information contained within this app are sourced from [ASOS](www.asos.com). All credit goes to them for supplying the assets for this project.
 
 ## ⚖️ Licensing
-This project is [MIT](https://github.com/Rhelli/StayInTouch-Social-Media/LICENSE.txt) licensed.
+This project is [MIT](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/blob/feature/readMe/LICENSE.txt) licensed.
