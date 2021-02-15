@@ -109,5 +109,15 @@ describe('The appearance and the functionality of the ProductInfoComponent', () 
     getByText('Makes you the night');
     getByText('Mysterious');
     getByText('Rich and Compelling');
-  })
+  });
+
+  it('Contains a container for displaying the madeOf info and the id number', () => {
+    const { container, getByText } = render(productInfoComponent);
+    const productExtraInfo = container.firstChild.lastChild;
+    expect(productExtraInfo.childElementCount).toBe(2);
+    expect(productExtraInfo.firstChild.classList.contains('madeOf')).toBe(true);
+    getByText('Mournful tears');
+    expect(productExtraInfo.lastChild.classList.contains('productID')).toBe(true);
+    getByText('ID: 121111');
+  });
 });

@@ -10,7 +10,6 @@ const fetchProducts = () => dispatch => {
   })
     .then(response => {
       const products = response.data;
-      // eslint-disable-next-line no-console
       dispatch(fetchProductsSuccess(products));
     })
     .catch(error => {
