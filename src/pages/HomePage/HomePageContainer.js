@@ -135,8 +135,8 @@ HomePageContainer.propTypes = {
   }).isRequired,
   fetchProducts: PropTypes.func.isRequired,
   filterCategory: PropTypes.func.isRequired,
-  categoryData: PropTypes.arrayOf(PropTypes.object).isRequired,
-  fetchProductID: PropTypes.arrayOf(PropTypes.object).isRequired,
+  categoryData: PropTypes.objectOf(PropTypes.object).isRequired,
+  fetchProductID: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
