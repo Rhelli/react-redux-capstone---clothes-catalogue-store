@@ -9,7 +9,14 @@ const price = '10.00';
 const images = 'thisIsAnImageURL';
 const itemClickThrough = () => 'This is a mock function';
 
-const productListComponent = <ProductListComponent productName={productName} price={price} images={images} itemClickThrough={itemClickThrough} />;
+const productListComponent = (
+  <ProductListComponent
+    productName={productName}
+    price={price}
+    images={images}
+    itemClickThrough={itemClickThrough}
+  />
+);
 
 describe('The appearance of the ProductListComponent', () => {
   it('Matches the ProductListComponent snapshot', () => {
