@@ -66,7 +66,7 @@ const HomePageContainer = ({
   return productData.loading ? (
     <div className={styles.loadingContainer}>
       <div>
-        <h2>Loading Catalogue...</h2>
+        <h2>Loading Catalogue..</h2>
       </div>
     </div>
   ) : productData.error ? (
