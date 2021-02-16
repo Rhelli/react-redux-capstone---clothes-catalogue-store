@@ -41,7 +41,12 @@ const categoryData = {
   },
 };
 
-const categoryFilterInputComponent = <CategoryFilterInputComponent categoryData={categoryData} enableSelectedFilter={enableSelectedFilter} />;
+const categoryFilterInputComponent = (
+  <CategoryFilterInputComponent
+    categoryData={categoryData}
+    enableSelectedFilter={enableSelectedFilter}
+  />
+);
 
 describe('The appearance and functionality of the CategoryFilterInputComponent', () => {
   it('Matches the CategoryFilterInputComponents snapshot', () => {
