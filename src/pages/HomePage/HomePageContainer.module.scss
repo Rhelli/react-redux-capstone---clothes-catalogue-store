@@ -18,7 +18,7 @@
   align-items: center;
   padding-bottom: 10px;
   margin: 10px 0;
-  border-bottom: 1px solid #EBEDEF;
+  border-bottom: 1px solid #ebedef;
 }
 
 .productListTitle {
@@ -42,8 +42,8 @@
   align-items: center;
 
   div {
-    background-color: #FDF2E9;
-    border: 1px solid #EBEDEF;
+    background-color: #fdf2e9;
+    border: 1px solid #ebedef;
     width: 70%;
     height: 20%;
     border-radius: 4px;
@@ -77,21 +77,21 @@
     flex-flow: column nowrap;
     width: 50%;
     height: 20%;
-    background-color: #FDF2E9;
-    border: 2px solid #EBEDEF;
+    background-color: #fdf2e9;
+    border: 2px solid #ebedef;
     border-radius: 4px;
 
     h2 {
       font: 700 40px/40px 'Playfair Display', monospace;
-      color: #535B63;
+      color: #535b63;
     }
   }
 }
 
 .errorContainer {
   div {
-    background-color: #F1948A;
-    border: 1px solid #EC7063;
+    background-color: #f1948a;
+    border: 1px solid #ec7063;
 
     h2 {
       color: #303030;
@@ -103,7 +103,6 @@
     }
   }
 }
-
 
 @media only screen and (min-width: 868px) {
   .productListContainer {

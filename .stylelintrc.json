@@ -8,7 +8,9 @@
   ],
   "rules": {
     "at-rule-no-unknown": null,
+    "no-duplicate-selectors": null,
     "scss/at-rule-no-unknown": true,
+    "no-descending-specificity": null,
     "csstree/validator": true
   },
   "ignoreFiles": [

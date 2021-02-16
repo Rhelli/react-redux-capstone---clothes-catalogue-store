@@ -1,3 +1,19 @@
+.filterInputDropdown {
+  display: none;
+  position: absolute;
+  right: -20px;
+  margin-top: 0;
+  margin-left: -1px;
+  width: 100vw;
+  z-index: 1;
+  background-color: #fdf2e9;
+  border-top: 1px solid #ede4dc;
+  -webkit-box-shadow: 0 2px 10px -1px rgba(48, 48, 48, 1);
+  -moz-box-shadow: 0 2px 10px -1px rgba(48, 48, 48, 1);
+  box-shadow: 0 2px 10px -1px rgba(48, 48, 48, 1);
+  padding: 0 10px;
+}
+
 .filterInputContainer {
   position: relative;
   display: inline-block;
@@ -11,8 +27,8 @@
     padding: 8px 16px;
     font: 400 18px/18px 'Source Sans Pro', monospace;
     background-color: #303030;
-    border-bottom: 1px solid #4A4A4A;
-    color: #E5E5E5;
+    border-bottom: 1px solid #4a4a4a;
+    color: #e5e5e5;
     border-radius: 35px;
     width: auto;
     transition: 0.15s;
@@ -26,24 +42,8 @@
 
 .filterIcon {
   font-size: 14px;
-  color: #E5E5E5;
+  color: #e5e5e5;
   margin: 0 0 1px 0;
-}
-
-.filterInputDropdown {
-  display: none;
-  position: absolute;
-  right: -20px;
-  margin-top: 0px;
-  margin-left: -1px;
-  width: 100vw;
-  z-index: 1;
-  background-color: #fdf2e9;
-  border-top: 1px solid #ede4dc;
-  -webkit-box-shadow: 0px 2px 10px -1px rgba(48,48,48,1);
-  -moz-box-shadow: 0px 2px 10px -1px rgba(48,48,48,1);
-  box-shadow: 0px 2px 10px -1px rgba(48,48,48,1);
-  padding: 0 10px;
 }
 
 @media only screen and (min-width: 768px) {

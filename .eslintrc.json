@@ -29,6 +29,10 @@
         ]
       }
     ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
     "react/react-in-jsx-scope": "off",
     "no-nested-ternary": "off",
     "import/no-unresolved": "off",
