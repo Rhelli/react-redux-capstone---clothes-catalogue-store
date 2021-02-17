@@ -25,7 +25,7 @@
   - [The Project Brief](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-the-project-brief)
   - [The Technical Requirements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-the-technical-requirements)
   - [Architecture](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-architecture)
-  - [Tools & Technology Used](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-languages-frameworks-and-build-tools-used)
+  - [Tools & Technology Used](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-tools--technology-used)
   - [Setup & Use](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-setup--use)
   - [Feature Previews](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-feature-previews)
   - [Contributions, Issues and Forking](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-contributions-issues-and-forking)
