@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The appearance of the ProductListComponent Matches the ProductListComponent snapshot 1`] = `
+<div
+  className="productListItem"
+  onClick={[Function]}
+  onKeyUp={[Function]}
+  role="button"
+  tabIndex="-1"
+>
+  <div
+    className="productListImage"
+  >
+    <img
+      alt=""
+      src="thisIsAnImageURL"
+    />
+  </div>
+  <div
+    className="productListInfoContainer"
+  >
+    <div
+      className="productListInfoNameContainer"
+    >
+      <h3>
+        Black T-Shirt
+      </h3>
+    </div>
+    <div
+      className="productListInfoPriceContainer"
+    >
+      <h5>
+        £
+        10.00
+      </h5>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The CategoryTagsComponent Matches the CategoryTagsComponent snapshot 1`] = `
+<div
+  className="categoryTagsContainer"
+>
+  <div
+    className="female"
+    data-name="female"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
+  >
+    <h6
+      data-name="female"
+    >
+      Womens   ×
+    </h6>
+  </div>
+  <div
+    className="jacket"
+    data-name="jacket"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
+  >
+    <h6
+      data-name="jacket"
+    >
+      Coats & Jackets   ×
+    </h6>
+  </div>
+  <div
+    className="shirts"
+    data-name="shirts"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
+  >
+    <h6
+      data-name="shirts"
+    >
+      Shirts   ×
+    </h6>
+  </div>
+  <div
+    className="dresses"
+    data-name="dresses"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="-1"
+  >
+    <h6
+      data-name="dresses"
+    >
+      Dresses   ×
+    </h6>
+  </div>
+  <div
+    data-name="darkestSpruce"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#0E6251",
+        "borderBottom": "2px solid #0C5647",
+        "color": "#A5C4BE",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="darkestSpruce"
+    >
+      Darkest Spruce   ×
+    </h6>
+  </div>
+  <div
+    data-name="blue"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#3498DB",
+        "borderBottom": "2px solid #2E85C0",
+        "color": "#CCE5F6",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="blue"
+    >
+      Blue   ×
+    </h6>
+  </div>
+  <div
+    data-name="navy"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#2C3E50",
+        "borderBottom": "2px solid #212F3C",
+        "color": "#CACFD3",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="navy"
+    >
+      Navy   ×
+    </h6>
+  </div>
+  <div
+    data-name="white"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "borderBottom": "2px solid #DFDFDF",
+        "color": "#303030",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="white"
+    >
+      White   ×
+    </h6>
+  </div>
+  <div
+    data-name="khaki"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#AED581",
+        "borderBottom": "2px solid #83A061",
+        "color": "#6D8551",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="khaki"
+    >
+      Khaki   ×
+    </h6>
+  </div>
+  <div
+    data-name="vintageIndigo"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#7986CB",
+        "borderBottom": "2px solid #5B6598",
+        "color": "#DDE1F2",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="vintageIndigo"
+    >
+      Vintage Indigo   ×
+    </h6>
+  </div>
+  <div
+    data-name="charcoal"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#424242",
+        "borderBottom": "2px solid #292929",
+        "color": "#D0D0D0",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="charcoal"
+    >
+      Charcoal   ×
+    </h6>
+  </div>
+  <div
+    data-name="dustyBlue"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#AED6F1",
+        "borderBottom": "2px solid #83A1B5",
+        "color": "#6D8697",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="dustyBlue"
+    >
+      Dusty Blue   ×
+    </h6>
+  </div>
+  <div
+    data-name="red"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#E53935",
+        "borderBottom": "2px solid #AC2B28",
+        "color": "#F8CECC",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="red"
+    >
+      Red   ×
+    </h6>
+  </div>
+  <div
+    data-name="lilac"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "backgroundColor": "#E1BEE7",
+        "borderBottom": "2px solid #A98FAD",
+        "color": "#F7EFF9",
+      }
+    }
+    tabIndex="-1"
+  >
+    <h6
+      data-name="lilac"
+    >
+      Lilac   ×
+    </h6>
+  </div>
+</div>
+`;

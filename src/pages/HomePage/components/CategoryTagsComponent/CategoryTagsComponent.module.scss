@@ -1,0 +1,113 @@
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.categoryTagsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  padding: 8px 8px;
+  background-color: #ddd4cc;
+  border-top: 2px solid #beb5af;
+
+  div {
+    padding: 6px 8px;
+    border-radius: 2px;
+    margin: 0 8px 8px 0;
+    -webkit-animation: fade-in 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: fade-in 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+
+    h6 {
+      font: 700 10px/5px 'Source Sans Pro', monospace;
+    }
+  }
+
+  .male {
+    background-color: #5dade2;
+    border-bottom: 2px solid #4682a9;
+    color: #d6eaf8;
+  }
+
+  .female {
+    background-color: #f8bbd0;
+    border-bottom: 2px solid #ba8c9c;
+    color: #5d464e;
+  }
+
+  .jacket {
+    background-color: #f7dc6f;
+    border-bottom: 2px solid #b9a553;
+    color: #7b6e37;
+  }
+
+  .jeans {
+    background-color: #e59866;
+    border-bottom: 2px solid #ac724d;
+    color: #563926;
+  }
+
+  .shirts {
+    background-color: #cddc39;
+    border-bottom: 2px solid #9aa52b;
+    color: #808924;
+  }
+
+  .tops {
+    background-color: #880e4f;
+    border-bottom: 2px solid #660a3b;
+    color: #e1c3d3;
+  }
+
+  .dresses {
+    background-color: #4db6ac;
+    border-bottom: 2px solid #3a8981;
+    color: #d3edea;
+  }
+
+  .multi {
+    background-image:
+      linear-gradient(
+        to right,
+        #64b5f6,
+        #4dd0e1 20%,
+        #81c784 40%,
+        #dce775 60%,
+        #ffb74d 80%,
+        #ba68c8
+      );
+    border-top: 2px solid #e1c3d3;
+    border-right: 2px solid #ba68c8;
+    border-bottom: 2px solid #81c784;
+    border-left: 2px solid #64b5f6;
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .categoryTagsContainer {
+    div {
+      padding: 8px 10px;
+
+      h6 {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+}

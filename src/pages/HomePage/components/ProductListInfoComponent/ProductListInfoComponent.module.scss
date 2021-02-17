@@ -1,0 +1,70 @@
+.productListInfoContainer {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.productListInfoNameContainer {
+  h3 {
+    padding: 4px 0;
+    font: 400 16px/16px 'Playfair Display', monospace;
+  }
+}
+
+.productListInfoPriceContainer {
+  h5 {
+    font: 400 12px/12px 'Source Sans Pro', monospace;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .productListInfoNameContainer {
+    h3 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  .productListInfoPriceContainer {
+    h5 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .productListInfoNameContainer {
+    h3 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .productListInfoPriceContainer {
+    margin-top: 10px;
+
+    h5 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .productListInfoNameContainer {
+    h3 {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  .productListInfoPriceContainer {
+    margin-top: 10px;
+
+    h5 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}

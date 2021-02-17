@@ -1,0 +1,22 @@
+.productListItem {
+  width: 48%;
+  background-color: #fbeee6;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 7px -2px rgba(107, 107, 107, 1);
+  -moz-box-shadow: 0 0 7px -2px rgba(107, 107, 107, 1);
+  box-shadow: 0 0 7px -2px rgba(107, 107, 107, 1);
+}
+
+@media only screen and (min-width: 868px) {
+  .productListItem {
+    width: 32%;
+    margin: 0 5px 30px 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .productListItem {
+    width: 23%;
+  }
+}

@@ -1,0 +1,27 @@
+.swiperGallery {
+  width: 100%;
+  height: auto;
+}
+
+.swiperGallerySlide {
+  width: 100%;
+}
+
+.swiperGalleryImage {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 468px) {
+  .swiperGallery {
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .swiperGallery {
+    position: relative;
+    top: 18px;
+  }
+}

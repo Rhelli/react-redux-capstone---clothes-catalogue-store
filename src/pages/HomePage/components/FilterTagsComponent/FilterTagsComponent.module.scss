@@ -1,0 +1,128 @@
+.filterTagsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.filterCategory {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-bottom: 5px;
+
+  h4 {
+    font: 700 18px/18px 'Playfair Display', monospace;
+  }
+}
+
+.categoryTags {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 10px 0 10px 2px;
+
+  div {
+    margin-right: 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 4px -1px rgba(71, 71, 71, 1);
+    -moz-box-shadow: 0 1px 4px -1px rgba(71, 71, 71, 1);
+    box-shadow: 0 1px 4px -1px rgba(71, 71, 71, 1);
+  }
+
+  h6 {
+    padding: 8px 12px;
+    font: 700 14px/14px 'Source Sans Pro', monospace;
+    white-space: nowrap;
+  }
+
+  .male {
+    background-color: #5dade2;
+    border-bottom: 2px solid #4682a9;
+    color: #d6eaf8;
+  }
+
+  .female {
+    background-color: #f8bbd0;
+    border-bottom: 2px solid #ba8c9c;
+    color: #5d464e;
+  }
+
+  .jacket {
+    background-color: #f7dc6f;
+    border-bottom: 2px solid #b9a553;
+    color: #7b6e37;
+  }
+
+  .jeans {
+    background-color: #e59866;
+    border-bottom: 2px solid #ac724d;
+    color: #563926;
+  }
+
+  .shirts {
+    background-color: #cddc39;
+    border-bottom: 2px solid #9aa52b;
+    color: #808924;
+  }
+
+  .tops {
+    background-color: #880e4f;
+    border-bottom: 2px solid #660a3b;
+    color: #e1c3d3;
+  }
+
+  .dresses {
+    background-color: #4db6ac;
+    border-bottom: 2px solid #3a8981;
+    color: #d3edea;
+  }
+
+  .multi {
+    background-image:
+      linear-gradient(
+        to right,
+        #64b5f6,
+        #4dd0e1 20%,
+        #81c784 40%,
+        #dce775 60%,
+        #ffb74d 80%,
+        #ba68c8
+      );
+    border-top: 2px solid #e1c3d3;
+    border-right: 2px solid #ba68c8;
+    border-bottom: 2px solid #81c784;
+    border-left: 2px solid #64b5f6;
+  }
+}
+
+.colorCategory {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+.tag {
+  width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .filterCategory {
+    h4 {
+      font: 700 22px/22px 'Playfair Display', monospace;
+    }
+  }
+
+  .categoryTags {
+    div {
+      margin-right: 14px;
+
+      h6 {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+}

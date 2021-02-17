@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  background-color: #ede4dc;
+  border-top: 1px solid #cec7c1;
+
+  p {
+    text-align: center;
+  }
+
+  .disclaimer {
+    font: 400 14px/18px 'Source Sans Pro', monospace;
+  }
+
+  .name {
+    font: 400 12px/20px 'Source Sans Pro', monospace;
+  }
+}

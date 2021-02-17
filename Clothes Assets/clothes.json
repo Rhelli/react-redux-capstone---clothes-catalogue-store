@@ -2,6 +2,13 @@
   "mens": {
     "jackets": {
       "jacket01": {
+        "id": 612690,
+        "images": [
+          "https://beeimg.com/images/n77550845531.webp",
+          "https://beeimg.com/images/q80110857421.webp",
+          "https://beeimg.com/images/q36881750471.webp",
+          "https://beeimg.com/images/l98114725021.webp"
+        ],
         "productName": "Timberland sherpa jacket in black/blue",
         "price": 120.00,
         "color": "Black",
@@ -15,6 +22,13 @@
         "madeOf": "Fabric: 100% Cotton."
       },
       "jacket02": {
+        "id": 773205,
+        "images": [
+          "https://beeimg.com/images/p51516871011.webp",
+          "https://beeimg.com/images/s72563517963.webp",
+          "https://beeimg.com/images/b56038814841.webp",
+          "https://beeimg.com/images/z21043132833.webp"
+        ],
         "productName": "Barbour Ashby wax jacket in black",
         "price": 146.30,
         "color": "Black",
@@ -32,6 +46,13 @@
         "madeOf": "Main: 100% Cotton, Sleeve: 100% Polyester, Inner: 100% Cotton."
       },
       "jacket03": {
+        "id": 193998,
+        "images": [
+          "https://beeimg.com/images/y94914354214.webp",
+          "https://beeimg.com/images/v98974490311.webp",
+          "https://beeimg.com/images/v53862104774.webp",
+          "https://beeimg.com/images/d04887864321.webp"
+        ],
         "productName": "Jack & Jones Core hooded puffer in green",
         "price": 33.00,
         "color": "Darkest Spruce",
@@ -50,6 +71,13 @@
         "madeOf": "Fabric: 100% Polyester."
       },
       "jacket04": {
+        "id": 994075,
+        "images": [
+          "https://beeimg.com/images/r94065218553.webp",
+          "https://beeimg.com/images/z27287180543.webp",
+          "https://beeimg.com/images/p63588674374.webp",
+          "https://beeimg.com/images/y11950473324.webp"
+        ],
         "productName": "ASOS DESIGN oversized polar fleece sweatshirt with half zip in all over geo print",
         "price": 32.00,
         "color": "Multi",
@@ -69,6 +97,13 @@
         "madeOf": "Fabric: 100% Polyester."
       },
       "jacket05": {
+        "id": 371669,
+        "images": [
+          "https://beeimg.com/images/g50046885074.webp",
+          "https://beeimg.com/images/e81333154644.webp",
+          "https://beeimg.com/images/f12324584551.webp",
+          "https://beeimg.com/images/g17033680263.webp"
+        ],
         "productName": "Bershka denim jacket in light blue",
         "price": 25.27,
         "color": "Blue",
@@ -89,6 +124,13 @@
     },
     "jeans": {
       "jeans01": {
+        "id": 252143,
+        "images": [
+          "https://beeimg.com/images/e73669685431.webp",
+          "https://beeimg.com/images/l49571878383.webp",
+          "https://beeimg.com/images/n97274063881.webp",
+          "https://beeimg.com/images/w50209312361.webp"
+        ],
         "productName": "Levi's skinny tapered fit jeans in eat the popcorn advanced light wash",
         "price": 95.00,
         "color": "Blue",
@@ -105,6 +147,13 @@
         "madeOf": "Main: 68% Cotton, 31% Lyocell, 1% Elastane."
       },
       "jeans02": {
+        "id": 709159,
+        "images": [
+          "https://beeimg.com/images/k28034227583.webp",
+          "https://beeimg.com/images/h48967632831.webp",
+          "https://beeimg.com/images/y93534262493.webp",
+          "https://beeimg.com/images/w33915017044.webp"
+        ],
         "productName": "River Island tapered jeans with rips in light blue",
         "price": 45.00,
         "color": "Blue",
@@ -122,6 +171,13 @@
         "madeOf": "Main: 98% Cotton, 2% Elastane."
       },
       "jeans03": {
+        "id": 487021,
+        "images": [
+          "https://beeimg.com/images/l21872209811.webp",
+          "https://beeimg.com/images/t66310252154.webp",
+          "https://beeimg.com/images/b09372496231.webp",
+          "https://beeimg.com/images/t72340893514.webp"
+        ],
         "productName": "ASOS DESIGN stretch slim jeans in black",
         "price": 25.00,
         "color": "Black",
@@ -139,6 +195,13 @@
         "madeOf": "Main: 99% Cotton, 1% Elastane."
       },
       "jeans04": {
+        "id": 96327,
+        "images": [
+          "https://beeimg.com/images/d95055216173.webp",
+          "https://beeimg.com/images/l49713163301.webp",
+          "https://beeimg.com/images/m88289824634.webp",
+          "https://beeimg.com/images/c31969654623.webp"
+        ],
         "productName": "Jack & Jones Intelligence Liam skinny fit stretch jeans in blue black",
         "price": 30.00,
         "color": "Blue Denim",
@@ -156,6 +219,13 @@
         "madeOf": "Fabric: 91% Cotton, 7% Polyester, 2% Elastane."
       },
       "jeans05": {
+        "id": 382592,
+        "images": [
+          "https://beeimg.com/images/n63241034824.webp",
+          "https://beeimg.com/images/v49376310031.webp",
+          "https://beeimg.com/images/c05088334964.webp",
+          "https://beeimg.com/images/g14876092554.webp"
+        ],
         "productName": "Burton Menswear tapered jeans in washed black",
         "price": 20.00,
         "color": "Black",
@@ -174,6 +244,13 @@
     },
     "shirts": {
       "shirts01": {
+        "id": 992303,
+        "images": [
+          "https://beeimg.com/images/z81726644674.webp",
+          "https://beeimg.com/images/y44829178473.webp",
+          "https://beeimg.com/images/w09259572303.webp",
+          "https://beeimg.com/images/c23311725821.webp"
+        ],
         "productName": "Jack & Jones Originals fleece overshirt in navy",
         "price": 35.00,
         "color": "Navy blazer",
@@ -192,6 +269,13 @@
         "madeOf": "Fabric: 100% Polyester."
       },
       "shirts02": {
+        "id": 14716,
+        "images": [
+          "https://beeimg.com/images/z37800446901.webp",
+          "https://beeimg.com/images/s86078608244.webp",
+          "https://beeimg.com/images/o20311413651.webp",
+          "https://beeimg.com/images/u90017994974.webp"
+        ],
         "productName": "ASOS DESIGN 90s oversized style cord shirt in college green",
         "price": 25.00,
         "color": "Green",
@@ -210,6 +294,13 @@
         "madeOf": "Main: 100% Cotton."
       },
       "shirts03": {
+        "id": 200051,
+        "images": [
+          "https://beeimg.com/images/n44747763171.webp",
+          "https://beeimg.com/images/d05155416831.webp",
+          "https://beeimg.com/images/e37626655041.webp",
+          "https://beeimg.com/images/r31606749261.webp"
+        ],
         "productName": "Polo Ralph Lauren oxford shirt in slim fit white",
         "price": 99.00,
         "color": "White",
@@ -229,6 +320,13 @@
         "madeOf": "Body: 100% Cotton."
       },
       "shirts04": {
+        "id": 661936,
+        "images": [
+          "https://beeimg.com/images/m57073810874.webp",
+          "https://beeimg.com/images/x46595929841.webp",
+          "https://beeimg.com/images/x98029644153.webp",
+          "https://beeimg.com/images/o58648656644.webp"
+        ],
         "productName": "ASOS DESIGN 90s oversized organic denim shirt in grape",
         "price": 25.00,
         "color": "Grape",
@@ -247,6 +345,13 @@
         "madeOf": "Body: 100% Organic Cotton."
       },
       "shirts05": {
+        "id": 619732,
+        "images": [
+          "https://beeimg.com/images/t16066848373.webp",
+          "https://beeimg.com/images/w17745458254.webp",
+          "https://beeimg.com/images/g49346235593.webp",
+          "https://beeimg.com/images/d75286490363.webp"
+        ],
         "productName": "Deus Ex Machina marcus flannel heavyweight overshirt in khaki",
         "price": 160.00,
         "color": "Khaki",
@@ -269,6 +374,13 @@
     },
     "tops": {
       "tops01": {
+        "id": 268009,
+        "images": [
+          "https://beeimg.com/images/h56832300883.webp",
+          "https://beeimg.com/images/z78258145454.webp",
+          "https://beeimg.com/images/q89817663201.webp",
+          "https://beeimg.com/images/m78288224444.webp"
+        ],
         "productName": "Carhartt WIP Chase t-shirt in grey",
         "price": 24.50,
         "color": "Grey heather/gold",
@@ -284,6 +396,13 @@
         "madeOf": "Fabric: 100% Cotton."
       },
       "tops02": {
+        "id": 57347,
+        "images": [
+          "https://beeimg.com/images/b21140583621.webp",
+          "https://beeimg.com/images/f41334512493.webp",
+          "https://beeimg.com/images/m70350030191.webp",
+          "https://beeimg.com/images/j77290514273.webp"
+        ],
         "productName": "Burton Menswear peace out t-shirt in washed khaki",
         "price": 16.00,
         "color": "Khaki",
@@ -301,6 +420,13 @@
         "madeOf": "Main: 100% Cotton."
       },
       "tops03": {
+        "id": 799914,
+        "images": [
+          "https://beeimg.com/images/k42235740503.webp",
+          "https://beeimg.com/images/z13172942471.webp",
+          "https://beeimg.com/images/t00396862044.webp",
+          "https://beeimg.com/images/w07294922061.webp"
+        ],
         "productName": "ASOS DESIGN oversized waffle t-shirt with deep hem and cuff in washed blue",
         "price": 16.00,
         "color": "Vintage indigo",
@@ -318,6 +444,13 @@
         "madeOf": "Main: 100% Cotton."
       },
       "tops04": {
+        "id": 478576,
+        "images": [
+          "https://beeimg.com/images/y37102411793.webp",
+          "https://beeimg.com/images/p38799551751.webp",
+          "https://beeimg.com/images/d09067233281.webp",
+          "https://beeimg.com/images/j31908232713.webp"
+        ],
         "productName": "ASOS DESIGN oversized t-shirt in blue towelling with text chest print",
         "price": 20.00,
         "color": "Mineral blue",
@@ -334,6 +467,13 @@
         "madeOf": "Main: 83% Cotton, 17% Polyester."
       },
       "tops05": {
+        "id": 803259,
+        "images": [
+          "https://beeimg.com/images/t99495665574.webp",
+          "https://beeimg.com/images/g26379744494.webp",
+          "https://beeimg.com/images/f11768632711.webp",
+          "https://beeimg.com/images/i17463486811.webp"
+        ],
         "productName": "American Eagle thermal front logo long sleeve top in charcoal marl",
         "price": 34.95,
         "color": "Charcoal heather gray",
@@ -355,6 +495,13 @@
   "womens": {
     "jackets": {
       "jacket01": {
+        "id": 640463,
+        "images": [
+          "https://beeimg.com/images/z45360642733.webp",
+          "https://beeimg.com/images/w71083195231.webp",
+          "https://beeimg.com/images/z26369718171.webp",
+          "https://beeimg.com/images/q37511091414.webp"
+        ],
         "productName": "ASOS DESIGN double breasted textured coat in khaki",
         "price": 52.00,
         "color": "Khaki",
@@ -373,6 +520,13 @@
         "madeOf": "Lining: 100% Polyester, Main: 100% Polyester."
       },
       "jacket02": {
+        "id": 699224,
+        "images": [
+          "https://beeimg.com/images/r12977143484.webp",
+          "https://beeimg.com/images/w24132940593.webp",
+          "https://beeimg.com/images/j72812567794.webp",
+          "https://beeimg.com/images/a90486585873.webp"
+        ],
         "productName": "ASOS DESIGN oversized padded shacket in khaki",
         "price": 40.00  ,
         "color": "Khaki",
@@ -392,6 +546,13 @@
         "madeOf": "Body Lining: 100% Polyester, Padding: 100% Polyester, Shell: 100% Polyester."
       },
       "jacket03": {
+        "id": 881716,
+        "images": [
+          "https://beeimg.com/images/w57151226711.webp",
+          "https://beeimg.com/images/y96895978451.webp",
+          "https://beeimg.com/images/n84205742611.webp",
+          "https://beeimg.com/images/h00386048931.webp"
+        ],
         "productName": "QED London borg coat in tan",
         "price": 62.00,
         "color": "Tan",
@@ -409,6 +570,13 @@
         "madeOf": "Main: 100% Polyester."
       },
       "jacket04": {
+        "id": 85124,
+        "images": [
+          "https://beeimg.com/images/o35277481941.webp",
+          "https://beeimg.com/images/p11777598571.webp",
+          "https://beeimg.com/images/r83009176513.webp",
+          "https://beeimg.com/images/q35981427851.webp"
+        ],
         "productName": "Threadbare overcoat in dusky blue",
         "price": 22.95,
         "color": "Dusty Blue",
@@ -426,6 +594,13 @@
         "madeOf": "Main: 76% Polyester, 23% Viscose, 1% Elastane, Lining: 100% Polyester."
       },
       "jacket05": {
+        "id": 306479,
+        "images": [
+          "https://beeimg.com/images/p33824477323.webp",
+          "https://beeimg.com/images/b23730355734.webp",
+          "https://beeimg.com/images/o76318920743.webp",
+          "https://beeimg.com/images/t00081291731.webp"
+        ],
         "productName": "Jayley faux fur stripe zip through jacket in black",
         "price": 120.00,
         "color": "Black",
@@ -445,6 +620,13 @@
     },
     "jeans": {
       "jeans01": {
+        "id": 895652,
+        "images": [
+          "https://beeimg.com/images/g44285470884.webp",
+          "https://beeimg.com/images/h35665867121.webp",
+          "https://beeimg.com/images/m31820297571.webp",
+          "https://beeimg.com/images/r36105636671.webp"
+        ],
         "productName": "Stradivarius organic cotton slim mom jean with stretch in washed blue",
         "price": 19.99,
         "color": "Blue",
@@ -463,6 +645,13 @@
         "madeOf": "Main: 99% Cotton, 1% Elastane."
       },
       "jeans02": {
+        "id": 285656,
+        "images": [
+          "https://beeimg.com/images/h44264189694.webp",
+          "https://beeimg.com/images/s07289973971.webp",
+          "https://beeimg.com/images/d44138481911.webp",
+          "https://beeimg.com/images/p91858000544.webp"
+        ],
         "productName": "Urban Bliss mom jeans in mid wash",
         "price": 20.00,
         "color": "Midwash",
@@ -481,6 +670,13 @@
         "madeOf": "Main: 99% Cotton, 1% Elastane."
       },
       "jeans03": {
+        "id": 993599,
+        "images": [
+          "https://beeimg.com/images/b71735248441.webp",
+          "https://beeimg.com/images/c49827379664.webp",
+          "https://beeimg.com/images/d94017829583.webp",
+          "https://beeimg.com/images/x12261905533.webp"
+        ],
         "productName": "Levi's utility mile high ankle jeans in black",
         "price": 60.00,
         "color": "Black",
@@ -499,6 +695,13 @@
         "madeOf": "Main: 64% Cotton, 34% Polyester, 2% Elastane."
       },
       "jeans04": {
+        "id": 218575,
+        "images": [
+          "https://beeimg.com/images/t54621939124.webp",
+          "https://beeimg.com/images/b56734723781.webp",
+          "https://beeimg.com/images/w67779766101.webp",
+          "https://beeimg.com/images/r08877110183.webp"
+        ],
         "productName": "Bershka high rise skinny jean in bleach blue",
         "price": 19.99,
         "color": "Blue",
@@ -515,6 +718,13 @@
         "madeOf": "Main: 71% Cotton, 18% Polyester, 8% Viscose, 3% Elastane."
       },
       "jeans05": {
+        "id": 587553,
+        "images": [
+          "https://beeimg.com/images/i19351115271.webp",
+          "https://beeimg.com/images/x69152950124.webp",
+          "https://beeimg.com/images/v47596356674.webp",
+          "https://beeimg.com/images/k66400877123.webp"
+        ],
         "productName": "ASOS DESIGN high rise 'slouchy' mom jeans in midwash with rips",
         "price": 35.00,
         "color": "Midwash",
@@ -536,6 +746,13 @@
     },
     "dresses": {
       "dresses01": {
+        "id": 108186,
+        "images": [
+          "https://beeimg.com/images/r08532261121.webp",
+          "https://beeimg.com/images/m26341758573.webp",
+          "https://beeimg.com/images/s56359297391.webp",
+          "https://beeimg.com/images/a52470229691.webp"
+        ],
         "productName": "ASOS DESIGN nipped in waist mini dress in black",
         "price": 28.00,
         "color": "Black",
@@ -553,6 +770,13 @@
         "madeOf": "Main: 96% Polyester, 4% Elastane."
       },
       "dresses02": {
+        "id": 559481,
+        "images": [
+          "https://beeimg.com/images/g70077191023.webp",
+          "https://beeimg.com/images/m70482919241.webp",
+          "https://beeimg.com/images/a64041502771.webp",
+          "https://beeimg.com/images/s43151905371.webp"
+        ],
         "productName": "Femme Luxe long sleeve ruched detail mini dress in pistachio",
         "price": 8.75,
         "color": "Khaki",
@@ -570,6 +794,13 @@
         "madeOf": "Fabric: 95% Polyester, 5% Elastane."
       },
       "dresses03": {
+        "id": 217728,
+        "images": [
+          "https://beeimg.com/images/j84686640831.webp",
+          "https://beeimg.com/images/v74784107261.webp",
+          "https://beeimg.com/images/g70492201491.webp",
+          "https://beeimg.com/images/k20874225713.webp"
+        ],
         "productName": "Missguided tea dress with ruched side in red polka",
         "price": 26.00,
         "color": "Red",
@@ -590,6 +821,13 @@
         "madeOf": "Main: 100% Polyester."
       },
       "dresses04": {
+        "id": 654311,
+        "images": [
+          "https://beeimg.com/images/m27644328214.webp",
+          "https://beeimg.com/images/h74149929163.webp",
+          "https://beeimg.com/images/o26496574151.webp",
+          "https://beeimg.com/images/z82947467311.webp"
+        ],
         "productName": "ASOS DESIGN super oversized frill sleeve smock dress in rose",
         "price": 18.00,
         "color": "Rose",
@@ -606,6 +844,13 @@
         "madeOf": "Main: 100% Cotton."
       },
       "dresses05": {
+        "id": 330788,
+        "images": [
+          "https://beeimg.com/images/g21682477991.webp",
+          "https://beeimg.com/images/d59238942414.webp",
+          "https://beeimg.com/images/y18392473854.webp",
+          "https://beeimg.com/images/b17634355753.webp"
+        ],
         "productName": "Weekday Kai organic cotton jersey dress with shoulder pads in black",
         "price": 25.00,
         "color": "Black",
@@ -627,6 +872,13 @@
     },
     "tops": {
       "tops01": {
+        "id": 945542,
+        "images": [
+          "https://beeimg.com/images/v38503418793.webp",
+          "https://beeimg.com/images/a15875014161.webp",
+          "https://beeimg.com/images/u42401122103.webp",
+          "https://beeimg.com/images/m82088247244.webp"
+        ],
         "productName": "AllSaints Coni tank in green",
         "price": 16.20,
         "color": "Green",
@@ -644,6 +896,13 @@
         "madeOf": "Body: 100% Cotton."
       },
       "tops02": {
+        "id": 709469,
+        "images": [
+          "https://beeimg.com/images/p05094436784.webp",
+          "https://beeimg.com/images/r12557014754.webp",
+          "https://beeimg.com/images/u25677875813.webp",
+          "https://beeimg.com/images/e18279271983.webp"
+        ],
         "productName": "ASOS DESIGN long sleeved cropped check shirt in black and cream",
         "price": 22.22,
         "color": "Multi",
@@ -663,6 +922,13 @@
         "madeOf": "Main: 100% Cotton."
       },
       "tops03": {
+        "id": 303474,
+        "images": [
+          "https://beeimg.com/images/e43416102133.webp",
+          "https://beeimg.com/images/g97299617393.webp",
+          "https://beeimg.com/images/c99886593401.webp",
+          "https://beeimg.com/images/d95747234474.webp"
+        ],
         "productName": "ASOS DESIGN long sleeve top with slash neck in black",
         "price": 12.00,
         "color": "Black",
@@ -680,6 +946,13 @@
         "madeOf": "Main: 96% Viscose, 4% Elastane."
       },
       "tops04": {
+        "id": 311365,
+        "images": [
+          "https://beeimg.com/images/b80424911401.webp",
+          "https://beeimg.com/images/z99863517481.webp",
+          "https://beeimg.com/images/h16630086801.webp",
+          "https://beeimg.com/images/d65991380031.webp"
+        ],
         "productName": "ASOS DESIGN super oversized t-shirt with stitch detail in washed teal",
         "price": 16.00,
         "color": "Green",
@@ -696,6 +969,13 @@
         "madeOf": "Main: 100% Cotton."
       },
       "tops05": {
+        "id": 455498,
+        "images": [
+          "https://beeimg.com/images/t45850701744.webp",
+          "https://beeimg.com/images/s47125745174.webp",
+          "https://beeimg.com/images/z70808432584.webp",
+          "https://beeimg.com/images/q37671563271.webp"
+        ],
         "productName": "Stradivarius v neck shoulder pad t-shirt in lilac",
         "price": 4.70,
         "color": "Lilac",
