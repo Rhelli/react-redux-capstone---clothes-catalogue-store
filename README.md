@@ -12,7 +12,7 @@
     <a href="https://clothes-inc.herokuapp.com/"><strong>Visit The Site »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/archive/feature/readMe.zip">Download this repository</a>
+    <a href="https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/archive/main.zip">Download this repository</a>
     |
     <a href="https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/issues/new/choose">Report A Bug</a>
     |
@@ -22,17 +22,17 @@
 
 
 ## 📑 Table of Contents
-  - [The Project Brief](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-the-project-brief)
-  - [The Technical Requirements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#%EF%B8%8F-the-nitty-gritty)
-  - [Architecture](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#architecture)
-  - [Tools & Technology Used](https://github.com/Rhelli/RoR-Capstone---Activity-Tracker/tree/release/0.1.0#-tools--technology-used)
-  - [Setup & Use](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-setup--use)
-  - [Showcase](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-feature-previews)
-  - [Contributions, Issues and Forking](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#%EF%B8%8F-contributions-issues-and-forking)
-  - [Creator](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-creator)
-  - [Show Your Support!](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-show-your-support)
-  - [Credit & Acknowledgements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#-credits--acknowledgements)
-  - [Licensing](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/feature/readMe#%EF%B8%8F-licensing)
+  - [The Project Brief](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-the-project-brief)
+  - [The Technical Requirements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-the-technical-requirements)
+  - [Architecture](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-architecture)
+  - [Tools & Technology Used](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-languages-frameworks-and-build-tools-used)
+  - [Setup & Use](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-setup--use)
+  - [Feature Previews](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-feature-previews)
+  - [Contributions, Issues and Forking](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-contributions-issues-and-forking)
+  - [Creator](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-creator)
+  - [Show Your Support!](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-show-your-support)
+  - [Credit & Acknowledgements](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#-credits--acknowledgements)
+  - [Licensing](https://github.com/Rhelli/react-redux-capstone---clothes-catalogue-store/tree/main#%EF%B8%8F-licensing)
 
 
 ## 🔰 The Project Brief
@@ -71,7 +71,7 @@ Additionally, was the extra stipulation that our app must collect data to be use
 ### Application State
   The state for this application was largely maintained using Redux, with the occasional use of Redux hooks.
 
-## 🧰 Languages, Frameworks and Build Tools Used
+## 🧰 Tools & Technology Used
 **Languages & Frameworks**
  - HTML5
  - SASS
